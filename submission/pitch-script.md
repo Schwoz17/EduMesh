@@ -51,7 +51,7 @@ EduMesh is **free for students**. Schools reuse a laptop they already own. Partn
 
 **[Slide 11 — Close] (10 s)**
 
-A student shouldn't need a data plan to ask a tutor a question. With EduMesh, they need **zero naira of data**. Try it now at [link], with airplane mode on. Thank you.
+A student shouldn't need a data plan to ask a tutor a question. With EduMesh, they need **zero naira of data**. Try it now at edumesh-eta.vercel.app, with airplane mode on. Thank you.
 
 ---
 

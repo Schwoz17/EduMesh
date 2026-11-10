@@ -6,6 +6,8 @@ EduMesh AI is a free AI tutor for Nigerian secondary-school students. A student 
 
 > "A student shouldn't need a ₦5,000 data plan to ask a tutor a question."
 
+**Live app:** https://edumesh-eta.vercel.app/ (open it once, then it works offline)
+
 ---
 
 ## How it works

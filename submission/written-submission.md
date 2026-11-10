@@ -4,7 +4,7 @@
 
 - **Team:** [Team name]
 - **Members:** [Names and roles]
-- **Live app:** [your live link]
+- **Live app:** https://edumesh-eta.vercel.app/
 - **Code:** https://github.com/Schwoz17/EduMesh
 - **Pitch deck:** [deck link]
 - **Demo video:** [video link]
