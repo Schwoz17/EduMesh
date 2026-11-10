@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>EduMesh AI — Offline AI Tutor</title>
+  <meta name="description" content="A free AI tutor that works with no internet. WAEC/NECO/JAMB lessons in English, Pidgin, Yoruba, Hausa and Igbo.">
+  <meta name="theme-color" content="#006b3f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#question">Skip to question box</a>
+
+  <!-- Audio-first onboarding: tap once = standard, double-tap = Voice Mode -->
+  <div id="onboard" class="onboard" role="dialog" aria-modal="true" aria-labelledby="onboardTitle" hidden>
+    <div class="onboard-inner">
+      <div class="onboard-logo" aria-hidden="true">📚</div>
+      <h1 id="onboardTitle">EduMesh AI</h1>
+      <p class="onboard-lead">Your free tutor. No internet. No data.</p>
+      <p class="onboard-big">Tap <strong>Start</strong> to begin.<br><strong>Double-tap</strong> anywhere for <strong>Voice Mode</strong><br><span class="onboard-sub">(for blind or low-vision learners)</span></p>
+      <div class="onboard-actions">
+        <button type="button" id="startStandard" class="btn btn-primary btn-lg">Start</button>
+        <button type="button" id="startVoice" class="btn btn-lg">🔊 Voice Mode</button>
+      </div>
+      <p class="onboard-hint">Keyboard: Enter to start, V for Voice Mode.</p>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">📚</span>
+      <span class="brand-name">EduMesh AI</span>
+    </div>
+    <div class="chips" aria-live="polite">
+      <span id="netChip" class="chip">…</span>
+      <button type="button" id="engineChip" class="chip chip-btn" aria-controls="setupCard" title="Change AI mode">…</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="chat-panel" aria-label="Tutor chat">
+      <div class="controls">
+        <label class="control">
+          <span class="sr-only">Language</span>
+          <select id="dialect" aria-label="Language"></select>
+        </label>
+        <label class="control">
+          <span class="sr-only">Subject</span>
+          <select id="subject" aria-label="Subject"></select>
+        </label>
+        <button type="button" id="contrastBtn" class="btn btn-sm" aria-pressed="false">◐ Contrast</button>
+        <button type="button" id="textBtn" class="btn btn-sm" aria-label="Increase text size">A+</button>
+        <button type="button" id="voiceModeBtn" class="btn btn-sm" aria-pressed="false">🔊 Voice Mode</button>
+      </div>
+
+      <div id="chat" class="chat" role="log" aria-live="polite" aria-relevant="additions" tabindex="0"></div>
+
+      <form id="askForm" class="ask" autocomplete="off">
+        <button type="button" id="micBtn" class="btn btn-mic" aria-label="Speak your question">🎙️</button>
+        <label for="question" class="sr-only">Your question</label>
+        <input id="question" type="text" enterkeyhint="send" placeholder="Ask any school question…" maxlength="500">
+        <button type="submit" id="sendBtn" class="btn btn-primary">Ask</button>
+      </form>
+    </section>
+
+    <aside class="side">
+      <section class="card" aria-labelledby="masteryTitle">
+        <h2 id="masteryTitle">🔮 Exam Readiness</h2>
+        <p class="muted small">Predicted on this phone from your quiz history. Nothing is uploaded.</p>
+        <div class="metric">
+          <div id="prediction" class="prediction">—</div>
+          <svg id="spark" class="spark" viewBox="0 0 120 36" aria-hidden="true"></svg>
+        </div>
+        <p id="trend" class="small"></p>
+        <p id="tier" class="small"></p>
+        <div id="weak" class="weak"></div>
+        <button type="button" id="quizBtn" class="btn btn-accent btn-block">📝 Take a 5-question quiz</button>
+      </section>
+
+      <section class="card" id="setupCard" aria-labelledby="setupTitle">
+        <h2 id="setupTitle">📶 Offline Setup</h2>
+        <ul class="status-list">
+          <li id="appStatus">App: checking…</li>
+          <li id="storageStatus"></li>
+        </ul>
+        <fieldset class="modes">
+          <legend>AI mode</legend>
+          <label><input type="radio" name="mode" value="auto" checked> Auto (best available)</label>
+          <label><input type="radio" name="mode" value="phone"> 📱 Phone AI — runs on this phone</label>
+          <label><input type="radio" name="mode" value="hub"> 🏫 Classroom Hub / Laptop (Ollama)</label>
+          <label><input type="radio" name="mode" value="textbook"> 📖 Textbook only — any phone</label>
+        </fieldset>
+        <div id="phoneSetup" class="phone-setup">
+          <label class="block small" for="modelSize">Phone AI model</label>
+          <select id="modelSize"></select>
+          <p id="gpuStatus" class="small muted"></p>
+          <div class="row">
+            <button type="button" id="downloadBtn" class="btn btn-primary">⬇️ Download for offline</button>
+            <button type="button" id="removeModelBtn" class="btn btn-sm" hidden>Remove</button>
+          </div>
+          <progress id="dlProgress" max="1" value="0" hidden></progress>
+          <p id="dlText" class="small muted" aria-live="polite"></p>
+        </div>
+        <button type="button" id="installBtn" class="btn btn-block" hidden>📲 Install app on this phone</button>
+      </section>
+
+      <section class="card" aria-labelledby="packsTitle">
+        <h2 id="packsTitle">📦 Update Packs</h2>
+        <p class="small muted">Got a lesson pack from your teacher by Xender, Bluetooth or USB? Import it here — no data needed.</p>
+        <label class="btn btn-block file-btn">
+          Import pack file
+          <input id="packInput" type="file" accept=".json,application/json" class="sr-only">
+        </label>
+        <ul id="packList" class="pack-list"></ul>
+      </section>
+
+      <details class="card about">
+        <summary>About &amp; privacy</summary>
+        <p class="small">EduMesh keeps your questions, scores and learning profile only on this phone. Answers come from the textbooks saved in the app.</p>
+        <p class="small">Shortcuts: <kbd>Alt</kbd>+<kbd>M</kbd> speak a question, <kbd>Alt</kbd>+<kbd>R</kbd> repeat last answer, <kbd>Esc</kbd> stop reading.</p>
+        <div class="row">
+          <button type="button" id="demoBtn" class="btn btn-sm">Load demo history</button>
+          <button type="button" id="resetBtn" class="btn btn-sm">Reset my data</button>
+        </div>
+      </details>
+    </aside>
+  </main>
+
+  <dialog id="quizDialog" class="quiz" aria-labelledby="quizQ">
+    <div class="quiz-head">
+      <span id="quizProgress" class="small"></span>
+      <button type="button" id="quizClose" class="btn btn-sm" aria-label="Close quiz">✕</button>
+    </div>
+    <p id="quizTopic" class="small muted"></p>
+    <h3 id="quizQ"></h3>
+    <div id="quizOptions" class="quiz-options" role="group" aria-label="Answer options"></div>
+    <p id="quizFeedback" class="quiz-feedback" aria-live="assertive"></p>
+    <button type="button" id="quizNext" class="btn btn-primary btn-block" hidden>Next</button>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
