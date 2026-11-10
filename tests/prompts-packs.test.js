@@ -35,16 +35,16 @@ test('history is trimmed and sanitised; unknown dialect falls back to English', 
 
 test('built-in quiz bank is valid', () => {
   const { questions } = JSON.parse(readFileSync(new URL('../public/data/quizzes.json', import.meta.url)));
-  assert.ok(questions.length >= 30);
+  assert.ok(questions.length >= 50);
   assert.ok(validateQuizzes(questions));
 });
 
 test('example pack parses and produces chunks', () => {
-  const pack = parsePack(readFileSync(new URL('../examples/economics-pack.edumesh.json', import.meta.url), 'utf8'));
+  const pack = parsePack(readFileSync(new URL('../examples/agric-pack.edumesh.json', import.meta.url), 'utf8'));
   const chunks = packChunks(pack);
   assert.ok(chunks.length > 0);
   assert.ok(chunks.every((c) => c.id.startsWith(`pack:${pack.id}:`)));
-  assert.equal(chunks[0].subject, 'Economics');
+  assert.equal(chunks[0].subject, 'Agricultural Science');
 });
 
 test('bad packs are rejected with readable errors', () => {

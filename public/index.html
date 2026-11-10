@@ -173,10 +173,31 @@
         <p class="fine">Got a pack from your teacher by Xender, Bluetooth or USB? Import it, no data needed.</p>
         <label class="btn btn-block btn-outline file-btn">
           📦 Import pack file
-          <input id="packInput" type="file" accept=".json,application/json" class="sr-only">
+          <input id="packInput" type="file" accept=".json,.txt,application/json,text/plain" class="sr-only">
         </label>
         <ul id="packList" class="pack-list"></ul>
       </section>
+
+      <details class="card teacher" id="teacherCard">
+        <summary><span>👩🏾‍🏫 Teacher: make a lesson pack</span></summary>
+        <p class="fine">Write a lesson and quiz, then share it to students' phones by Xender, Bluetooth or WhatsApp. No data needed.</p>
+        <form id="teacherForm" class="teacher-form" novalidate>
+          <label class="field">Pack title<input id="tpTitle" required placeholder="e.g. SS2 Biology week 3"></label>
+          <div class="field-row">
+            <label class="field">Subject<input id="tpSubject" list="subjectList" required placeholder="Biology"></label>
+            <label class="field">Level<input id="tpLevel" placeholder="SS2"></label>
+          </div>
+          <datalist id="subjectList"></datalist>
+          <label class="field">Topic<input id="tpTopic" required placeholder="e.g. Transpiration"></label>
+          <label class="field">Lesson notes<textarea id="tpLesson" rows="6" placeholder="Write the lesson in simple paragraphs. Leave a blank line between paragraphs."></textarea></label>
+          <div id="tpQuestions" class="tp-questions"></div>
+          <button type="button" id="tpAddQ" class="btn btn-outline btn-block">➕ Add a quiz question</button>
+          <div class="row tp-actions">
+            <button type="button" id="tpSave" class="btn btn-primary">Save on this phone</button>
+            <button type="button" id="tpShare" class="btn btn-gold">📤 Share pack</button>
+          </div>
+        </form>
+      </details>
 
       <details class="card about">
         <summary>About &amp; privacy</summary>

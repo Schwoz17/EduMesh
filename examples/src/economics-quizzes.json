@@ -1,5 +1,0 @@
-[
-  {"subject": "Economics", "topic": "Demand and Supply", "q": "According to the law of demand, when price rises, quantity demanded…", "options": ["rises", "falls", "stays the same", "doubles"], "answer": 1, "explain": "Other things being equal, higher prices mean people buy less."},
-  {"subject": "Economics", "topic": "Demand and Supply", "q": "The price where quantity demanded equals quantity supplied is the…", "options": ["maximum price", "equilibrium price", "reserve price", "cost price"], "answer": 1, "explain": "At equilibrium there is no shortage and no surplus."},
-  {"subject": "Economics", "topic": "Inflation", "q": "Inflation is a persistent rise in…", "options": ["the general price level", "population", "exports", "interest only"], "answer": 0, "explain": "Inflation means prices in general keep rising, so money buys less."}
-]

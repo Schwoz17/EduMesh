@@ -337,6 +337,24 @@ progress { width: 100%; height: 10px; margin-top: 10px; accent-color: var(--bran
 .file-btn { cursor: pointer; }
 .pack-list { list-style: none; padding: 0; margin: 10px 0 0; font-size: 0.88rem; }
 .pack-list li { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 8px 0; border-top: 1px solid var(--line); }
+.teacher summary { cursor: pointer; font-weight: 800; list-style: none; display: flex; justify-content: space-between; }
+.teacher summary::after { content: '+'; font-size: 1.2rem; color: var(--ink-2); }
+.teacher[open] summary::after { content: '–'; }
+.teacher-form { display: grid; gap: 12px; margin-top: 12px; }
+.field { display: grid; gap: 6px; font-size: 0.85rem; font-weight: 700; }
+.field-row { display: grid; grid-template-columns: 2fr 1fr; gap: 10px; }
+.field input, .field textarea, .tp-q input, .tp-q textarea, .tp-q select {
+  font: inherit; font-weight: 500; font-size: 0.95rem; color: var(--ink); width: 100%;
+  padding: 10px 12px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface-2);
+}
+.field textarea { resize: vertical; min-height: 110px; line-height: 1.5; }
+.field input:focus, .field textarea:focus, .tp-q input:focus, .tp-q select:focus { outline: none; border-color: var(--brand-2); box-shadow: 0 0 0 3px var(--brand-tint); }
+.tp-questions { display: grid; gap: 10px; }
+.tp-q { border: 1.5px dashed var(--line); border-radius: 16px; padding: 12px; margin: 0; display: grid; gap: 8px; }
+.tp-q legend { font-weight: 800; font-size: 0.85rem; padding: 0 6px; }
+.tp-q .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.tp-q .tp-remove { justify-self: end; }
+.tp-actions .btn { flex: 1; }
 .about summary { cursor: pointer; font-weight: 800; list-style: none; display: flex; justify-content: space-between; }
 .about summary::after { content: '+'; font-size: 1.2rem; color: var(--ink-2); }
 .about[open] summary::after { content: '–'; }

@@ -35,6 +35,11 @@ const cases = [
   ['solve a quadratic equation', 'Quadratic Equations'],
   ['difference between plant and animal cell', 'The Cell'],
   ['how to separate chaff from grain', 'Separation Techniques'],
+  ['what is opportunity cost', 'Scarcity, Choice and Opportunity Cost'],
+  ['how do I end a formal letter', 'Letter Writing'],
+  ['neither nor subject verb agreement', 'Concord (Subject-Verb Agreement)'],
+  ['what is a simile', 'Figures of Speech'],
+  ['functions of money', 'Money and Its Functions'],
 ];
 for (const [q, topic] of cases) {
   test(`search finds "${topic}" for "${q}"`, () => {

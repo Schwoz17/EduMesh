@@ -5,6 +5,7 @@ import { LearnerProfile, tierFor } from './mastery.js';
 import { textbookEngine, createOllamaEngine, createPhoneEngine, webgpuSupport, modelIdFor, PHONE_MODELS } from './engines.js';
 import { speak, stopSpeaking, listen, canListen, canSpeak } from './speech.js';
 import { parsePack, packChunks } from './packs.js';
+import { buildTeacherPack, packFile } from './teacher.js';
 
 const $ = (id) => document.getElementById(id);
 const SETTINGS_KEY = 'edumesh.settings.v1';
@@ -83,6 +84,7 @@ function renderSubjects() {
   const current = sel.value || 'all';
   sel.replaceChildren(new Option('📚 All subjects', 'all'), ...state.subjects.map((s) => new Option(s, s)));
   sel.value = state.subjects.includes(current) ? current : 'all';
+  $('subjectList').replaceChildren(...state.subjects.map((s) => new Option(s)));
 }
 
 // ------------------------------------------------------------------ engine selection
@@ -611,17 +613,89 @@ function renderPacks(packs) {
   );
 }
 
+async function addPack(pack) {
+  const packs = readJSON(PACKS_KEY, []).filter((p) => p.id !== pack.id);
+  packs.push(pack);
+  localStorage.setItem(PACKS_KEY, JSON.stringify(packs));
+  await loadData();
+  toast(`📦 Added "${pack.title}": ${pack.curriculum.length} lesson(s), ${pack.quizzes.length} question(s).`);
+}
+
 async function importPack(file) {
   try {
-    const pack = parsePack(await file.text());
-    const packs = readJSON(PACKS_KEY, []).filter((p) => p.id !== pack.id);
-    packs.push(pack);
-    localStorage.setItem(PACKS_KEY, JSON.stringify(packs));
-    await loadData();
-    toast(`📦 Added "${pack.title}": ${pack.curriculum.length} lessons, ${pack.quizzes.length} questions.`);
+    await addPack(parsePack(await file.text()));
   } catch (e) {
     toast(`Could not import: ${e.message}`);
   }
+}
+
+// ------------------------------------------------------------------ teacher pack builder
+let tpCount = 0;
+function addTeacherQuestion() {
+  const n = ++tpCount;
+  const fs = document.createElement('fieldset');
+  fs.className = 'tp-q';
+  const legend = document.createElement('legend');
+  legend.textContent = `Question ${$('tpQuestions').children.length + 1}`;
+  const q = Object.assign(document.createElement('input'), { className: 'tp-text', placeholder: 'Question', ariaLabel: 'Question text' });
+  const opts = document.createElement('div');
+  opts.className = 'opts';
+  for (const L of 'ABCD') opts.append(Object.assign(document.createElement('input'), { className: 'tp-opt', placeholder: `Option ${L}`, ariaLabel: `Option ${L}` }));
+  const ans = document.createElement('select');
+  ans.className = 'tp-ans';
+  ans.setAttribute('aria-label', 'Correct answer');
+  ans.append(new Option('Correct answer…', ''), ...'ABCD'.split('').map((L, i) => new Option(`Correct: ${L}`, String(i))));
+  const exp = Object.assign(document.createElement('input'), { className: 'tp-exp', placeholder: 'Short explanation (optional)', ariaLabel: 'Explanation' });
+  const rm = Object.assign(document.createElement('button'), { type: 'button', className: 'btn btn-quiet tp-remove', textContent: 'Remove' });
+  rm.addEventListener('click', () => {
+    fs.remove();
+    [...$('tpQuestions').children].forEach((el, i) => (el.querySelector('legend').textContent = `Question ${i + 1}`));
+  });
+  fs.append(legend, q, opts, ans, exp, rm);
+  fs.dataset.n = n;
+  $('tpQuestions').append(fs);
+  q.focus();
+}
+
+function readTeacherForm() {
+  return buildTeacherPack({
+    title: $('tpTitle').value,
+    subject: $('tpSubject').value,
+    topic: $('tpTopic').value,
+    level: $('tpLevel').value,
+    lesson: $('tpLesson').value,
+    questions: [...document.querySelectorAll('.tp-q')].map((fs) => ({
+      q: fs.querySelector('.tp-text').value,
+      options: [...fs.querySelectorAll('.tp-opt')].map((o) => o.value),
+      answer: fs.querySelector('.tp-ans').value === '' ? -1 : Number(fs.querySelector('.tp-ans').value),
+      explain: fs.querySelector('.tp-exp').value,
+    })),
+  });
+}
+
+async function shareTeacherPack() {
+  let pack;
+  try {
+    pack = readTeacherForm();
+  } catch (e) {
+    return toast(e.message);
+  }
+  const file = packFile(pack);
+  try {
+    if (navigator.canShare?.({ files: [file] })) {
+      // On Android this opens the share sheet: Xender, Bluetooth, WhatsApp…
+      await navigator.share({ files: [file], title: pack.title, text: 'EduMesh lesson pack — open EduMesh → Setup → Import pack file.' });
+      return;
+    }
+  } catch (e) {
+    if (e.name === 'AbortError') return;
+  }
+  const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(file), download: file.name });
+  document.body.append(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+  toast(`Saved ${file.name}. Send it with Xender, Bluetooth or WhatsApp.`);
 }
 
 // ------------------------------------------------------------------ status
@@ -771,6 +845,15 @@ function bindUI() {
     const idx = '1234'.indexOf(k) >= 0 ? '1234'.indexOf(k) : 'abcd'.indexOf(k);
     if (k.length === 1 && idx >= 0 && state.quiz) answerQuiz(idx);
   });
+  $('tpAddQ').addEventListener('click', addTeacherQuestion);
+  $('tpSave').addEventListener('click', async () => {
+    try {
+      await addPack(readTeacherForm());
+    } catch (e) {
+      toast(e.message);
+    }
+  });
+  $('tpShare').addEventListener('click', shareTeacherPack);
   $('packInput').addEventListener('change', (e) => {
     const f = e.target.files[0];
     if (f) importPack(f);

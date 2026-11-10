@@ -1,0 +1,54 @@
+{
+  "format": "edumesh-pack",
+  "version": 1,
+  "id": "agric-basics",
+  "title": "Agricultural Science basics (JSS3–SS2)",
+  "created": "2026-11-10T16:20:59.615Z",
+  "curriculum": [
+    {
+      "name": "agric.md",
+      "markdown": "# Agricultural Science\n\n## Soil and Soil Fertility\nLevel: JSS3–SS2\n\nSoil is the loose top layer of the earth's surface in which plants grow. It is made of mineral particles, organic matter (humus), water, air and living organisms.\n\nThere are three main types of soil. Sandy soil has large particles, drains quickly and holds little water or nutrients. Clay soil has very fine particles, holds a lot of water but drains poorly and becomes hard when dry. Loamy soil is a mixture of sand, silt and clay with plenty of humus; it holds enough water, drains well and is the best soil for most crops.\n\nSoil fertility is the ability of soil to supply the nutrients plants need. Farmers maintain fertility by crop rotation, adding animal manure or compost, planting legumes such as cowpea and groundnut that add nitrogen, applying fertilizers like NPK correctly, and avoiding bush burning, which destroys organic matter.\n\n## Farming Systems\nLevel: JSS3–SS2\n\nA farming system is the way a farmer organises land, crops and animals.\n\nShifting cultivation means farming a piece of land for a few years and then moving to new land so the old one can rest. Bush fallowing is similar, but the farmer returns to the old land after a rest period. Both need a lot of land.\n\nMixed cropping is growing two or more crops on the same land at the same time, for example maize with cassava, which is common in Nigeria and reduces the risk of total crop failure. Crop rotation is growing different crops on the same land in a planned order from season to season, such as yam, then maize, then cowpea, to maintain soil fertility and control pests.\n\nMixed farming combines crop production and animal rearing on the same farm, so animal dung fertilises the crops and crop waste feeds the animals.\n"
+    }
+  ],
+  "quizzes": [
+    {
+      "subject": "Agricultural Science",
+      "topic": "Soil and Soil Fertility",
+      "q": "The best soil for most crops is…",
+      "options": [
+        "sandy soil",
+        "clay soil",
+        "loamy soil",
+        "gravel"
+      ],
+      "answer": 2,
+      "explain": "Loamy soil holds enough water, drains well and is rich in humus."
+    },
+    {
+      "subject": "Agricultural Science",
+      "topic": "Soil and Soil Fertility",
+      "q": "Which practice adds nitrogen to the soil?",
+      "options": [
+        "Bush burning",
+        "Planting legumes like cowpea",
+        "Over-grazing",
+        "Erosion"
+      ],
+      "answer": 1,
+      "explain": "Legumes such as cowpea and groundnut add nitrogen to the soil."
+    },
+    {
+      "subject": "Agricultural Science",
+      "topic": "Farming Systems",
+      "q": "Growing maize and cassava together on the same land at the same time is…",
+      "options": [
+        "crop rotation",
+        "mixed cropping",
+        "shifting cultivation",
+        "monocropping"
+      ],
+      "answer": 1,
+      "explain": "Mixed cropping grows two or more crops together at the same time."
+    }
+  ]
+}

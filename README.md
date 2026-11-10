@@ -110,13 +110,20 @@ The hub finds Ollama automatically and prints the Wi-Fi address for students, e.
 
 Set `OLLAMA_HOST` or `PORT` if you need different values.
 
-### 3. Host it so anyone can install it anywhere (GitHub Pages)
+### 3. Host it so anyone can install it anywhere
 
-1. Push to `main`.
-2. In the repo, go to **Settings → Pages → Source: GitHub Actions**.
-3. The workflow in `.github/workflows/pages.yml` runs the tests and publishes `public/`.
+The app is a static site: just the `public/` folder, served over **https** (offline install and Phone AI require https).
 
-Any static host works (Netlify Drop, Cloudflare Pages): just upload the `public/` folder. It must be served over **https**, which offline install and Phone AI require.
+**Recommended: Vercel.** It gives a short link (e.g. `edumesh.vercel.app`) and a preview link for every branch, and works with private repos.
+1. Go to vercel.com → **Add New → Project** → import `Schwoz17/EduMesh`.
+2. Leave the settings as they are; `vercel.json` already sets them. It runs `npm test` as the build step, so a broken version is never published, and serves `public/`.
+3. Click **Deploy**. Every push to `main` then redeploys automatically.
+
+**Also set up: GitHub Pages.**
+1. In the repo, go to **Settings → Pages → Source: GitHub Actions**.
+2. `.github/workflows/pages.yml` runs the tests and publishes `public/` on every push to `main`, at `https://schwoz17.github.io/EduMesh/`.
+
+**Not needed: Render.** Its strength is always-on servers, but EduMesh has no server to run in the cloud: the classroom hub runs on a laptop in the classroom, not online.
 
 To use a laptop's Ollama from the hosted https site, start Ollama with `OLLAMA_ORIGINS=*` and choose **🏫 Classroom Hub / Laptop** in *Offline Setup*.
 
@@ -126,7 +133,7 @@ To use a laptop's Ollama from the hosted https site, start Ollama with `OLLAMA_O
 npm test
 ```
 
-30 tests cover:
+38 tests cover:
 - textbook search
 - prompt building
 - prediction and profile
@@ -145,10 +152,10 @@ npm run build:data
 ### Make an update pack for students
 
 ```bash
-npm run pack -- --id econ-basics --title "Economics basics" lesson.md --quizzes quizzes.json -o econ.edumesh.json
+npm run pack -- --id agric-basics --title "Agricultural Science basics" lesson.md --quizzes quizzes.json -o agric.edumesh.json
 ```
 
-Try the example in `examples/economics-pack.edumesh.json`.
+Try the example in `examples/agric-pack.edumesh.json`. Teachers can also make packs inside the app: **Setup → Teacher: make a lesson pack**, then **Share pack** opens the phone's share sheet (Xender, Bluetooth, WhatsApp).
 
 ---
 
@@ -160,7 +167,7 @@ Try the example in `examples/economics-pack.edumesh.json`.
 4. **Pidgin.** Switch to 🇳🇬 Pidgin and ask "Wetin be Ohm's law?" Ask 3 times and the app announces Pidgin is now the default.
 5. **Accessibility.** Reset the onboarding (clear site data), double-tap the screen, and Voice Mode turns on: high contrast, large text, answers read aloud.
 6. **Prediction.** Take two Biology quizzes. Readiness shows (e.g. "62% 📈 Improving") and weak topics appear. Tap one to get a simpler explanation.
-7. **Pass-It-On.** Import `economics-pack.edumesh.json` (sent by Xender). Ask "What is inflation?" It answers with no data.
+7. **Pass-It-On.** Import `agric-pack.edumesh.json` (sent by Xender). Ask "What is loamy soil?" It answers with no data.
 
 (*About → Load demo history* fills in a sample quiz history if time is short.)
 
@@ -173,7 +180,7 @@ Try the example in `examples/economics-pack.edumesh.json`.
 - **Small models are less capable than ChatGPT.** Textbook grounding and short, focused prompts reduce mistakes but don't remove them.
 - **Voice input is not offline in every browser.** Chrome may send speech to an online service; EduMesh asks for on-device recognition where supported and always lets students type. Read-aloud (text-to-speech) works offline with the phone's installed voices.
 - Yoruba, Hausa and Igbo modes are *English with code-switching*. Small models are not fluent in these languages, and phones rarely have Yoruba/Hausa/Igbo voices, so speech falls back to an English (Nigeria) voice.
-- The sample curriculum is a demo set (4 subjects + 1 pack) written for this prototype; a real rollout would load full approved textbooks.
+- The sample curriculum is a demo set (6 subjects, 58 questions, plus an example Agricultural Science pack) written for this prototype; a real rollout would load full approved textbooks.
 
 ## Project layout
 
@@ -187,12 +194,14 @@ public/                 ← the whole app (deploy this folder)
   js/engines.js         Phone AI (WebLLM) · Ollama hub · Textbook engines
   js/speech.js          read-aloud + voice input
   js/packs.js           update-pack validation
+  js/teacher.js         in-app teacher pack builder
   data/                 built textbooks + quizzes (from curriculum/)
   vendor/web-llm/       in-browser AI runtime (Apache-2.0)
 server/index.js         optional classroom hub (static files + Ollama relay)
 curriculum/             source lessons (Markdown) + quiz bank
 scripts/                build-data.js, make-pack.js
-examples/               sample update pack
+examples/               sample lesson pack (Agricultural Science)
+submission/             pitch script, demo-video plan, written submission
 tests/                  node:test suites
 ```
 
