@@ -1,0 +1,15 @@
+{
+  "name": "edumesh-ai",
+  "version": "1.0.0",
+  "description": "Offline, zero-bandwidth AI tutor hub for classrooms: local LLM (Ollama) + local curriculum RAG + accessible browser clients over LAN.",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test tests/"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
