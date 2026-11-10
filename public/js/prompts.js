@@ -5,6 +5,7 @@
 export const DIALECTS = {
   english: {
     label: 'Standard English',
+    short: 'English',
     flag: '🇬🇧',
     instruction: 'Reply in clear, simple standard English.',
     textbookIntro: "Here is what your textbook says:",
@@ -13,6 +14,7 @@ export const DIALECTS = {
   },
   pidgin: {
     label: 'Nigerian Pidgin',
+    short: 'Pidgin',
     flag: '🇳🇬',
     instruction:
       'Reply in Nigerian Pidgin English, the way a friendly teacher in Lagos would talk. ' +
@@ -23,6 +25,7 @@ export const DIALECTS = {
   },
   yoruba: {
     label: 'Yoruba + English',
+    short: 'Yorùbá mix',
     flag: '🇳🇬',
     instruction:
       'Reply mainly in simple English, but code-switch naturally into Yoruba for greetings, encouragement and everyday analogies ' +
@@ -33,6 +36,7 @@ export const DIALECTS = {
   },
   hausa: {
     label: 'Hausa + English',
+    short: 'Hausa mix',
     flag: '🇳🇬',
     instruction:
       'Reply mainly in simple English, but code-switch naturally into Hausa for greetings, encouragement and everyday analogies ' +
@@ -43,6 +47,7 @@ export const DIALECTS = {
   },
   igbo: {
     label: 'Igbo + English',
+    short: 'Igbo mix',
     flag: '🇳🇬',
     instruction:
       'Reply mainly in simple English, but code-switch naturally into Igbo for greetings, encouragement and everyday analogies ' +

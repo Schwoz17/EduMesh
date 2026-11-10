@@ -155,16 +155,38 @@ async function downloadModel() {
 }
 
 // ------------------------------------------------------------------ chat
+// Returns the bubble element (which holds .msg-body and, later, the meta row).
 function addMessage(role, text) {
+  $('welcome')?.remove(); // the empty-state screen goes away once the conversation starts
   const div = document.createElement('div');
   div.className = `msg ${role}`;
+  if (role === 'ai') {
+    const avatar = document.createElement('div');
+    avatar.className = 'avatar';
+    avatar.setAttribute('aria-hidden', 'true');
+    avatar.textContent = 'E';
+    div.append(avatar);
+  }
+  const bubble = document.createElement('div');
+  bubble.className = 'bubble';
   const body = document.createElement('div');
   body.className = 'msg-body';
   body.textContent = text;
-  div.append(body);
+  bubble.append(body);
+  div.append(bubble);
   $('chat').append(div);
   scrollChat();
-  return div;
+  return bubble;
+}
+
+function icon(name) {
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svg.setAttribute('class', 'ic');
+  svg.setAttribute('aria-hidden', 'true');
+  const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+  use.setAttribute('href', `#i-${name}`);
+  svg.append(use);
+  return svg;
 }
 
 // Scroll only the chat box (scrollIntoView would also jump the whole page on phones).
@@ -178,8 +200,8 @@ function addMeta(msgEl, { sources = [], engineLabel, text }) {
   meta.className = 'msg-meta';
   const play = document.createElement('button');
   play.type = 'button';
-  play.className = 'btn btn-sm';
-  play.textContent = '🔊 Listen';
+  play.className = 'listen';
+  play.append(icon('ear'), 'Listen');
   play.setAttribute('aria-label', 'Read this answer aloud');
   play.addEventListener('click', () => speak(text, dialect()));
   if (canSpeak) meta.append(play);
@@ -195,6 +217,7 @@ function addMeta(msgEl, { sources = [], engineLabel, text }) {
   }
   if (engineLabel) {
     const e = document.createElement('span');
+    e.className = 'engine-tag';
     e.textContent = engineLabel;
     meta.append(e);
   }
@@ -339,7 +362,7 @@ function disableVoiceMode() {
 }
 
 function applyVoiceFirst() {
-  $('micBtn').classList.toggle('btn-lg', !!profile.data.voiceFirst);
+  $('micBtn').classList.toggle('big', !!profile.data.voiceFirst);
 }
 
 // Audio-first onboarding: Start button for sighted users; tap anywhere = hear instructions;
@@ -399,6 +422,14 @@ function showOnboarding() {
 }
 
 // ------------------------------------------------------------------ mastery panel
+const RING = 2 * Math.PI * 50;
+function setGauge(percent) {
+  const ring = $('ring');
+  ring.style.strokeDashoffset = String(RING * (1 - (percent ?? 0) / 100));
+  ring.classList.toggle('low', percent != null && percent < 50);
+  ring.classList.toggle('mid', percent != null && percent >= 50 && percent < 75);
+}
+
 function renderMastery() {
   const subj = subject();
   const scores = profile.scores(subj);
@@ -408,7 +439,9 @@ function renderMastery() {
     $('prediction').textContent = '—';
     $('trend').textContent = scores.length ? `1 quiz done in ${label}. Take one more to unlock your prediction.` : `Take 2 quizzes in ${label} to unlock your prediction.`;
     $('tier').textContent = '';
+    setGauge(null);
   } else {
+    setGauge(pred.predicted);
     $('prediction').textContent = `${pred.predicted}%`;
     $('prediction').setAttribute('aria-label', `Predicted next score ${pred.predicted} percent`);
     $('trend').textContent =
@@ -439,7 +472,10 @@ function renderMastery() {
       b.type = 'button';
       b.className = 'btn btn-sm';
       b.textContent = `${w.topic} · ${w.percent}%`;
-      b.addEventListener('click', () => ask(`Explain ${w.topic} simply, step by step.`));
+      b.addEventListener('click', () => {
+        showView('tutor');
+        ask(`Explain ${w.topic} simply, step by step.`);
+      });
       box.append(b);
     }
   }
@@ -478,6 +514,7 @@ function renderQuizItem() {
   const { items, i } = state.quiz;
   const item = items[i];
   $('quizProgress').textContent = `Question ${i + 1} of ${items.length}`;
+  $('quizBar').style.width = `${(i / items.length) * 100}%`;
   $('quizTopic').textContent = `${item.subject} · ${item.topic}`;
   $('quizQ').textContent = item.q;
   $('quizFeedback').textContent = '';
@@ -487,8 +524,12 @@ function renderQuizItem() {
     ...item.options.map((opt, idx) => {
       const b = document.createElement('button');
       b.type = 'button';
-      b.className = 'btn';
-      b.textContent = `${'ABCD'[idx]}. ${opt}`;
+      b.className = 'option';
+      const letter = document.createElement('span');
+      letter.className = 'letter';
+      letter.textContent = 'ABCD'[idx];
+      b.append(letter, opt);
+      b.setAttribute('aria-label', `${'ABCD'[idx]}: ${opt}`);
       b.addEventListener('click', () => answerQuiz(idx));
       return b;
     })
@@ -520,6 +561,7 @@ function answerQuiz(idx) {
     if (i === item.answer) b.classList.add('correct');
     else if (i === idx) b.classList.add('wrong');
   });
+  $('quizBar').style.width = `${((q.i + 1) / q.items.length) * 100}%`;
   const fb = correct ? `✅ Correct! ${item.explain}` : `❌ Not quite. The answer is ${'ABCD'[item.answer]}. ${item.explain}`;
   $('quizFeedback').textContent = fb;
   const next = $('quizNext');
@@ -595,7 +637,7 @@ function toast(text) {
 function renderNet() {
   const chip = $('netChip');
   const on = navigator.onLine;
-  chip.textContent = on ? '🌐 Online (not needed)' : '✈️ Offline — still working';
+  chip.textContent = on ? '🌐 Online · not needed' : '✈️ Offline · still working';
   chip.classList.toggle('offline', !on);
 }
 
@@ -621,10 +663,40 @@ async function registerServiceWorker() {
   }
 }
 
+// Phones show one section at a time (bottom tabs); wide screens show all three.
+function showView(name) {
+  document.documentElement.dataset.view = name;
+  document.querySelectorAll('.tab').forEach((t) => {
+    if (t.dataset.tab === name) t.setAttribute('aria-current', 'page');
+    else t.removeAttribute('aria-current');
+  });
+  if (name === 'progress') renderMastery();
+}
+
 // ------------------------------------------------------------------ init
 function bindUI() {
   const dsel = $('dialect');
-  dsel.replaceChildren(...Object.entries(DIALECTS).map(([k, d]) => new Option(`${d.flag} ${d.label}`, k)));
+  dsel.replaceChildren(
+    ...Object.entries(DIALECTS).map(([k, d]) => {
+      const o = new Option(`${d.flag} ${d.short}`, k);
+      o.title = d.label;
+      return o;
+    })
+  );
+
+  // Phones: accessibility buttons live in a small "Aa" menu.
+  const toolbar = document.querySelector('.toolbar');
+  const setMenu = (open) => {
+    toolbar.classList.toggle('open', open);
+    $('a11yToggle').setAttribute('aria-expanded', String(open));
+  };
+  $('a11yToggle').addEventListener('click', (e) => {
+    e.stopPropagation();
+    setMenu(!toolbar.classList.contains('open'));
+  });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('#a11yMenu')) setMenu(false);
+  });
   dsel.value = isDialect(profile.data.preferredDialect) ? profile.data.preferredDialect : 'english';
 
   $('modelSize').replaceChildren(...Object.entries(PHONE_MODELS).map(([k, m]) => new Option(m.label, k)));
@@ -663,7 +735,15 @@ function bindUI() {
     setFontScale(steps[(steps.indexOf(settings.fontScale) + 1) % steps.length] || 1);
   });
   $('voiceModeBtn').addEventListener('click', () => (state.voiceMode ? disableVoiceMode() : enableVoiceMode()));
+  document.querySelectorAll('.tab').forEach((t) => t.addEventListener('click', () => showView(t.dataset.tab)));
+  document.querySelectorAll('.suggest').forEach((b) =>
+    b.addEventListener('click', () => {
+      if (b.dataset.dialect) $('dialect').value = b.dataset.dialect;
+      ask(b.dataset.q, 'text');
+    })
+  );
   $('engineChip').addEventListener('click', () => {
+    showView('setup');
     $('setupCard').scrollIntoView({ behavior: 'smooth' });
     document.querySelector('input[name="mode"]:checked').focus();
   });
@@ -751,7 +831,6 @@ async function init() {
   bindUI();
   renderNet();
   applyVoiceFirst();
-  addMessage('ai', 'Welcome! I am your EduMesh tutor. I work with no internet. Choose your language and subject, then ask me anything from your WAEC/NECO syllabus — for example "What is photosynthesis?"');
 
   if (!settings.onboarded) showOnboarding();
   else if (profile.data.lowVision) enableVoiceMode({ announce: false });

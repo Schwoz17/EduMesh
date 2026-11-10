@@ -1,6 +1,6 @@
 // EduMesh service worker: makes the app + textbooks work with no internet.
 // Bump VERSION whenever app files change so phones pick up the update next time they are online.
-const VERSION = 'v1';
+const VERSION = 'v2';
 const SHELL = `edumesh-shell-${VERSION}`;
 const VENDOR = 'edumesh-vendor-v1'; // the AI runtime library; only cached if Phone AI is used
 
