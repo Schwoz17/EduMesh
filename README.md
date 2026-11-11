@@ -54,7 +54,7 @@ The teacher sees the whole class grouped by root gap, ready to *teach at the rig
 `npm test` runs **60 tests** (Node 18+, no dependencies).
 
 ## Nigerian voices (YarnGPT) and translations
-RootPath can speak with recorded Nigerian voices from [YarnGPT](https://github.com/saheedniyi02/yarngpt). Each spoken piece is recorded once, ahead of time. The app plays the clip when it exists and falls back to the device's voice otherwise. Clips are saved for offline use, and the phone line plays them too.
+RootPath speaks with recorded Nigerian voices from [YarnGPT](https://github.com/saheedniyi02/yarngpt). **The demo call is recorded:** 193 clips in English and Pidgin (`voice/clips/`, 2 MB), plus Yoruba, Igbo and Hausa greetings. Each spoken piece is recorded once, ahead of time. The app plays the clip when it exists and falls back to the device's voice otherwise. Clips are saved for offline use, and the phone line plays them too.
 
 1. **Fix the words first.** Native speakers correct `voice/review.csv` (every line of the demo call) and fill in Yoruba, Igbo and Hausa in `voice/translate.csv`. The corrections are then applied to the source text.
 2. **List the lines:** run `node tools/voice-lines.js` for the demo call (196 pieces), or add `--full` for everything (897). This writes `voice/manifest*.json`.
@@ -63,6 +63,7 @@ RootPath can speak with recorded Nigerian voices from [YarnGPT](https://github.c
    2. Choose **Run all**. It records every line in GitHub's `voice/manifest.json`, which takes about 20–30 minutes.
    3. It then downloads `rootpath-voice.zip`.
 4. **Add the clips:** unzip into `voice/clips/` (mp3 files plus `index.json`) and deploy.
+5. **Listen and flag:** open `/voice/listen.html` on the site, play each clip next to its text, and mark the bad ones (cut off, wrong words). Bad clips are dropped from `index.json`, so the device voice says them instead. Paste their ids into `REDO_IDS` in the notebook to re-record only those. The notebook also re-tries clips that come out suspiciously fast, which usually means they were cut short.
 
 Voices: English `idera`, Pidgin `jude` (YarnGPT has no Pidgin voice, so a Nigerian-English voice reads the Pidgin text), Yoruba `yoruba_female2`, Igbo `igbo_female2`, Hausa `hausa_female1`. To change them, edit `src/voice.js` and `SPEAKER_OVERRIDE` in the notebook.
 
@@ -79,7 +80,7 @@ Licence: YarnGPT's Yoruba, Igbo and Hausa voices are non-commercial (CC-BY-NC-SA
 This is built and tested, but not yet connected to a live number.
 
 ## Honest limits
-- Until the YarnGPT clips are added, the demo uses the device's own voice.
+- The YarnGPT clips still need a human listen-through (`/voice/listen.html`). Automatic checks can't tell a cut-off clip from fast speech. The broken Pidgin "Correct!" clip and 2 re-worded lines currently use the device voice until they're re-recorded.
 - The voice call is complete in English and Pidgin. Yoruba, Igbo and Hausa only greet the caller, then continue in English, until `voice/translate.csv` is filled in.
 - All non-English text awaits native-speaker review.
 - The teacher view's class is simulated until real calls come in.

@@ -32,6 +32,7 @@ test('speakable reads maths aloud', () => {
   assert.equal(speakable('x + 1/2 = 3/4. x = ?'), 'x plus 1 over 2 equals 3 over 4. x equals what?');
   assert.equal(speakable('6 × 7 = ?'), '6 times 7 equals what?');
   assert.equal(speakable('4 − 7'), '4 minus 7');
+  assert.equal(speakable('Use the opposite: + with −, × with ÷.'), 'Use the opposite: plus with minus, times with divided by.');
 });
 
 test('a full Pidgin call finds Tunde\'s root gap and ends with a plan', () => {

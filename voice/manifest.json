@@ -144,11 +144,11 @@
   "where": "call: feedback"
  },
  {
-  "id": "en-c2a73954",
+  "id": "en-1f583592",
   "lang": "en",
   "yarn_lang": "english",
   "speaker": "idera",
-  "text": "Undo with the opposite: plus with −, times with divided by .",
+  "text": "Undo with the opposite: plus with minus, times with divided by.",
   "where": "call: mistake explained"
  },
  {
@@ -912,11 +912,11 @@
   "where": "call: feedback"
  },
  {
-  "id": "pcm-49982f0b",
+  "id": "pcm-0113f2bf",
   "lang": "pcm",
   "yarn_lang": "english",
   "speaker": "jude",
-  "text": "Use the opposite to comot am: plus with −, times with divided by .",
+  "text": "Use the opposite to comot am: plus with minus, times with divided by.",
   "where": "call: mistake explained"
  },
  {

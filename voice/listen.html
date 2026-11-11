@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RootPath — listen to the voice clips</title>
+<style>
+:root{--bg:#f3efe4;--ink:#1d2b24;--soft:#55635b;--moss:#2f6b4f;--deep:#1f4a3a;--clay:#b4532a;--line:#ddd6c3;--card:#fbf9f2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+header{position:sticky;top:0;background:var(--deep);color:#f3efe4;padding:.7rem 1rem;z-index:2}
+header h1{font:700 1.15rem Georgia,serif;margin:0 0 .4rem}.bar{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+button,select{font:inherit;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:.4rem .7rem;cursor:pointer}
+header button,header select{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#f3efe4}header .count{font-size:.85rem;color:#cfe3d6}
+main{max-width:56rem;margin:0 auto;padding:.8rem}.help{color:var(--soft);font-size:.88rem;margin:.2rem 0 .8rem}
+.row{display:grid;grid-template-columns:2.6rem 1fr auto;gap:.6rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.5rem .7rem;margin:.35rem 0}
+.row.now{outline:3px solid #e3a857}.row.bad{background:#f6e4da;border-color:var(--clay)}.row.good{background:#e6efe8}
+.row .play{width:2.4rem;height:2.4rem;border-radius:50%;padding:0;background:var(--moss);color:#fff;border:0}
+.row .txt b{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);display:block}
+.row .marks button{padding:.3rem .55rem;font-size:.85rem}.row .marks button.on.g{background:var(--moss);color:#fff;border-color:var(--moss)}.row .marks button.on.b{background:var(--clay);color:#fff;border-color:var(--clay)}
+.missing{color:var(--clay);font-size:.8rem}
+textarea{width:100%;min-height:5rem;font:13px ui-monospace,monospace;border-radius:10px;border:1.5px solid var(--line);padding:.5rem}
+</style></head><body>
+<header><h1>Listen to RootPath's YarnGPT voices</h1>
+<div class="bar"><select id="lang"><option value="all">All languages</option><option value="en">English</option><option value="pcm">Pidgin</option><option value="local">Yoruba, Igbo, Hausa</option></select>
+<button id="all">▶ Play all from here</button><button id="stop">■ Stop</button><span class="count" id="count"></span></div></header>
+<main>
+<p class="help">Play each clip and mark it <b>Good</b> or <b>Bad</b> (cut off, wrong words, garbled, or sounds unnatural). Keyboard while playing all: <b>G</b> good, <b>B</b> bad, <b>Space</b> pause. Your marks are saved in this browser. When done, copy the list at the bottom and send it back. Bad clips are then skipped (the device voice is used) and can be re-recorded.</p>
+<div id="list"></div>
+<h2 style="font:700 1.05rem Georgia,serif">Bad clips to send back</h2>
+<textarea id="out" readonly></textarea><p><button id="copy">Copy list</button> <button id="reset">Clear my marks</button></p>
+</main>
+<script>
+const $=id=>document.getElementById(id),KEY='rootpath.listen.v1',LANG={en:'English',pcm:'Pidgin',yo:'Yoruba',ig:'Igbo',ha:'Hausa'};
+let rows=[],have=new Set(),marks=JSON.parse(localStorage.getItem(KEY)||'{}'),audio=new Audio(),cur=-1,auto=false;
+const save=()=>{localStorage.setItem(KEY,JSON.stringify(marks));out()};
+const vis=()=>rows.filter(r=>{const l=$('lang').value;return l==='all'||(l==='local'?['yo','ig','ha'].includes(r.lang):r.lang===l)});
+function out(){const bad=rows.filter(r=>marks[r.id]==='bad');$('out').value=bad.length?JSON.stringify(bad.map(r=>({id:r.id,text:r.text})),null,1):'(no bad clips marked yet)';
+ const v=vis(),done=v.filter(r=>marks[r.id]).length;$('count').textContent=`${done}/${v.length} checked · ${bad.length} bad`}
+function render(){const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ $('list').innerHTML=vis().map((r,i)=>`<div class="row ${marks[r.id]||''}" id="r-${r.id}"><button class="play" data-i="${i}" aria-label="Play">▶</button><div class="txt"><b>${LANG[r.lang]} · ${esc(r.where)}</b>${esc(r.text)}${have.has(r.id)?'':' <span class="missing">(not recorded yet)</span>'}</div><div class="marks"><button class="g ${marks[r.id]==='good'?'on':''}" data-m="good" data-id="${r.id}">Good</button> <button class="b ${marks[r.id]==='bad'?'on':''}" data-m="bad" data-id="${r.id}">Bad</button></div></div>`).join('');
+ $('list').querySelectorAll('.play').forEach(b=>b.onclick=()=>{auto=false;play(+b.dataset.i)});
+ $('list').querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>mark(b.dataset.id,b.dataset.m));out()}
+function mark(id,m){marks[id]=marks[id]===m?undefined:m;if(!marks[id])delete marks[id];save();const el=$('r-'+id);if(el){el.classList.remove('good','bad');if(marks[id])el.classList.add(marks[id]);el.querySelectorAll('[data-m]').forEach(b=>b.classList.toggle('on',b.dataset.m===marks[id]))}}
+function play(i){const v=vis();if(i<0||i>=v.length){auto=false;return}cur=i;const r=v[i];document.querySelectorAll('.row.now').forEach(x=>x.classList.remove('now'));const el=$('r-'+r.id);el.classList.add('now');el.scrollIntoView({block:'center',behavior:'smooth'});
+ if(!have.has(r.id)){if(auto)setTimeout(()=>play(i+1),300);return}audio.src='clips/'+r.id+'.mp3';audio.play().catch(()=>{})}
+audio.onended=()=>{if(auto)setTimeout(()=>play(cur+1),450)};
+$('all').onclick=()=>{auto=true;play(Math.max(cur,0))};$('stop').onclick=()=>{auto=false;audio.pause()};$('lang').onchange=()=>{cur=-1;render()};
+document.addEventListener('keydown',e=>{const r=vis()[cur];if(e.key===' '){e.preventDefault();audio.paused?audio.play():audio.pause()}else if(r&&/^[gb]$/i.test(e.key))mark(r.id,e.key.toLowerCase()==='g'?'good':'bad')});
+$('copy').onclick=()=>{$('out').select();navigator.clipboard&&navigator.clipboard.writeText($('out').value)};$('reset').onclick=()=>{if(confirm('Clear all your marks?')){marks={};save();render()}};
+Promise.all([fetch('manifest.json').then(r=>r.json()),fetch('clips/index.json').then(r=>r.json()).catch(()=>[])]).then(([m,ids])=>{rows=m;have=new Set(ids);render()});
+</script></body></html>

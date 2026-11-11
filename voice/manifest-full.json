@@ -144,11 +144,11 @@
   "where": "call: feedback"
  },
  {
-  "id": "en-c2a73954",
+  "id": "en-1f583592",
   "lang": "en",
   "yarn_lang": "english",
   "speaker": "idera",
-  "text": "Undo with the opposite: plus with −, times with divided by .",
+  "text": "Undo with the opposite: plus with minus, times with divided by.",
   "where": "call: mistake explained"
  },
  {
@@ -912,11 +912,11 @@
   "where": "call: feedback"
  },
  {
-  "id": "pcm-49982f0b",
+  "id": "pcm-0113f2bf",
   "lang": "pcm",
   "yarn_lang": "english",
   "speaker": "jude",
-  "text": "Use the opposite to comot am: plus with −, times with divided by .",
+  "text": "Use the opposite to comot am: plus with minus, times with divided by.",
   "where": "call: mistake explained"
  },
  {
@@ -2216,11 +2216,11 @@
   "where": "option"
  },
  {
-  "id": "en-c6881bec",
+  "id": "en-f4765406",
   "lang": "en",
   "yarn_lang": "english",
   "speaker": "idera",
-  "text": "For times , multiply straight across.",
+  "text": "For times, multiply straight across.",
   "where": "mistake explained"
  },
  {
@@ -3816,11 +3816,11 @@
   "where": "option"
  },
  {
-  "id": "en-66f519b9",
+  "id": "en-2113fce9",
   "lang": "en",
   "yarn_lang": "english",
   "speaker": "idera",
-  "text": "Some verbs change completely: go , so went, buy , so bought.",
+  "text": "Some verbs change completely: go, so went, buy, so bought.",
   "where": "mistake explained"
  },
  {
@@ -3904,11 +3904,11 @@
   "where": "option"
  },
  {
-  "id": "en-ec4a5f35",
+  "id": "en-4d5d9501",
   "lang": "en",
   "yarn_lang": "english",
   "speaker": "idera",
-  "text": "If plus present , so will (If it rains, we will stay). If plus past , so would.",
+  "text": "If plus present, so will (If it rains, we will stay). If plus past, so would.",
   "where": "mistake explained"
  },
  {
@@ -6624,11 +6624,11 @@
   "where": "option"
  },
  {
-  "id": "pcm-00d57ba6",
+  "id": "pcm-8c95f55a",
   "lang": "pcm",
   "yarn_lang": "english",
   "speaker": "jude",
-  "text": "Some verbs change completely: go , so went, buy , so bought.",
+  "text": "Some verbs change completely: go, so went, buy, so bought.",
   "where": "mistake explained"
  },
  {
@@ -6712,11 +6712,11 @@
   "where": "option"
  },
  {
-  "id": "pcm-44f3b648",
+  "id": "pcm-2104d45c",
   "lang": "pcm",
   "yarn_lang": "english",
   "speaker": "jude",
-  "text": "If plus present , so will (If it rains, we will stay). If plus past , so would.",
+  "text": "If plus present, so will (If it rains, we will stay). If plus past, so would.",
   "where": "mistake explained"
  },
  {

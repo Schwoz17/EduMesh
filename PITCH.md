@@ -35,7 +35,7 @@ That map is the AI. Every key press updates a mastery probability for that skill
 Every call places the child on the class map, grouped by **root gap**, not by age. Each group gets practice SMS on exactly its gap. That's "teaching at the right level", the same method the trials used. The teacher doesn't need a smartphone: she gets this as a weekly SMS summary on any phone, or opens the view from a link. *(The demo class is simulated by the real engine; Tunde's call is real.)*
 
 **[Slide 7 · Any phone] (10 s)**
-It works by voice call, SMS, USSD, or an offline app, in English and Pidgin, with Yoruba, Igbo and Hausa in native-speaker review.
+It works by voice call, SMS, USSD, or an offline app. The call speaks with real Nigerian voices recorded with YarnGPT, in English and Pidgin. Yoruba, Igbo and Hausa are in native-speaker review.
 
 **[Slide 8 · Built and tested] (10 s)**
 It's real code with 60 tests. An Africa's Talking voice adapter already serves the same tutor to a real phone line; going live only needs a number.
@@ -100,7 +100,7 @@ A child shouldn't need data or a smartphone to get a tutor. With RootPath, any p
 - **Evidence:** builds on randomised trials of phone tutoring; the field-test tool measures agreement with teachers.
 
 ## Honest limits
-- The demo voice is the browser's. A live line uses the telephony provider's voice.
+- The demo call speaks with recorded YarnGPT Nigerian voices (English and Pidgin); a few lines still use the device voice. The clips still need a full human listen-through.
 - Yoruba, Igbo and Hausa voice prompts are partial; all local-language text is in native-speaker review.
 - The class in the teacher view is simulated until real calls come in.
 - Fill in, or remove, the field-test slide before submitting.

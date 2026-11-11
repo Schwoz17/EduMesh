@@ -56,7 +56,8 @@
       .replace(/×/g, ' times ').replace(/÷/g, ' divided by ')
       .replace(/(^|\s)[−-](?=\d)/g, '$1minus ').replace(/\s[−-]\s/g, ' minus ')
       .replace(/=\s*\?/g, 'equals what?').replace(/=/g, ' equals ').replace(/²/g, ' squared').replace(/\+/g, ' plus ')
-      .replace(/→/g, ', so ').replace(/\s+/g, ' ').trim();
+      .replace(/→/g, ', so ').replace(/[−–]/g, ' minus ')
+      .replace(/\s+/g, ' ').replace(/\s+([.,!?;:])/g, '$1').trim();
   }
 
   // Build a prompt: what to say aloud, what to show as captions, and which keys are valid.
