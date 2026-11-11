@@ -38,7 +38,7 @@ Children with a basic phone don't install anything: they dial the number. For ch
 2. **Android (Chrome):** tap the **⋮** menu, then **Add to Home screen** (or **Install app**). **iPhone (Safari):** tap **Share**, then **Add to Home Screen**.
 3. A **RootPath** icon appears on the home screen. It opens with no internet from then on; progress is saved on the phone.
 
-It's about 300 KB, so it uses almost no data.
+It's about 120 KB, so it uses almost no data.
 
 ## How the teacher sees the class
 - **Any phone:** a weekly SMS summary listing the biggest root-gap groups (`teacherSms` in `src/classroom.js`). The plan is that she replies with a number to send that group its practice SMS. The demo shows this message; acting on her reply needs a live SMS gateway.
