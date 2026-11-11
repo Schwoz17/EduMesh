@@ -121,7 +121,7 @@ button{font:inherit;color:inherit;cursor:pointer}:focus-visible{outline:3px soli
      <p class="hint">Tap to call. The tutor speaks; answer with the keypad or say the number. Sound on for the voice; captions are always shown.</p></div>
    </div>
    <div class="pane" id="p-call" hidden>
-    <div class="incall"><div class="callhead"><div class="nm" id="callName">RootPath Tutor</div><div class="tm" id="timer">00:00</div><div class="wave" id="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+    <div class="incall"><div class="callhead"><div class="nm" id="callName">RootPath Tutor</div><div class="tm" id="timer">00:00</div><div class="tm" id="voiceTag" style="font-size:.7rem;opacity:.85">🔊 Device voice</div><div class="wave" id="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
      <div class="caps" id="caps" aria-live="polite"></div>
      <div class="keys" id="keys">${'123456789*0#'}</div>
      <div class="callbar"><button id="spk" aria-pressed="true" aria-label="Speaker">🔊</button><button class="hang" id="hang" aria-label="Hang up">✕</button><button id="mic" aria-label="Say your answer">🎙</button></div></div>
@@ -153,6 +153,7 @@ button{font:inherit;color:inherit;cursor:pointer}:focus-visible{outline:3px soli
    <h3 style="font-size:1rem;margin:1rem 0 0">Teach at the right level: groups for this week</h3>
    <div class="groups" id="groups"></div>
    <div class="addcode"><input id="code" placeholder="Add a learner from an SMS code, e.g. RP1 equiv:04,frac:91" aria-label="SMS progress code"><button id="addc">Add</button></div>
+   <div class="parent"><div class="eyebrow" style="color:var(--moss)">Weekly SMS to the teacher · any phone, no app</div><div id="tsmsMsg"></div><p class="note" style="margin:.4rem 0 0">On a smartphone, the teacher opens this same class view from a link instead.</p></div>
    <div class="parent" id="parent" hidden><div class="eyebrow" style="color:var(--moss)">SMS sent to Tunde's parent</div><div id="parentMsg"></div></div>
    <p class="note" id="simnote"></p></section>
  </div>
@@ -160,7 +161,7 @@ button{font:inherit;color:inherit;cursor:pointer}:focus-visible{outline:3px soli
 <nav class="tabs" id="tabs"><button data-t="phone" class="on">📞 Phone</button><button data-t="ai">🧠 AI view</button><button data-t="teacher">👩🏾‍🏫 Teacher</button></nav>
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
-<script src="src/content.js"></script><script src="src/algebra.js"></script><script src="src/physics.js"></script><script src="src/english.js"></script><script src="src/pcm.js"></script><script src="src/langs.js"></script><script src="src/engine.js"></script><script src="src/pack.js"></script><script src="src/ussd.js"></script><script src="src/router.js"></script><script src="src/call.js"></script><script src="src/sms.js"></script><script src="src/classroom.js"></script>
+<script src="src/content.js"></script><script src="src/algebra.js"></script><script src="src/physics.js"></script><script src="src/english.js"></script><script src="src/pcm.js"></script><script src="src/langs.js"></script><script src="src/engine.js"></script><script src="src/pack.js"></script><script src="src/ussd.js"></script><script src="src/router.js"></script><script src="src/call.js"></script><script src="src/sms.js"></script><script src="src/classroom.js"></script><script src="src/voice.js"></script>
 <script>
 const P=RootPathPack,{CallSession,CheckInCall}=RootPathCall,S=RootPathSms,K=RootPathClass,{ussd}=RootPathUssd;
 const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -170,13 +171,11 @@ const toast=t=>{const e=$('toast');e.textContent=t;e.hidden=false;clearTimeout(t
 let session=null,timerT=null,secs=0,speaker=true,unread=0;
 
 // ---------- speech (offline voices on the device; captions always shown)
-const synth=window.speechSynthesis;
-function pickVoice(lang){if(!synth)return null;const v=synth.getVoices();return v.find(x=>x.lang===lang)||v.find(x=>x.lang&&x.lang.startsWith(lang.split('-')[0]+'-'))||v.find(x=>x.lang==='en-NG')||v.find(x=>x.lang==='en-GB')||v.find(x=>/^en/.test(x.lang))||null}
-function speak(text,lang,rate=1){const w=$('wave');if(!synth||!speaker){w.classList.remove('on');return}synth.cancel();
- const parts=String(text).match(/[^.!?]+[.!?]*/g)||[text];const voice=pickVoice(lang||'en-NG');
- parts.forEach((p,i)=>{const u=new SpeechSynthesisUtterance(p.trim());if(voice){u.voice=voice;u.lang=voice.lang}else u.lang='en-NG';u.rate=rate;
-  if(i===0)u.onstart=()=>w.classList.add('on');if(i===parts.length-1){u.onend=u.onerror=()=>w.classList.remove('on')}synth.speak(u)})}
-function hush(){synth&&synth.cancel();$('wave').classList.remove('on')}
+// Nigerian voices: pre-recorded YarnGPT clips where available, otherwise the device's own voice.
+const voice=RootPathVoice.createPlayer({onState:on=>$('wave').classList.toggle('on',on)});
+voice.ready.then(()=>{const n=voice.count();$('voiceTag').textContent=n?`🔊 Nigerian voices (YarnGPT) · ${n} clips`:'🔊 Device voice';});
+function speak(pieces,lang,ttsLang,rate=1){voice.play(pieces,lang,{ttsLang,rate,muted:!speaker})}
+function hush(){voice.stop()}
 
 // ---------- phone apps
 function show(app){['dial','call','ring','sms','ussd'].forEach(a=>$('p-'+a).hidden=a!==app);document.querySelectorAll('.apps button').forEach(b=>b.classList.toggle('on',b.dataset.app===app||(app==='call'&&b.dataset.app==='dial')||(app==='ring'&&b.dataset.app==='dial')));
@@ -194,7 +193,7 @@ document.addEventListener('keydown',e=>{if($('p-call').hidden||e.target.tagName=
 function addCap(text,kind){const c=document.createElement('div');c.className='cap '+(kind||'say');c.textContent=text;$('caps').append(c);$('caps').scrollTop=$('caps').scrollHeight}
 function render(p){$('caps').querySelectorAll('.cap.option').forEach(o=>o.remove());p.lines.forEach(l=>addCap(l.text,l.kind));
  $('keys').querySelectorAll('button').forEach(b=>b.classList.toggle('hot',p.keys.some(k=>k.key===b.dataset.k)));
- speak(p.say,p.voice,p.lang==='pcm'?0.95:1);drawMap();if(p.end)setTimeout(()=>endCall(p),400)}
+ speak(p.segments,p.lang,p.voice,p.lang==='pcm'?0.95:1);drawMap();if(p.end)setTimeout(()=>endCall(p),400)}
 
 // ---------- calls
 function startTimer(){secs=0;clearInterval(timerT);timerT=setInterval(()=>{secs++;$('timer').textContent=String(Math.floor(secs/60)).padStart(2,'0')+':'+String(secs%60).padStart(2,'0')},1000)}
@@ -270,7 +269,7 @@ function renderTeacher(){const rs=rows(),g=K.groupByRoot(rs,P),max=Math.max(1,..
  $('bars').innerHTML=g.groups.map(x=>`<div class="barrow ${x.names.includes(youName)?'you':''}"><span class="lab" title="${esc(x.name)}"><span>${esc(x.name)}</span>${x.names.includes(youName)?'<span class="you-tag">'+esc(youName)+'</span>':''}</span><span class="track"><span class="fill" style="display:block;width:${x.count/max*100}%"></span></span><span class="n">${x.count}</span></div>`).join('');
  $('groups').innerHTML=g.groups.slice(0,6).map(x=>`<div class="grp"><b>${esc(x.name)} · ${x.count}</b><div class="names">${esc(x.names.slice(0,6).join(', '))}${x.names.length>6?' +'+(x.names.length-6):''}</div><button data-sk="${x.skill}" data-n="${x.count}">Send group SMS</button></div>`).join('')+(g.noGap.length?`<div class="grp"><b>Ready to move on · ${g.noGap.length}</b><div class="names">${esc(g.noGap.slice(0,6).join(', '))}</div></div>`:'');
  $('groups').querySelectorAll('button').forEach(b=>b.onclick=()=>toast(`Practice SMS queued for ${b.dataset.n} learners: ${P.text.skillName(b.dataset.sk,'en')}`));
- $('parent').hidden=!st.parentMsg;if(st.parentMsg)$('parentMsg').innerHTML=`<div class="bub">${esc(st.parentMsg)}</div>`;
+ $('tsmsMsg').innerHTML=`<div class="bub">${esc(K.teacherSms(g,'JSS1 B'))}</div>`;$('parent').hidden=!st.parentMsg;if(st.parentMsg)$('parentMsg').innerHTML=`<div class="bub">${esc(st.parentMsg)}</div>`;
  $('simnote').textContent=`Includes 30 simulated learners diagnosed by the real engine, for demonstration${st.calls.length?', plus '+youName+'’s call':''}${st.codes.length?' and '+st.codes.length+' learner(s) added by SMS code':''}.`}
 $('addc').onclick=()=>{const v=$('code').value.trim();try{K.fromCode('Learner',v,P);st.codes.push({name:'Learner '+(st.codes.length+1),code:v});$('code').value='';save();renderTeacher();toast('Learner added from SMS code')}catch(e){toast('That is not a RootPath code (starts with RP1)')}};
 

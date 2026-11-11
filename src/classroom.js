@@ -52,6 +52,14 @@
     });
   }
 
-  const api = { groupByRoot, fromCode, demoClass };
+  /** Weekly class summary the teacher receives by SMS: works on any phone, no app or data. */
+  function teacherSms(grouped, className = 'Your class', { top = 4 } = {}) {
+    const g = grouped.groups.slice(0, top).map((x, i) => `${i + 1}) ${x.name}: ${x.count}`);
+    const more = grouped.groups.length > top ? `\n+${grouped.groups.length - top} more groups` : '';
+    return [`RootPath weekly: ${className}`, `${grouped.total} learners, ${grouped.total - grouped.noGap.length} with a gap.`, 'Start with:', ...g].join('\n') + more +
+      `\nReady to move on: ${grouped.noGap.length}\nReply 1-${Math.min(top, grouped.groups.length)} to send that group its practice SMS.`;
+  }
+
+  const api = { groupByRoot, fromCode, demoClass, teacherSms };
   if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.RootPathClass = api;
 })(typeof self !== 'undefined' ? self : this);

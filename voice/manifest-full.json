@@ -1,0 +1,7178 @@
+[
+ {
+  "id": "en-1ebcf0be",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Welcome to RootPath, your free tutor on any phone.",
+  "where": "call: welcome"
+ },
+ {
+  "id": "en-0c447e5d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "For English, press 1. For Pidgin, press 2. For Yoruba, press 3. For Igbo, press 4. For Hausa, press 5.",
+  "where": "call: welcome"
+ },
+ {
+  "id": "en-eec49cde",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Which subject? Press 1 for Maths. Press 2 for Physics. Press 3 for English.",
+  "where": "call: subject"
+ },
+ {
+  "id": "en-1e3c10e6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Which topic is hard for you?",
+  "where": "call: topic"
+ },
+ {
+  "id": "en-bcfcc9c5",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for Adding fractions (different bottoms).",
+  "where": "call: topic"
+ },
+ {
+  "id": "en-270f8bdb",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for Multiplying fractions.",
+  "where": "call: topic"
+ },
+ {
+  "id": "en-c60f5997",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for Fraction word problems.",
+  "where": "call: topic"
+ },
+ {
+  "id": "en-7d2415b8",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for Two-step equations.",
+  "where": "call: topic"
+ },
+ {
+  "id": "en-feb2dd91",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 5 for Equations with fractions.",
+  "where": "call: topic"
+ },
+ {
+  "id": "en-57952b9c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "I will ask a few short questions to find where the problem really starts. Press the number of your answer.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-f1baf4d9",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 1.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-0b777505",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "x plus 1 over 2 equals 3 over 4. x equals what?",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-024c6bd6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 1 over 4.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-e8d9cd63",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 5 over 4.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-e983bc97",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 2 over 6.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-290468b3",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 3 over 8.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-2c293ad3",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Correct!",
+  "where": "call: feedback"
+ },
+ {
+  "id": "en-a6961e0d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Not quite.",
+  "where": "call: feedback"
+ },
+ {
+  "id": "en-c2a73954",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Undo with the opposite: plus with −, times with divided by .",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "en-ab5b43cd",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "The bottom names the size of the pieces: never add it.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "en-8fb39ece",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 2.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-d83a6d42",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "x plus 1 over 3 equals 5 over 6. x equals what?",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-0247eea8",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 1 over 2.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-0529a75b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 7 over 6.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-6148e8c0",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 4 over 3.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-38b0a44f",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 2 over 3.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-71b5ae2b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 3.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-b0d5948c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "1 over 2 equals what over 8",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-377bc511",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 4.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-74da65a5",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-aaebec8d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 6.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-cfe2f71e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 2.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-0a874b0f",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Multiply, don't add: 1 over 2 equals 4 over 8 because both were times 4.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "en-efae25c0",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 4.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-33c3d0db",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "2 over 3 equals what over 12",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-d785bb4d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 8.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-f626b43c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 11.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-d1d62e51",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 9.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-71b130fd",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 5.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-661b6865",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "3 of 4 equal parts are shaded. Which fraction?",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-a65a3370",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 3 over 4.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-eb0922eb",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 4 over 3.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-e1d86c5d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 3 over 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-571b21c5",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 1 over 4.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-f4f7ad78",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Parts you take go on top; total parts go on the bottom.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "en-d499b281",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "The bottom number counts ALL the parts.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "en-efa9a892",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 6.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-445ad39b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "A puff-puff is cut into 8 equal pieces. You eat 5. Fraction eaten?",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-afc1e56e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 5 over 8.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-658b7789",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 8 over 5.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-122c0273",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 5 over 3.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-11ac1caf",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-45a0e4b0",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "LCM of 4 and 6",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-f5084976",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 12.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-58298d19",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 10.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-67abb15f",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 24.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-e085bba7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "List each times table; find the first number in both.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "en-5230e5e5",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "The product works but isn't always the smallest.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "en-e9e51f08",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "The LCM is a multiple, so it is at least as big as both numbers.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "en-6fa461e4",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 8.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-c9d62358",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "LCM of 3 and 5",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-d705dba5",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 15.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-92f05b2e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 8.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-08eebf1e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 1.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-40fb0991",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 30.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-91a6d601",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 9.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-e2156f0f",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "2 over 7 plus 3 over 7 equals what?",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-91abefe5",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 5 over 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-d9b136f6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 5 over 14.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-8dfb3186",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 6 over 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-f513cbba",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 1 over 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-609015cb",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 10.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-af4726c9",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "1 over 5 plus 2 over 5 equals what?",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-285d3ead",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 3 over 5.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-ac273490",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 3 over 10.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-07862a68",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 2 over 5.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-75191268",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 1 over 5.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-fe8d3cee",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 11.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-ebd19b85",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "x plus 5 equals 12. x equals what?",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-b5743ca6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-561840d2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 17.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-c499f2e8",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for minus 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-bddb4702",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 60.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-609492f9",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 12.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-c2945beb",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "3x equals 18. x equals what?",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-d776b0c3",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 6.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-c4985e01",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 54.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-21e81277",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 15.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-d465fe53",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 21.",
+  "where": "call: questions"
+ },
+ {
+  "id": "en-95450c8b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "I found where your gap starts: Equivalent fractions.",
+  "where": "call: result"
+ },
+ {
+  "id": "en-7c987e77",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Your path back up is: Equivalent fractions, then Adding fractions (different bottoms), then Equations with fractions.",
+  "where": "call: result"
+ },
+ {
+  "id": "en-27a6b91f",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "I will send you one practice question by SMS every day, and call you again on Saturday to check your progress.",
+  "where": "call: result"
+ },
+ {
+  "id": "en-4cb29706",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Goodbye, and keep learning!",
+  "where": "call: result"
+ },
+ {
+  "id": "en-760a76d7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Sorry, I did not get that.",
+  "where": "call: invalid key"
+ },
+ {
+  "id": "en-02c4b9f1",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Hello Tunde! This is RootPath, calling for your weekly check on Equivalent fractions.",
+  "where": "check-in call"
+ },
+ {
+  "id": "en-b89fd898",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Multiply top and bottom by the same number. 1 over 2 times 4 over 4 equals 4 over 8, so 1 over 2 equals 4 over 8. Never add.",
+  "where": "check-in call"
+ },
+ {
+  "id": "en-f37104f7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Your level in Equivalent fractions went from 30 percent to 90 percent. Great work!",
+  "where": "check-in call"
+ },
+ {
+  "id": "pcm-b12279c5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Welcome to RootPath, your free teacher for any phone.",
+  "where": "call: subject"
+ },
+ {
+  "id": "pcm-cfc5f603",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Which subject? Press 1 for Maths. Press 2 for Physics. Press 3 for English.",
+  "where": "call: subject"
+ },
+ {
+  "id": "pcm-9714108c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Which topic dey hard you?",
+  "where": "call: topic"
+ },
+ {
+  "id": "pcm-747ca881",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for Add fractions wey bottom no be the same.",
+  "where": "call: topic"
+ },
+ {
+  "id": "pcm-3d08e762",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for Multiply fractions.",
+  "where": "call: topic"
+ },
+ {
+  "id": "pcm-5b5e0556",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for Fraction story questions.",
+  "where": "call: topic"
+ },
+ {
+  "id": "pcm-197b9fb8",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for Find x (two steps).",
+  "where": "call: topic"
+ },
+ {
+  "id": "pcm-22f2d409",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 5 for Find x for fraction equations.",
+  "where": "call: topic"
+ },
+ {
+  "id": "pcm-5506cccd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "I go ask you small questions to find where the wahala start. Press the number of your answer.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-c79f007c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 1.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-7c058318",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "x plus 1 over 2 equals 3 over 4. x equals what?",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-4f3fd673",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 1 over 4.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-dc7d250e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 5 over 4.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-c2f13966",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 2 over 6.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-bd40027e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 3 over 8.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-ecb16e60",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Correct!",
+  "where": "call: feedback"
+ },
+ {
+  "id": "pcm-1feca6e5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "E no correct.",
+  "where": "call: feedback"
+ },
+ {
+  "id": "pcm-49982f0b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Use the opposite to comot am: plus with −, times with divided by .",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "pcm-40dcf33c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "The bottom number na the size of the piece, you no go add am.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "pcm-a99c92ab",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 2.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-e678ab67",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "x plus 1 over 3 equals 5 over 6. x equals what?",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-cf3a8fc5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 1 over 2.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-103512da",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 7 over 6.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-daa47955",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 4 over 3.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-9682502e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 2 over 3.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-c79a834e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 3.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-5f12d609",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "1 over 2 equals what over 8",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-609b4c46",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 4.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-8ca7b742",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-9cf7309a",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 6.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-694f77e1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 2.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-fff9498b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "No add, multiply: 1 over 2 na 4 over 8 because we multiply both by 4.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "pcm-a998157d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 4.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-dd092f48",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "2 over 3 equals what over 12",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-00a54282",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 8.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-e79caa1d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 11.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-e75b772e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 9.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-27950a40",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 5.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-a9e2d3cc",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "3 out of 4 equal parts dey shaded. Which fraction be that?",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-c1c1e559",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 3 over 4.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-a4b4b2ca",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 4 over 3.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-cc2dbf18",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 3 over 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-8fc2cb74",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 1 over 4.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-7ce7b4f1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "The part wey you take go on top; all the parts go under.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "pcm-7db92936",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "The bottom number dey count ALL the parts, even the ones wey you take.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "pcm-4993012f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 6.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-5c4ec294",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Dem cut puff-puff into 8 equal pieces. You chop 5. Which fraction you chop?",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-44bd38ab",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 5 over 8.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-9a8d70b0",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 8 over 5.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-e565fcc2",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 5 over 3.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-27908d12",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-a25cf9bb",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "LCM of 4 and 6",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-57b10267",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 12.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-e59a6860",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 10.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-8067d822",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 24.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-5fcdd65f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "No add am. Write the times table of each one, pick the first one wey dey both.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "pcm-8a3d4a9f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "To multiply the two go work, but e no too dey the smallest.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "pcm-ddbe2761",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "LCM na multiple, so e big reach or pass the two numbers.",
+  "where": "call: mistake explained"
+ },
+ {
+  "id": "pcm-c98dba81",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 8.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-2a517f93",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "LCM of 3 and 5",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-55bdcb34",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 15.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-6ea54971",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 8.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-9f087ce1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 1.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-c84b9cc8",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 30.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-a78b4664",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 9.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-fb494826",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "2 over 7 plus 3 over 7 equals what?",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-e2a25ae8",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 5 over 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-94205da9",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 5 over 14.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-ed47ec6f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 6 over 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-11bfc683",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 1 over 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-1134b2b0",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 10.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-163b17cc",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "1 over 5 plus 2 over 5 equals what?",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-5fbf0c7c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 3 over 5.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-2f40aab7",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 3 over 10.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-44f8c1d1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 2 over 5.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-71c4dad1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 1 over 5.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-9337bded",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 11.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-2fd8645e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "x plus 5 equals 12. x equals what?",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-e2a2d4b1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-67a1f0cb",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 17.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-e3ac1b17",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for minus 7.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-0397764f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 60.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-11303582",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 12.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-c2fd5370",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "3x equals 18. x equals what?",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-809ffbd4",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 6.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-d1076570",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 54.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-271990ca",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 15.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-14e075a6",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 21.",
+  "where": "call: questions"
+ },
+ {
+  "id": "pcm-d35a1500",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "I don find where the wahala start: Fractions wey be the same.",
+  "where": "call: result"
+ },
+ {
+  "id": "pcm-e57a289e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Your path na: Fractions wey be the same, then Add fractions wey bottom no be the same, then Find x for fraction equations.",
+  "where": "call: result"
+ },
+ {
+  "id": "pcm-34210845",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Every day I go send you one practice question by SMS, and I go call you again on Saturday to check how you dey do.",
+  "where": "call: result"
+ },
+ {
+  "id": "pcm-2b1405b8",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Bye bye, continue to learn!",
+  "where": "call: result"
+ },
+ {
+  "id": "pcm-04566a00",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Sorry, I no hear am well.",
+  "where": "call: invalid key"
+ },
+ {
+  "id": "pcm-88e849cb",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Hello Tunde! Na RootPath dey call you for your weekly check on Fractions wey be the same.",
+  "where": "check-in call"
+ },
+ {
+  "id": "pcm-44e0c264",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Multiply top and bottom by the same number. 1 over 2 times 4 over 4 equals 4 over 8, so 1 over 2 na 4 over 8. No add.",
+  "where": "check-in call"
+ },
+ {
+  "id": "pcm-3612d6c7",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Your level for Fractions wey be the same don move from 30 percent to 90 percent. Well done!",
+  "where": "check-in call"
+ },
+ {
+  "id": "yo-cafa4837",
+  "lang": "yo",
+  "yarn_lang": "yoruba",
+  "speaker": "yoruba_female2",
+  "text": "Ẹ káàbọ̀ sí RootPath.",
+  "where": "call: greeting"
+ },
+ {
+  "id": "ig-23541eb5",
+  "lang": "ig",
+  "yarn_lang": "igbo",
+  "speaker": "igbo_female2",
+  "text": "Nnọọ na RootPath.",
+  "where": "call: greeting"
+ },
+ {
+  "id": "ha-937389e8",
+  "lang": "ha",
+  "yarn_lang": "hausa",
+  "speaker": "hausa_female1",
+  "text": "Barka da zuwa RootPath.",
+  "where": "call: greeting"
+ },
+ {
+  "id": "en-53a478dd",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press star to hear it again.",
+  "where": "template: star"
+ },
+ {
+  "id": "en-7e92839c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 13.",
+  "where": "question number"
+ },
+ {
+  "id": "en-8085bacf",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 14.",
+  "where": "question number"
+ },
+ {
+  "id": "en-5e8346b2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 15.",
+  "where": "question number"
+ },
+ {
+  "id": "en-e08acf1d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 16.",
+  "where": "question number"
+ },
+ {
+  "id": "en-de888d60",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 17.",
+  "where": "question number"
+ },
+ {
+  "id": "en-e07bc493",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 18.",
+  "where": "question number"
+ },
+ {
+  "id": "en-fe79b536",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 19.",
+  "where": "question number"
+ },
+ {
+  "id": "en-978c3726",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Question 20.",
+  "where": "question number"
+ },
+ {
+  "id": "en-f2c4e151",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for Speed, distance and time.",
+  "where": "topic menu"
+ },
+ {
+  "id": "en-dc9c81d7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for Work (force × distance).",
+  "where": "topic menu"
+ },
+ {
+  "id": "en-59435d3f",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for Speed with fractions of an hour.",
+  "where": "topic menu"
+ },
+ {
+  "id": "en-fbe66351",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for Subject-verb agreement.",
+  "where": "topic menu"
+ },
+ {
+  "id": "en-524747f1",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for Simple past tense.",
+  "where": "topic menu"
+ },
+ {
+  "id": "en-bd95be3d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for If-sentences.",
+  "where": "topic menu"
+ },
+ {
+  "id": "en-171812c7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "6 times 7 equals what?",
+  "where": "question mult1"
+ },
+ {
+  "id": "en-16f4cdc1",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 42.",
+  "where": "option"
+ },
+ {
+  "id": "en-f622370e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 13.",
+  "where": "option"
+ },
+ {
+  "id": "en-12d970cf",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "6 times 7 means 6 groups of 7, not 6 plus 7.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-1923a14e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 36.",
+  "where": "option"
+ },
+ {
+  "id": "en-98338774",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 48.",
+  "where": "option"
+ },
+ {
+  "id": "en-5f011c8e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "8 times 4 equals what?",
+  "where": "question mult2"
+ },
+ {
+  "id": "en-9aa64528",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 32.",
+  "where": "option"
+ },
+ {
+  "id": "en-d824466b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 12.",
+  "where": "option"
+ },
+ {
+  "id": "en-60ec3167",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 36.",
+  "where": "option"
+ },
+ {
+  "id": "en-2759c806",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "9 times 5 equals what?",
+  "where": "question mult3"
+ },
+ {
+  "id": "en-14e3817a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 45.",
+  "where": "option"
+ },
+ {
+  "id": "en-d81fc93d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 14.",
+  "where": "option"
+ },
+ {
+  "id": "en-eb70b07e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 54.",
+  "where": "option"
+ },
+ {
+  "id": "en-7846dccc",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 40.",
+  "where": "option"
+ },
+ {
+  "id": "en-824577b3",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "12 sweets are shared equally among 3 children. Each gets?",
+  "where": "question div1"
+ },
+ {
+  "id": "en-52415895",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 36.",
+  "where": "option"
+ },
+ {
+  "id": "en-4f723582",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Sharing equally means divide.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-88da6de6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 9.",
+  "where": "option"
+ },
+ {
+  "id": "en-b81dca02",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 15.",
+  "where": "option"
+ },
+ {
+  "id": "en-41f5b69a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "20 divided by 4 equals what?",
+  "where": "question div2"
+ },
+ {
+  "id": "en-5579b5b4",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 5.",
+  "where": "option"
+ },
+ {
+  "id": "en-50292706",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 80.",
+  "where": "option"
+ },
+ {
+  "id": "en-3fea8048",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 16.",
+  "where": "option"
+ },
+ {
+  "id": "en-725a2b1a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 24.",
+  "where": "option"
+ },
+ {
+  "id": "en-31568a73",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "18 yams go equally into 6 bags. Yams per bag?",
+  "where": "question div3"
+ },
+ {
+  "id": "en-356a78ca",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 3.",
+  "where": "option"
+ },
+ {
+  "id": "en-60957153",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 108.",
+  "where": "option"
+ },
+ {
+  "id": "en-1ff4db44",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 12.",
+  "where": "option"
+ },
+ {
+  "id": "en-99a2db84",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Which is bigger: 1 over 2 or 1 over 5?",
+  "where": "question frac3"
+ },
+ {
+  "id": "en-69e0e6ea",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 1 over 5.",
+  "where": "option"
+ },
+ {
+  "id": "en-d3b9d406",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "More pieces means smaller pieces: 1 over 5 is less than 1 over 2.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-c1ae1ef9",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for They are equal.",
+  "where": "option"
+ },
+ {
+  "id": "en-d177daae",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for Cannot tell.",
+  "where": "option"
+ },
+ {
+  "id": "en-24677c50",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "3 over 5 equals 9/?",
+  "where": "question equiv3"
+ },
+ {
+  "id": "en-3fe6031a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 14.",
+  "where": "option"
+ },
+ {
+  "id": "en-ba2f1649",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 12.",
+  "where": "option"
+ },
+ {
+  "id": "en-fb79c2eb",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Simplify 6 over 8",
+  "where": "question simp1"
+ },
+ {
+  "id": "en-68fd1d52",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 4 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "en-9b05e295",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Divide top and bottom by the same number.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-ffc75276",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 3 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "en-1db79468",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 6 over 4.",
+  "where": "option"
+ },
+ {
+  "id": "en-4af060af",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Simplify 12 over 18",
+  "where": "question simp2"
+ },
+ {
+  "id": "en-cad70348",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 2 over 3.",
+  "where": "option"
+ },
+ {
+  "id": "en-586af67f",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 6 over 9.",
+  "where": "option"
+ },
+ {
+  "id": "en-917cc34a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Keep dividing until no number divides both.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-703e2cd6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 6 over 12.",
+  "where": "option"
+ },
+ {
+  "id": "en-21416a52",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 9 over 12.",
+  "where": "option"
+ },
+ {
+  "id": "en-da582cb4",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Simplify 20 over 30",
+  "where": "question simp3"
+ },
+ {
+  "id": "en-806f7f31",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 10 over 15.",
+  "where": "option"
+ },
+ {
+  "id": "en-f9c9833a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 10 over 20.",
+  "where": "option"
+ },
+ {
+  "id": "en-5b7b8527",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 20 over 3.",
+  "where": "option"
+ },
+ {
+  "id": "en-ce42a8c4",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "LCM of 6 and 8",
+  "where": "question lcm3"
+ },
+ {
+  "id": "en-6942a671",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 24.",
+  "where": "option"
+ },
+ {
+  "id": "en-db27e665",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 48.",
+  "where": "option"
+ },
+ {
+  "id": "en-78f42aa9",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "3 over 8 plus 4 over 8 equals what?",
+  "where": "question addl3"
+ },
+ {
+  "id": "en-30b11480",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 7 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "en-4ca30fc2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 7 over 16.",
+  "where": "option"
+ },
+ {
+  "id": "en-08c24cfe",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 12 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "en-573936d9",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 1 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "en-0ce4de45",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "1 over 2 plus 1 over 3 equals what?",
+  "where": "question addu1"
+ },
+ {
+  "id": "en-2fa91708",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 5 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "en-d010b707",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 2 over 5.",
+  "where": "option"
+ },
+ {
+  "id": "en-078aa796",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 2 over 3.",
+  "where": "option"
+ },
+ {
+  "id": "en-96a69a84",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Make the bottoms the same before adding.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-5716a497",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 1 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "en-c6881bec",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "For times , multiply straight across.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-38b022be",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "1 over 4 plus 1 over 2 equals what?",
+  "where": "question addu2"
+ },
+ {
+  "id": "en-ae12c018",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 2 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "en-e98839c5",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 2 over 4.",
+  "where": "option"
+ },
+ {
+  "id": "en-a4e38a61",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "1 over 3 plus 1 over 6 equals what?",
+  "where": "question addu3"
+ },
+ {
+  "id": "en-502e029b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 2 over 9.",
+  "where": "option"
+ },
+ {
+  "id": "en-4faa6940",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 1 over 18.",
+  "where": "option"
+ },
+ {
+  "id": "en-06778185",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "1 over 2 times 1 over 3 equals what?",
+  "where": "question multf1"
+ },
+ {
+  "id": "en-62518024",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 1 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "en-48dee1b1",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 5 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "en-7fe020dc",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 3 over 2.",
+  "where": "option"
+ },
+ {
+  "id": "en-fb81f85e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Top times top, bottom times bottom.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-b6b8266e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 2 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "en-3a0c4df4",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "2 over 3 times 3 over 4 equals what?",
+  "where": "question multf2"
+ },
+ {
+  "id": "en-b21ad7e1",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 17 over 12.",
+  "where": "option"
+ },
+ {
+  "id": "en-d6b5cfee",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 8 over 9.",
+  "where": "option"
+ },
+ {
+  "id": "en-fb8e1986",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 5 over 7.",
+  "where": "option"
+ },
+ {
+  "id": "en-71786538",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "1 over 4 times 2 over 5 equals what?",
+  "where": "question multf3"
+ },
+ {
+  "id": "en-3278e025",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 1 over 10.",
+  "where": "option"
+ },
+ {
+  "id": "en-fa3a0802",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 13 over 20.",
+  "where": "option"
+ },
+ {
+  "id": "en-3041f7fc",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 5 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "en-c7018fd6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 3 over 9.",
+  "where": "option"
+ },
+ {
+  "id": "en-85067338",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "1 over 4 of 20 mangoes equals what?",
+  "where": "question fofq1"
+ },
+ {
+  "id": "en-102ff8b6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "A fraction of something is smaller: divide by the bottom.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-8ae73cff",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 4.",
+  "where": "option"
+ },
+ {
+  "id": "en-b0d27954",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "3 over 4 of 20 naira notes equals what?",
+  "where": "question fofq2"
+ },
+ {
+  "id": "en-f4d51ef7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 5.",
+  "where": "option"
+ },
+ {
+  "id": "en-96690b24",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Two steps: divided by bottom, then times top.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-c6b2f889",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 80.",
+  "where": "option"
+ },
+ {
+  "id": "en-b8224730",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 17.",
+  "where": "option"
+ },
+ {
+  "id": "en-40babf09",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "2 over 5 of 30 tomatoes equals what?",
+  "where": "question fofq3"
+ },
+ {
+  "id": "en-12d78cc8",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 6.",
+  "where": "option"
+ },
+ {
+  "id": "en-9963ba45",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 150.",
+  "where": "option"
+ },
+ {
+  "id": "en-e0f5f543",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 32.",
+  "where": "option"
+ },
+ {
+  "id": "en-14a5e356",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Ada ate 1 over 2 a loaf in the morning and 1 over 4 in the afternoon. How much in all?",
+  "where": "question word1"
+ },
+ {
+  "id": "en-0c00a69b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 1 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "en-9691c291",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "'Morning AND afternoon' means put together: add.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-fbc4e7d1",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Did you use every part the question gave you?",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-25969099",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Ada had 1 loaf. She ate 1 over 2 and then 1 over 4. How much is LEFT?",
+  "where": "question word2"
+ },
+ {
+  "id": "en-e96b6e5d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 3 over 4.",
+  "where": "option"
+ },
+ {
+  "id": "en-62a5cbcc",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Underline the last words of the question: used, or left?",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-c90c7008",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 1 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "en-d7206873",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 1 over 2.",
+  "where": "option"
+ },
+ {
+  "id": "en-1228a6d7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Ada ate 1 over 3 of a cake and Bola ate 1 over 6. Together?",
+  "where": "question word3"
+ },
+ {
+  "id": "en-c49793b6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 1 over 18.",
+  "where": "option"
+ },
+ {
+  "id": "en-87a375fc",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 2 over 9.",
+  "where": "option"
+ },
+ {
+  "id": "en-cc90ec1c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "minus 3 plus 5 equals what?",
+  "where": "question ints1"
+ },
+ {
+  "id": "en-576cece7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 2.",
+  "where": "option"
+ },
+ {
+  "id": "en-a558f004",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for minus 2.",
+  "where": "option"
+ },
+ {
+  "id": "en-4a58c11d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Watch the minus sign: 4 minus 7 goes below zero.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-aadce203",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 8.",
+  "where": "option"
+ },
+ {
+  "id": "en-0a5150a4",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for minus 8.",
+  "where": "option"
+ },
+ {
+  "id": "en-b0248617",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "4 minus 7 equals what?",
+  "where": "question ints2"
+ },
+ {
+  "id": "en-8a8933e2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for minus 3.",
+  "where": "option"
+ },
+ {
+  "id": "en-14e45be1",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 3.",
+  "where": "option"
+ },
+ {
+  "id": "en-a1f1d653",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 11.",
+  "where": "option"
+ },
+ {
+  "id": "en-3cc9152e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for minus 11.",
+  "where": "option"
+ },
+ {
+  "id": "en-9fb8e5dc",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "minus 2 minus 6 equals what?",
+  "where": "question ints3"
+ },
+ {
+  "id": "en-0c7d3495",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for minus 8.",
+  "where": "option"
+ },
+ {
+  "id": "en-12d30f9a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 4.",
+  "where": "option"
+ },
+ {
+  "id": "en-8a5b1480",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for minus 4.",
+  "where": "option"
+ },
+ {
+  "id": "en-02191413",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "3x plus 2x equals what?",
+  "where": "question like1"
+ },
+ {
+  "id": "en-27cdf110",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 5x.",
+  "where": "option"
+ },
+ {
+  "id": "en-23a78532",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 5x squared.",
+  "where": "option"
+ },
+ {
+  "id": "en-5707a8ab",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Only add terms with the same letter: 3x and 2 are different kinds.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-b39006df",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 6x.",
+  "where": "option"
+ },
+ {
+  "id": "en-71e0248d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 5.",
+  "where": "option"
+ },
+ {
+  "id": "en-6376b9a7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "4a plus 3b minus a equals what?",
+  "where": "question like2"
+ },
+ {
+  "id": "en-594077f0",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 3a plus 3b.",
+  "where": "option"
+ },
+ {
+  "id": "en-a8ed1201",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 6ab.",
+  "where": "option"
+ },
+ {
+  "id": "en-f10a4289",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 7ab.",
+  "where": "option"
+ },
+ {
+  "id": "en-9e51f67d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 4a plus 2b.",
+  "where": "option"
+ },
+ {
+  "id": "en-b8c3c5b4",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "5y plus 2 plus 3y equals what?",
+  "where": "question like3"
+ },
+ {
+  "id": "en-ae56c660",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 8y plus 2.",
+  "where": "option"
+ },
+ {
+  "id": "en-ff31fc36",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 10y.",
+  "where": "option"
+ },
+ {
+  "id": "en-34f1a5e7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 8y squared.",
+  "where": "option"
+ },
+ {
+  "id": "en-0bdb368b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 5y plus 5.",
+  "where": "option"
+ },
+ {
+  "id": "en-e7490e44",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "x minus 4 equals 9. x equals what?",
+  "where": "question solve13"
+ },
+ {
+  "id": "en-d70a58d3",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 13.",
+  "where": "option"
+ },
+ {
+  "id": "en-4494ac3a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for minus 5.",
+  "where": "option"
+ },
+ {
+  "id": "en-9fe75b1c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "2x plus 3 equals 11. x equals what?",
+  "where": "question solve21"
+ },
+ {
+  "id": "en-33be8b79",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Two steps: undo the plus or minus first, then the times.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-a8e9aad0",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 7.",
+  "where": "option"
+ },
+ {
+  "id": "en-4a140d84",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "3x minus 5 equals 10. x equals what?",
+  "where": "question solve22"
+ },
+ {
+  "id": "en-561cbe00",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 15.",
+  "where": "option"
+ },
+ {
+  "id": "en-0c5e1fbd",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for minus 5.",
+  "where": "option"
+ },
+ {
+  "id": "en-a0bc4d8c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "5x plus 2 equals 17. x equals what?",
+  "where": "question solve23"
+ },
+ {
+  "id": "en-1849c8e2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 19 over 5.",
+  "where": "option"
+ },
+ {
+  "id": "en-6fdde2d0",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 4.",
+  "where": "option"
+ },
+ {
+  "id": "en-06ee74f7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "x minus 1 over 4 equals 1 over 2. x equals what?",
+  "where": "question leqf3"
+ },
+ {
+  "id": "en-8be35b07",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 1 over 4.",
+  "where": "option"
+ },
+ {
+  "id": "en-45ca1268",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Which unit measures distance?",
+  "where": "question unit1"
+ },
+ {
+  "id": "en-8b2128e3",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for km.",
+  "where": "option"
+ },
+ {
+  "id": "en-02dd4580",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for kg.",
+  "where": "option"
+ },
+ {
+  "id": "en-d4ad293d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Check the unit first: km and m are distance, s and h are time, kg is mass.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-8854a20c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for s.",
+  "where": "option"
+ },
+ {
+  "id": "en-eefea13a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for N.",
+  "where": "option"
+ },
+ {
+  "id": "en-fef4f0ec",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "1 km equals what? m",
+  "where": "question unit2"
+ },
+ {
+  "id": "en-57a3fad4",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 1000.",
+  "where": "option"
+ },
+ {
+  "id": "en-e0a9c28b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 100.",
+  "where": "option"
+ },
+ {
+  "id": "en-bfefc6f6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 10.",
+  "where": "option"
+ },
+ {
+  "id": "en-33a8de59",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 10000.",
+  "where": "option"
+ },
+ {
+  "id": "en-21a2cd4a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "2 hours equals what? minutes",
+  "where": "question unit3"
+ },
+ {
+  "id": "en-73fd021e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 120.",
+  "where": "option"
+ },
+ {
+  "id": "en-719494d4",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 200.",
+  "where": "option"
+ },
+ {
+  "id": "en-541b4bc7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 60.",
+  "where": "option"
+ },
+ {
+  "id": "en-f263eef6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 20.",
+  "where": "option"
+ },
+ {
+  "id": "en-988866ac",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "A car goes 100 km in 2 hours. Speed?",
+  "where": "question speed1"
+ },
+ {
+  "id": "en-f89c4cd9",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 50 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-0a8838bf",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 0.02 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-d1d69571",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Speed equals distance divided by time. Distance goes on top.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-7b275b1e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 200 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-528f824c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 102 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-78977f83",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "A trader walks 12 km in 3 hours. Speed?",
+  "where": "question speed2"
+ },
+ {
+  "id": "en-24e6a33e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 4 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-7035ce60",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 0.25 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-ecb553fb",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 36 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-472a1247",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 15 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-e7153344",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "A bus travels 90 km in 3 hours. Speed?",
+  "where": "question speed3"
+ },
+ {
+  "id": "en-2c943f6f",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 30 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-c6a48868",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 0.03 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-0675bcb5",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 270 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-9bd0db9d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 93 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-4fd4acd6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "F equals m times a. m equals 4 kg, a equals 3 m/s squared. F equals what?",
+  "where": "question force1"
+ },
+ {
+  "id": "en-7604f360",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 12 N.",
+  "where": "option"
+ },
+ {
+  "id": "en-766e5ce3",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 7 N.",
+  "where": "option"
+ },
+ {
+  "id": "en-5c55740a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Force equals mass times acceleration and work equals force times distance. Multiply, never add.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-b2e9bafd",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 1.3 N.",
+  "where": "option"
+ },
+ {
+  "id": "en-9178503d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 43 N.",
+  "where": "option"
+ },
+ {
+  "id": "en-60d73d88",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "F equals m times a. m equals 5 kg, a equals 2 m/s squared. F equals what?",
+  "where": "question force2"
+ },
+ {
+  "id": "en-8a539ac2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 10 N.",
+  "where": "option"
+ },
+ {
+  "id": "en-63e3cb28",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 2.5 N.",
+  "where": "option"
+ },
+ {
+  "id": "en-1fc9d533",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 52 N.",
+  "where": "option"
+ },
+ {
+  "id": "en-3c4167b9",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "F equals m times a. m equals 6 kg, a equals 4 m/s squared. F equals what?",
+  "where": "question force3"
+ },
+ {
+  "id": "en-de607bf7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 24 N.",
+  "where": "option"
+ },
+ {
+  "id": "en-20e44daf",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 10 N.",
+  "where": "option"
+ },
+ {
+  "id": "en-a4eddc1b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 1.5 N.",
+  "where": "option"
+ },
+ {
+  "id": "en-242246d8",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 64 N.",
+  "where": "option"
+ },
+ {
+  "id": "en-c332a069",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Work equals force times distance. 10 N over 3 m. Work?",
+  "where": "question work1"
+ },
+ {
+  "id": "en-5b1f0020",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 30 J.",
+  "where": "option"
+ },
+ {
+  "id": "en-d188a624",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 13 J.",
+  "where": "option"
+ },
+ {
+  "id": "en-33b58a4b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 3.3 J.",
+  "where": "option"
+ },
+ {
+  "id": "en-b45ac72c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 103 J.",
+  "where": "option"
+ },
+ {
+  "id": "en-46ac0e12",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Work equals force times distance. 8 N over 5 m. Work?",
+  "where": "question work2"
+ },
+ {
+  "id": "en-b87476a1",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 40 J.",
+  "where": "option"
+ },
+ {
+  "id": "en-557eacd8",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 1.6 J.",
+  "where": "option"
+ },
+ {
+  "id": "en-22100633",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 85 J.",
+  "where": "option"
+ },
+ {
+  "id": "en-15ae08ad",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Work equals force times distance. 20 N over 4 m. Work?",
+  "where": "question work3"
+ },
+ {
+  "id": "en-844c0db5",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 80 J.",
+  "where": "option"
+ },
+ {
+  "id": "en-1893223e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 24 J.",
+  "where": "option"
+ },
+ {
+  "id": "en-6cc90498",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 5 J.",
+  "where": "option"
+ },
+ {
+  "id": "en-a7227c18",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 204 J.",
+  "where": "option"
+ },
+ {
+  "id": "en-fe92d951",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "A cyclist rides 6 km in 1 over 2 hour. Speed?",
+  "where": "question spdf1"
+ },
+ {
+  "id": "en-8efec293",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 12 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-7ae13eae",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 3 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-451c9240",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Dividing by 1 over 2 asks how many halves fit: 6 divided by 1 over 2 equals 12.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-0ff8f717",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 6.5 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-c4e0202f",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 1 over 12 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-9668b6f2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "A boy runs 10 km in 1 over 4 hour. Speed?",
+  "where": "question spdf2"
+ },
+ {
+  "id": "en-fe8cdebc",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 40 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-63a44678",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 2.5 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-f0e9618f",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 14 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-47652d9e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 0.025 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-6f7e81aa",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "A bike goes 15 km in 3 over 4 hour. Speed?",
+  "where": "question spdf3"
+ },
+ {
+  "id": "en-6dcb483a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for 20 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-071def56",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for 11.25 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-b8ccf355",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for 18.75 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-e1a1a068",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for 0.05 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "en-59c1ba6e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Which word is a verb?",
+  "where": "question noun1"
+ },
+ {
+  "id": "en-68cc0d0e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for run.",
+  "where": "option"
+ },
+ {
+  "id": "en-ee1aa1dc",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for bread.",
+  "where": "option"
+ },
+ {
+  "id": "en-29c754e8",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "A noun names a thing; a verb shows an action.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-553390ae",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for green.",
+  "where": "option"
+ },
+ {
+  "id": "en-52807462",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for Lagos.",
+  "where": "option"
+ },
+ {
+  "id": "en-bcfcd94d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Which word is a noun?",
+  "where": "question noun2"
+ },
+ {
+  "id": "en-d6abd31b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for market.",
+  "where": "option"
+ },
+ {
+  "id": "en-2916537a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for jump.",
+  "where": "option"
+ },
+ {
+  "id": "en-e23ed4e7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for quickly.",
+  "where": "option"
+ },
+ {
+  "id": "en-de5ee938",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for blue.",
+  "where": "option"
+ },
+ {
+  "id": "en-84479dee",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "In \"Ada sells yams\", the verb is:",
+  "where": "question noun3"
+ },
+ {
+  "id": "en-a2421efe",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for sells.",
+  "where": "option"
+ },
+ {
+  "id": "en-f297492a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for Ada.",
+  "where": "option"
+ },
+ {
+  "id": "en-8c9d5aeb",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for yams.",
+  "where": "option"
+ },
+ {
+  "id": "en-7d76450e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for none.",
+  "where": "option"
+ },
+ {
+  "id": "en-8a78e0f4",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "The children ___ playing football.",
+  "where": "question subv1"
+ },
+ {
+  "id": "en-932232bf",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for are.",
+  "where": "option"
+ },
+ {
+  "id": "en-a986d8e6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for is.",
+  "where": "option"
+ },
+ {
+  "id": "en-5e1bd2fc",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "One person goes; many people go. The children are, my brother is.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-9b2e44c2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for be.",
+  "where": "option"
+ },
+ {
+  "id": "en-ad8eb2aa",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for am.",
+  "where": "option"
+ },
+ {
+  "id": "en-8a1da833",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "My brother ___ to school every day.",
+  "where": "question subv2"
+ },
+ {
+  "id": "en-27809a21",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for goes.",
+  "where": "option"
+ },
+ {
+  "id": "en-e76ece44",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for go.",
+  "where": "option"
+ },
+ {
+  "id": "en-ab808051",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for going.",
+  "where": "option"
+ },
+ {
+  "id": "en-1263efe5",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for gone.",
+  "where": "option"
+ },
+ {
+  "id": "en-44ecd733",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Chinedu and Bola ___ friends.",
+  "where": "question subv3"
+ },
+ {
+  "id": "en-563bbcfc",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for was.",
+  "where": "option"
+ },
+ {
+  "id": "en-4a8de2be",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Yesterday, I ___ to the market.",
+  "where": "question tense1"
+ },
+ {
+  "id": "en-8abc2d0d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for went.",
+  "where": "option"
+ },
+ {
+  "id": "en-40b7f9c7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for goed.",
+  "where": "option"
+ },
+ {
+  "id": "en-66f519b9",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Some verbs change completely: go , so went, buy , so bought.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-7bfa04e7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for go.",
+  "where": "option"
+ },
+ {
+  "id": "en-e85e0196",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for going.",
+  "where": "option"
+ },
+ {
+  "id": "en-1623a738",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Last week she ___ a new phone.",
+  "where": "question tense2"
+ },
+ {
+  "id": "en-fa4af3b2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for bought.",
+  "where": "option"
+ },
+ {
+  "id": "en-1b41a871",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for buyed.",
+  "where": "option"
+ },
+ {
+  "id": "en-06fb2c37",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for buy.",
+  "where": "option"
+ },
+ {
+  "id": "en-f55aeffb",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for buys.",
+  "where": "option"
+ },
+ {
+  "id": "en-f29fc3d2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "They ___ football yesterday.",
+  "where": "question tense3"
+ },
+ {
+  "id": "en-3a8ad28a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for played.",
+  "where": "option"
+ },
+ {
+  "id": "en-2da6a06b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for plays.",
+  "where": "option"
+ },
+ {
+  "id": "en-ec4a5f35",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "If plus present , so will (If it rains, we will stay). If plus past , so would.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-73b6bccf",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for play.",
+  "where": "option"
+ },
+ {
+  "id": "en-85ed7242",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for playing.",
+  "where": "option"
+ },
+ {
+  "id": "en-b0a6c67c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Ada and ___ went to church.",
+  "where": "question pron1"
+ },
+ {
+  "id": "en-b5fa0880",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for I.",
+  "where": "option"
+ },
+ {
+  "id": "en-f4e5628c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for me.",
+  "where": "option"
+ },
+ {
+  "id": "en-f904e3df",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Use I for the doer (Ada and I) and me after a verb or to (to Tunde and me).",
+  "where": "mistake explained"
+ },
+ {
+  "id": "en-1c43627f",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for my.",
+  "where": "option"
+ },
+ {
+  "id": "en-196a8a69",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for mine.",
+  "where": "option"
+ },
+ {
+  "id": "en-7c420ee7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "The teacher gave a book to Tunde and ___.",
+  "where": "question pron2"
+ },
+ {
+  "id": "en-793b6bb9",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for me.",
+  "where": "option"
+ },
+ {
+  "id": "en-151a75db",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for I.",
+  "where": "option"
+ },
+ {
+  "id": "en-65dec085",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "___ is my sister.",
+  "where": "question pron3"
+ },
+ {
+  "id": "en-7f0dcaab",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for She.",
+  "where": "option"
+ },
+ {
+  "id": "en-5e3dbce7",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for Her.",
+  "where": "option"
+ },
+ {
+  "id": "en-0ba8a2e1",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for Hers.",
+  "where": "option"
+ },
+ {
+  "id": "en-6ee2796b",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for Herself.",
+  "where": "option"
+ },
+ {
+  "id": "en-295bf3c8",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "If it rains, we ___ at home.",
+  "where": "question cond1"
+ },
+ {
+  "id": "en-1ecca5a2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for will stay.",
+  "where": "option"
+ },
+ {
+  "id": "en-44e8c3de",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for stayed.",
+  "where": "option"
+ },
+ {
+  "id": "en-b88a080a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for staying.",
+  "where": "option"
+ },
+ {
+  "id": "en-4de9359a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for stays.",
+  "where": "option"
+ },
+ {
+  "id": "en-649feeaa",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "If I ___ money, I would buy a car.",
+  "where": "question cond2"
+ },
+ {
+  "id": "en-cb6ce5a6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for had.",
+  "where": "option"
+ },
+ {
+  "id": "en-3e1fe2ec",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for have.",
+  "where": "option"
+ },
+ {
+  "id": "en-53256dcf",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for has.",
+  "where": "option"
+ },
+ {
+  "id": "en-88028886",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for will have.",
+  "where": "option"
+ },
+ {
+  "id": "en-17fa119e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "If she ___ hard, she will pass.",
+  "where": "question cond3"
+ },
+ {
+  "id": "en-d9d72802",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 1 for studies.",
+  "where": "option"
+ },
+ {
+  "id": "en-d5ef7d3d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 2 for study.",
+  "where": "option"
+ },
+ {
+  "id": "en-e84377bb",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 3 for studied.",
+  "where": "option"
+ },
+ {
+  "id": "en-8a969113",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Press 4 for will study.",
+  "where": "option"
+ },
+ {
+  "id": "en-af9908cf",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: 6 × 7 means 6 groups of 7: 7, 14, 21, 28, 35, 42. Six bags of 7 oranges is 42 oranges.",
+  "where": "lesson mult"
+ },
+ {
+  "id": "en-1307f2f1",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Sharing equally is division. 12 sweets for 3 children: 12 ÷ 3 = 4 each.",
+  "where": "lesson div"
+ },
+ {
+  "id": "en-d0e99889",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: The bottom counts all the equal parts; the top counts the parts you take. Eat 3 of 8 puff-puff pieces: 3/8.",
+  "where": "lesson frac"
+ },
+ {
+  "id": "en-31a4369a",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Multiply top and bottom by the same number. 1/2 × 4/4 = 4/8, so 1/2 = 4/8. Never add.",
+  "where": "lesson equiv"
+ },
+ {
+  "id": "en-a64dcf41",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Divide top and bottom by the same number until you cannot. 12/18 ÷ 6 = 2/3.",
+  "where": "lesson simp"
+ },
+ {
+  "id": "en-ad4094c8",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: List each times table and find the first number in both. 4: 4, 8, 12. 6: 6, 12. LCM = 12.",
+  "where": "lesson lcm"
+ },
+ {
+  "id": "en-3838d137",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Same bottom: add the tops, keep the bottom. 2/7 + 3/7 = 5/7.",
+  "where": "lesson addl"
+ },
+ {
+  "id": "en-a13f43d6",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Make the bottoms equal first. 1/2 + 1/3 = 3/6 + 2/6 = 5/6.",
+  "where": "lesson addu"
+ },
+ {
+  "id": "en-fd1f7f24",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Top × top, bottom × bottom, then simplify. 2/3 × 3/4 = 6/12 = 1/2.",
+  "where": "lesson multf"
+ },
+ {
+  "id": "en-815aa665",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Divide by the bottom, then multiply by the top. 3/4 of 20: 20 ÷ 4 = 5, 5 × 3 = 15.",
+  "where": "lesson fofq"
+ },
+ {
+  "id": "en-617cff4e",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Underline what is asked: total, used or left. Then choose add or subtract.",
+  "where": "lesson word"
+ },
+ {
+  "id": "en-84653e4c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: On a number line, minus moves left. 4 − 7 = −3.",
+  "where": "lesson ints"
+ },
+ {
+  "id": "en-3efa981d",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Add only terms with the same letter. 3x + 2x = 5x, but 3x + 2 stays.",
+  "where": "lesson like"
+ },
+ {
+  "id": "en-918aa730",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Undo with the opposite. x + 5 = 12 → x = 12 − 5 = 7.",
+  "where": "lesson solve1"
+ },
+ {
+  "id": "en-15ef8cf2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Undo plus or minus first, then times. 2x + 3 = 11 → 2x = 8 → x = 4.",
+  "where": "lesson solve2"
+ },
+ {
+  "id": "en-6b7d66f1",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Same rule, with fractions. x + 1/2 = 3/4 → x = 3/4 − 2/4 = 1/4.",
+  "where": "lesson leqf"
+ },
+ {
+  "id": "en-a0c70ac1",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Check the unit first: km and m measure distance, s and h measure time, kg measures mass. 1 km = 1000 m; 1 hour = 60 minutes.",
+  "where": "lesson unit"
+ },
+ {
+  "id": "en-7863ca98",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Speed = distance ÷ time. 100 km in 2 hours: 100 ÷ 2 = 50 km/h.",
+  "where": "lesson speed"
+ },
+ {
+  "id": "en-951920b2",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Force = mass × acceleration. 4 kg at 3 m/s²: 4 × 3 = 12 N. Multiply, never add.",
+  "where": "lesson force"
+ },
+ {
+  "id": "en-280b0650",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Work = force × distance. 10 N over 3 m: 10 × 3 = 30 J.",
+  "where": "lesson work"
+ },
+ {
+  "id": "en-ac33b81c",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Dividing by a fraction asks how many fit. 6 km in 1/2 hour: 6 ÷ 1/2 = 12 km/h.",
+  "where": "lesson spdf"
+ },
+ {
+  "id": "en-67281458",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: A noun names a person, place or thing (market). A verb shows action (run, sells).",
+  "where": "lesson noun"
+ },
+ {
+  "id": "en-04439200",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: The verb must match the subject: one person goes, many people go; the children are, my brother is.",
+  "where": "lesson subv"
+ },
+ {
+  "id": "en-bd4c1e57",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Many past-tense verbs add -ed (played), but irregular ones change: go → went, buy → bought.",
+  "where": "lesson tense"
+ },
+ {
+  "id": "en-10f18061",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: Use I as the doer (Ada and I went) and me after a verb or \"to\" (to Tunde and me).",
+  "where": "lesson pron"
+ },
+ {
+  "id": "en-f9ae3791",
+  "lang": "en",
+  "yarn_lang": "english",
+  "speaker": "idera",
+  "text": "Quick reminder: If + present, then will: If it rains, we will stay. If + past, then would: If I had money, I would buy a car.",
+  "where": "lesson cond"
+ },
+ {
+  "id": "pcm-2d828016",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "For English, press 1. For Pidgin, press 2. For Yoruba, press 3. For Igbo, press 4. For Hausa, press 5.",
+  "where": "template: lang"
+ },
+ {
+  "id": "pcm-a8c3e01b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press star to hear am again.",
+  "where": "template: star"
+ },
+ {
+  "id": "pcm-f33244df",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 13.",
+  "where": "question number"
+ },
+ {
+  "id": "pcm-f13f0dac",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 14.",
+  "where": "question number"
+ },
+ {
+  "id": "pcm-134181c9",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 15.",
+  "where": "question number"
+ },
+ {
+  "id": "pcm-7139c6fe",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 16.",
+  "where": "question number"
+ },
+ {
+  "id": "pcm-933c3b1b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 17.",
+  "where": "question number"
+ },
+ {
+  "id": "pcm-f120f898",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 18.",
+  "where": "question number"
+ },
+ {
+  "id": "pcm-13236cb5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 19.",
+  "where": "question number"
+ },
+ {
+  "id": "pcm-a69d6c01",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Question 20.",
+  "where": "question number"
+ },
+ {
+  "id": "pcm-23406f3c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for Speed, distance and time.",
+  "where": "topic menu"
+ },
+ {
+  "id": "pcm-65650bcc",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for Work (force × distance).",
+  "where": "topic menu"
+ },
+ {
+  "id": "pcm-e400511c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for Speed with fractions of an hour.",
+  "where": "topic menu"
+ },
+ {
+  "id": "pcm-4fcb4b90",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for Subject-verb agreement.",
+  "where": "topic menu"
+ },
+ {
+  "id": "pcm-3f168706",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for Simple past tense.",
+  "where": "topic menu"
+ },
+ {
+  "id": "pcm-7788ed88",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for If-sentences.",
+  "where": "topic menu"
+ },
+ {
+  "id": "pcm-0306b084",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "6 times 7 equals what?",
+  "where": "question mult1"
+ },
+ {
+  "id": "pcm-9cbe9e9c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 42.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-879795cf",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 13.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-a1ed9aa0",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "6 times 7 mean 6 groups of 7, no be 6 plus 7.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-eefaa7ef",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 36.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-893fccfd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 48.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-bf94e46d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "8 times 4 equals what?",
+  "where": "question mult2"
+ },
+ {
+  "id": "pcm-30ea236d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 32.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-659521b2",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 12.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-4850e376",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 36.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-2a263d3d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "9 times 5 equals what?",
+  "where": "question mult3"
+ },
+ {
+  "id": "pcm-9eb1d5cf",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 45.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-85a45e9c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 14.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-75e4b04b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 54.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-092b7bc5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 40.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-81dc1814",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Dem share 12 sweet equal equal for 3 pikin. Each pikin go get how many?",
+  "where": "question div1"
+ },
+ {
+  "id": "pcm-ab298be8",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 36.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-addf4d21",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "To share equal equal, na divide you go use.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-7f1bd239",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 9.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-5027d1ff",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 15.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-cf2dbbd1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "20 divided by 4 equals what?",
+  "where": "question div2"
+ },
+ {
+  "id": "pcm-829dc063",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 5.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-ed4b1c93",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 80.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-c9214b95",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 16.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-b6d925e7",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 24.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-a58200db",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Dem put 18 yam equal equal inside 6 bag. How many yam dey one bag?",
+  "where": "question div3"
+ },
+ {
+  "id": "pcm-029879b5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 3.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-40491644",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 108.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-292add11",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 12.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-512c0106",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Which big pass: 1 over 2 or 1 over 5?",
+  "where": "question frac3"
+ },
+ {
+  "id": "pcm-636c14af",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 1 over 5.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-016daf17",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Pieces wey plenty mean each piece small: 1 over 5 small pass 1 over 2.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-ccc90298",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for They are equal.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-8e515dfd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for Cannot tell.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-bf8b1df9",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "3 over 5 equals 9/?",
+  "where": "question equiv3"
+ },
+ {
+  "id": "pcm-491c04e7",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 14.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-ce33d14c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 12.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-d994f3ea",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Simplify 6 over 8",
+  "where": "question simp1"
+ },
+ {
+  "id": "pcm-46c0eac3",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 4 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-37810b81",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "No subtract, divide top and bottom by the same number.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-6e49019b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 3 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-14436209",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 6 over 4.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-8ed3293e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Simplify 12 over 18",
+  "where": "question simp2"
+ },
+ {
+  "id": "pcm-b7664da5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 2 over 3.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-5c74975a",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 6 over 9.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-0f60a9f9",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Continue to divide until no number fit divide both again.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-d6dc9e39",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 6 over 12.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-2b1b4115",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 9 over 12.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-211da5e9",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Simplify 20 over 30",
+  "where": "question simp3"
+ },
+ {
+  "id": "pcm-eeebcb3c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 10 over 15.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e142adc3",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 10 over 20.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-d4a40ac4",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 20 over 3.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-0e6498bf",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "LCM of 6 and 8",
+  "where": "question lcm3"
+ },
+ {
+  "id": "pcm-c243cbe8",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 24.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-8619f2ac",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 48.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-193520cc",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "3 over 8 plus 4 over 8 equals what?",
+  "where": "question addl3"
+ },
+ {
+  "id": "pcm-52973571",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 7 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-738c7655",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 7 over 16.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-0b824051",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 12 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-0fcc8f50",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 1 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-0f046f88",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "1 over 2 plus 1 over 3 equals what?",
+  "where": "question addu1"
+ },
+ {
+  "id": "pcm-c4a46a45",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 5 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1f8cb772",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 2 over 5.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-64e9e9a7",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 2 over 3.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-b40512d3",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Make the bottom numbers the same before you add.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-efbd5266",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 1 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-439e5453",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "For multiply, multiply straight across. Add na another work.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-d7dc011b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "1 over 4 plus 1 over 2 equals what?",
+  "where": "question addu2"
+ },
+ {
+  "id": "pcm-a1943fdd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 2 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-62f6b274",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 2 over 4.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e2cbe984",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "1 over 3 plus 1 over 6 equals what?",
+  "where": "question addu3"
+ },
+ {
+  "id": "pcm-bf8325f6",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 2 over 9.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e49dc927",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 1 over 18.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-188281f2",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "1 over 2 times 1 over 3 equals what?",
+  "where": "question multf1"
+ },
+ {
+  "id": "pcm-6f448601",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 1 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-dc81a23c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 5 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-ce3a8e31",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 3 over 2.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-8c70bc73",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Top times top, bottom times bottom.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-187ace0f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 2 over 6.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-dcaa107f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "2 over 3 times 3 over 4 equals what?",
+  "where": "question multf2"
+ },
+ {
+  "id": "pcm-63ef54c4",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 17 over 12.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-6f030b63",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 8 over 9.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1a14056f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 5 over 7.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-08a8261f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "1 over 4 times 2 over 5 equals what?",
+  "where": "question multf3"
+ },
+ {
+  "id": "pcm-5b59cfea",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 1 over 10.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1df92747",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 13 over 20.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e75933f5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 5 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-df42769b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 3 over 9.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-50aded31",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "1 over 4 of 20 mango equals what?",
+  "where": "question fofq1"
+ },
+ {
+  "id": "pcm-a315fb85",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Part of something small pass am: divide by the bottom.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-9cfbadc8",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 4.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-77b20c06",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "3 over 4 of 20 naira note equals what?",
+  "where": "question fofq2"
+ },
+ {
+  "id": "pcm-8cac3470",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 5.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-fcab319c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Two steps: divide by the bottom, then multiply by the top.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-c1751490",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 80.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-702c818d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 17.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-a18093aa",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "2 over 5 of 30 tomato equals what?",
+  "where": "question fofq3"
+ },
+ {
+  "id": "pcm-6ea9c69f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 6.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-9143c67a",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 150.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-c8471f9a",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 32.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-8d279e57",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Ada chop 1 over 2 of bread for morning and 1 over 4 for afternoon. How much she chop for all?",
+  "where": "question word1"
+ },
+ {
+  "id": "pcm-615f4596",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 1 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-f77dd935",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "'Morning AND afternoon' mean put am together: add.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-b7af9e76",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Check am: you don use everything wey the question give you?",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-b55c4afd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Ada get 1 bread. She chop 1 over 2 then 1 over 4. How much REMAIN?",
+  "where": "question word2"
+ },
+ {
+  "id": "pcm-d00ae0bc",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 3 over 4.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1fa2ee28",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Look the last words of the question: na wetin dem use or wetin remain?",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-ebaa37e1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 1 over 8.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-6fb38e8a",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 1 over 2.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-9f46b60c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Ada chop 1 over 3 of cake and Bola chop 1 over 6. Together, how much?",
+  "where": "question word3"
+ },
+ {
+  "id": "pcm-376b3d59",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 1 over 18.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e502b80d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 2 over 9.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-eceb4955",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "minus 3 plus 5 equals what?",
+  "where": "question ints1"
+ },
+ {
+  "id": "pcm-e0960598",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 2.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-801c308b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for minus 2.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-72bb2c3b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Look the minus sign well: 4 minus 7 go go under zero.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-9d19c2dc",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 8.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-9cdfd203",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for minus 8.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-2c9ac114",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "4 minus 7 equals what?",
+  "where": "question ints2"
+ },
+ {
+  "id": "pcm-478db1dd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for minus 3.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-ecb148be",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 3.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-a72354a6",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 11.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-9c91a653",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for minus 11.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-d21c0707",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "minus 2 minus 6 equals what?",
+  "where": "question ints3"
+ },
+ {
+  "id": "pcm-e572d41a",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for minus 8.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-0eaf3fad",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 4.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-7cea2cff",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for minus 4.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-56bfaaa2",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "3x plus 2x equals what?",
+  "where": "question like1"
+ },
+ {
+  "id": "pcm-ea9e5091",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 5x.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-9ebe61e7",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 5x squared.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e97e1fed",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Na only the same kind of letter you fit add together.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-cd896222",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 6x.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-673e2b9a",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 5.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-0aae650a",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "4a plus 3b minus a equals what?",
+  "where": "question like2"
+ },
+ {
+  "id": "pcm-30eb4d05",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 3a plus 3b.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-8ea77f0e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 6ab.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-95755746",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 7ab.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e19bef18",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 4a plus 2b.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-f4c13107",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "5y plus 2 plus 3y equals what?",
+  "where": "question like3"
+ },
+ {
+  "id": "pcm-275622af",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 8y plus 2.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e2ea24a1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 10y.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-2f3ad9aa",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 8y squared.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-426ae7f4",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 5y plus 5.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-69d138f3",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "x minus 4 equals 9. x equals what?",
+  "where": "question solve13"
+ },
+ {
+  "id": "pcm-35ae8e4a",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 13.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e3b09845",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for minus 5.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1f11f971",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "2x plus 3 equals 11. x equals what?",
+  "where": "question solve21"
+ },
+ {
+  "id": "pcm-a3cb9d79",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "E get two steps: comot the plus or minus first, then the times.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-7ef93ff7",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 7.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e6517a37",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "3x minus 5 equals 10. x equals what?",
+  "where": "question solve22"
+ },
+ {
+  "id": "pcm-67a66df9",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 15.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1ae75422",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for minus 5.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-88cfd421",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "5x plus 2 equals 17. x equals what?",
+  "where": "question solve23"
+ },
+ {
+  "id": "pcm-f01cf8b9",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 19 over 5.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-49403af7",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 4.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-f72c4480",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "x minus 1 over 4 equals 1 over 2. x equals what?",
+  "where": "question leqf3"
+ },
+ {
+  "id": "pcm-4169a092",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 1 over 4.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-d1d0a171",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Which unit measures distance?",
+  "where": "question unit1"
+ },
+ {
+  "id": "pcm-7e75acde",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for km.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-39ee9ffd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for kg.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-8a40771e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Check the unit first: km and m are distance, s and h are time, kg is mass.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-7fa19e13",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for s.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-698114ad",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for N.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-c42069a1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "1 km equals what? m",
+  "where": "question unit2"
+ },
+ {
+  "id": "pcm-a69b04dd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 1000.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-605cd05c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 100.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-c925c8c3",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 10.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-9d3f6076",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 10000.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-2f7e98f1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "2 hours equals what? minutes",
+  "where": "question unit3"
+ },
+ {
+  "id": "pcm-746623f5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 120.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-31ace3d3",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 200.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-2cd70dca",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 60.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-36e2e9c3",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 20.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-2219ed9f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "A car goes 100 km in 2 hours. Speed?",
+  "where": "question speed1"
+ },
+ {
+  "id": "pcm-bfcbea66",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 50 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-bb9715d0",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 0.02 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1aa69d02",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Speed equals distance divided by time. Distance goes on top.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-a769af13",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 200 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e196e3fd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 102 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-84bba1da",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "A trader walks 12 km in 3 hours. Speed?",
+  "where": "question speed2"
+ },
+ {
+  "id": "pcm-9a33c383",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 4 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-c66f98f3",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 0.25 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-16d0ed40",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 36 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-5e701370",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 15 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-d1e100df",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "A bus travels 90 km in 3 hours. Speed?",
+  "where": "question speed3"
+ },
+ {
+  "id": "pcm-a4190b50",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 30 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-438a4fc7",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 0.03 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-3aa5baa8",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 270 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-6a2eb91e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 93 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-0262cf73",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "F equals m times a. m equals 4 kg, a equals 3 m/s squared. F equals what?",
+  "where": "question force1"
+ },
+ {
+  "id": "pcm-47238dd1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 12 N.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-b3cdb7b4",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 7 N.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-cb691d33",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Force equals mass times acceleration and work equals force times distance. Multiply, never add.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-79ed9abe",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 1.3 N.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-ed65c41c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 43 N.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-ab734a49",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "F equals m times a. m equals 5 kg, a equals 2 m/s squared. F equals what?",
+  "where": "question force2"
+ },
+ {
+  "id": "pcm-f51ed593",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 10 N.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e66a2433",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 2.5 N.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-6989614e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 52 N.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-09df1824",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "F equals m times a. m equals 6 kg, a equals 4 m/s squared. F equals what?",
+  "where": "question force3"
+ },
+ {
+  "id": "pcm-6877d07e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 24 N.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-b4c2a2a6",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 10 N.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-b48f3d00",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 1.5 N.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-14928b8d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 64 N.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-088cae32",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Work equals force times distance. 10 N over 3 m. Work?",
+  "where": "question work1"
+ },
+ {
+  "id": "pcm-789bd0fd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 30 J.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-6311c1ed",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 13 J.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-49881270",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 3.3 J.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1b009143",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 103 J.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-b9246c07",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Work equals force times distance. 8 N over 5 m. Work?",
+  "where": "question work2"
+ },
+ {
+  "id": "pcm-6bb31244",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 40 J.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-83af83e3",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 1.6 J.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-3be035a2",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 85 J.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-cb7a3f66",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Work equals force times distance. 20 N over 4 m. Work?",
+  "where": "question work3"
+ },
+ {
+  "id": "pcm-3a051258",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 80 J.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1f1c8017",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 24 J.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-18f02207",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 5 J.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-765d313f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 204 J.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-41e866ac",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "A cyclist rides 6 km in 1 over 2 hour. Speed?",
+  "where": "question spdf1"
+ },
+ {
+  "id": "pcm-2a1a8148",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 12 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-ced6a8cb",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 3 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-76317d31",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Dividing by 1 over 2 asks how many halves fit: 6 divided by 1 over 2 equals 12.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-9a7e0026",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 6.5 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-2a1ca842",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 1 over 12 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-7604357b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "A boy runs 10 km in 1 over 4 hour. Speed?",
+  "where": "question spdf2"
+ },
+ {
+  "id": "pcm-53f1ee9b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 40 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-940be955",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 2.5 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-5dcee8c8",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 14 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-31907ac3",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 0.025 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-7e76232d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "A bike goes 15 km in 3 over 4 hour. Speed?",
+  "where": "question spdf3"
+ },
+ {
+  "id": "pcm-08b1d79d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for 20 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-7cf24787",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for 11.25 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-de771d58",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for 18.75 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-f4420aab",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for 0.05 km/h.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1bbbcd6b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Which word is a verb?",
+  "where": "question noun1"
+ },
+ {
+  "id": "pcm-d5bcc0b1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for run.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-04a503df",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for bread.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-611becb9",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "A noun names a thing; a verb shows an action.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-c1c3aa2d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for green.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-6ef45669",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for Lagos.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-25bf7c40",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Which word is a noun?",
+  "where": "question noun2"
+ },
+ {
+  "id": "pcm-8ae58e82",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for market.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-01b03fbf",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for jump.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-556a0694",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for quickly.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e53d4e99",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for blue.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-949a3447",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "In \"Ada sells yams\", the verb is:",
+  "where": "question noun3"
+ },
+ {
+  "id": "pcm-a12a3439",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for sells.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-3db13edd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for Ada.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-3f18cdd2",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for yams.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-de0772ef",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for none.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-6ea1f0e7",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "The children ___ playing football.",
+  "where": "question subv1"
+ },
+ {
+  "id": "pcm-764da3d4",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for are.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1520db57",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for is.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-fd488051",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "One person goes; many people go. The children are, my brother is.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-cc965c5f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for be.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-5a402807",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for am.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-dcb2fc16",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "My brother ___ to school every day.",
+  "where": "question subv2"
+ },
+ {
+  "id": "pcm-b7c11e78",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for goes.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-6e279611",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for go.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1312915e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for going.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-6fe572c0",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for gone.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-0445497a",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Chinedu and Bola ___ friends.",
+  "where": "question subv3"
+ },
+ {
+  "id": "pcm-b092c533",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for was.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-399aa9c7",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Yesterday, I ___ to the market.",
+  "where": "question tense1"
+ },
+ {
+  "id": "pcm-8f87bc1c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for went.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-ff43aee6",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for goed.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-00d57ba6",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Some verbs change completely: go , so went, buy , so bought.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-253dab8e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for go.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-1b4033d9",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for going.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e5e81f97",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Last week she ___ a new phone.",
+  "where": "question tense2"
+ },
+ {
+  "id": "pcm-80c6182f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for bought.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-71514a1e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for buyed.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-adefbdf8",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for buy.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-eb18b252",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for buys.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-cb48ad11",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "They ___ football yesterday.",
+  "where": "question tense3"
+ },
+ {
+  "id": "pcm-77580317",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for played.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-f66b8d9c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for plays.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-44f3b648",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "If plus present , so will (If it rains, we will stay). If plus past , so would.",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-e015eee2",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for play.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-3ea1d7c1",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for playing.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-c8728f2d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Ada and ___ went to church.",
+  "where": "question pron1"
+ },
+ {
+  "id": "pcm-83bcdfcf",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for I.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e0bac5a5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for me.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-c9a559ea",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Use I for the doer (Ada and I) and me after a verb or to (to Tunde and me).",
+  "where": "mistake explained"
+ },
+ {
+  "id": "pcm-e4d6d002",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for my.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-816d8b88",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for mine.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-8d3bd0c2",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "The teacher gave a book to Tunde and ___.",
+  "where": "question pron2"
+ },
+ {
+  "id": "pcm-d77c6798",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for me.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-ec7b2ec4",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for I.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-61fd049c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "___ is my sister.",
+  "where": "question pron3"
+ },
+ {
+  "id": "pcm-3f7a3994",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for She.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-d03a5d78",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for Her.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-0e66cd4c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for Hers.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-e9c88bc0",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for Herself.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-f93826f3",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "If it rains, we ___ at home.",
+  "where": "question cond1"
+ },
+ {
+  "id": "pcm-3dc8b579",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for will stay.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-40647f73",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for stayed.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-2f1b9be9",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for staying.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-929649c5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for stays.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-9cbd0bb5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "If I ___ money, I would buy a car.",
+  "where": "question cond2"
+ },
+ {
+  "id": "pcm-086d37a9",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for had.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-d16218fd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for have.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-cd896f38",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for has.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-cbb40fa5",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for will have.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-ecf18787",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "If she ___ hard, she will pass.",
+  "where": "question cond3"
+ },
+ {
+  "id": "pcm-b3bb33fd",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 1 for studies.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-99026d52",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 2 for study.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-a14d02f4",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 3 for studied.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-bec2d84a",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Press 4 for will study.",
+  "where": "option"
+ },
+ {
+  "id": "pcm-d37c91b4",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: 6 × 7 mean 6 groups of 7: 7, 14, 21, 28, 35, 42. Six bag wey get 7 orange each na 42 orange.",
+  "where": "lesson mult"
+ },
+ {
+  "id": "pcm-21eee543",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: To share equal equal na divide. 12 sweet for 3 pikin: 12 ÷ 3 = 4 each.",
+  "where": "lesson div"
+ },
+ {
+  "id": "pcm-e4e7d716",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: The bottom dey count all the equal parts; the top dey count wetin you take. You chop 3 from 8 puff-puff pieces: 3/8.",
+  "where": "lesson frac"
+ },
+ {
+  "id": "pcm-b7e41516",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Multiply top and bottom by the same number. 1/2 × 4/4 = 4/8, so 1/2 na 4/8. No add.",
+  "where": "lesson equiv"
+ },
+ {
+  "id": "pcm-f454c78c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Divide top and bottom by the same number till e no fit again. 12/18 ÷ 6 = 2/3.",
+  "where": "lesson simp"
+ },
+ {
+  "id": "pcm-7656942d",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Write each times table, find the first number wey dey both. 4: 4, 8, 12. 6: 6, 12. LCM na 12.",
+  "where": "lesson lcm"
+ },
+ {
+  "id": "pcm-944d0184",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Same bottom: add the tops, keep the bottom. 2/7 + 3/7 = 5/7.",
+  "where": "lesson addl"
+ },
+ {
+  "id": "pcm-a1fdc68c",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Make the bottoms the same first. 1/2 + 1/3 = 3/6 + 2/6 = 5/6.",
+  "where": "lesson addu"
+ },
+ {
+  "id": "pcm-fae18991",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Top times top, bottom times bottom, then make am small. 2/3 × 3/4 = 6/12 = 1/2.",
+  "where": "lesson multf"
+ },
+ {
+  "id": "pcm-bcb49cde",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Divide by the bottom, then multiply by the top. 3/4 of 20: 20 ÷ 4 = 5, 5 × 3 = 15.",
+  "where": "lesson fofq"
+ },
+ {
+  "id": "pcm-804a08a8",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Underline wetin dem ask: total, wetin dem use or wetin remain. Then choose add or subtract.",
+  "where": "lesson word"
+ },
+ {
+  "id": "pcm-469c4694",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: For number line, minus dey go left. 4 − 7 = −3.",
+  "where": "lesson ints"
+ },
+ {
+  "id": "pcm-26c7d653",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Add only the terms wey get the same letter. 3x + 2x = 5x, but 3x + 2 no change.",
+  "where": "lesson like"
+ },
+ {
+  "id": "pcm-8c4761a7",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Use the opposite to comot am. x + 5 = 12 → x = 12 − 5 = 7.",
+  "where": "lesson solve1"
+ },
+ {
+  "id": "pcm-477d690b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Comot plus or minus first, then times. 2x + 3 = 11 → 2x = 8 → x = 4.",
+  "where": "lesson solve2"
+ },
+ {
+  "id": "pcm-2f9d8335",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Same rule, but with fractions. x + 1/2 = 3/4 → x = 3/4 − 2/4 = 1/4.",
+  "where": "lesson leqf"
+ },
+ {
+  "id": "pcm-9920450e",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Check the unit first: km and m measure distance, s and h measure time, kg measures mass. 1 km = 1000 m; 1 hour = 60 minutes.",
+  "where": "lesson unit"
+ },
+ {
+  "id": "pcm-4d52bc2f",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Speed = distance ÷ time. 100 km in 2 hours: 100 ÷ 2 = 50 km/h.",
+  "where": "lesson speed"
+ },
+ {
+  "id": "pcm-2d4e8593",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Force = mass × acceleration. 4 kg at 3 m/s²: 4 × 3 = 12 N. Multiply, never add.",
+  "where": "lesson force"
+ },
+ {
+  "id": "pcm-d9df8f6b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Work = force × distance. 10 N over 3 m: 10 × 3 = 30 J.",
+  "where": "lesson work"
+ },
+ {
+  "id": "pcm-eac275a3",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Dividing by a fraction asks how many fit. 6 km in 1/2 hour: 6 ÷ 1/2 = 12 km/h.",
+  "where": "lesson spdf"
+ },
+ {
+  "id": "pcm-5da4c635",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: A noun names a person, place or thing (market). A verb shows action (run, sells).",
+  "where": "lesson noun"
+ },
+ {
+  "id": "pcm-f65f871b",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: The verb must match the subject: one person goes, many people go; the children are, my brother is.",
+  "where": "lesson subv"
+ },
+ {
+  "id": "pcm-bacafff6",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Many past-tense verbs add -ed (played), but irregular ones change: go → went, buy → bought.",
+  "where": "lesson tense"
+ },
+ {
+  "id": "pcm-fa2f9bd4",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: Use I as the doer (Ada and I went) and me after a verb or \"to\" (to Tunde and me).",
+  "where": "lesson pron"
+ },
+ {
+  "id": "pcm-f9435684",
+  "lang": "pcm",
+  "yarn_lang": "english",
+  "speaker": "jude",
+  "text": "Small reminder: If + present, then will: If it rains, we will stay. If + past, then would: If I had money, I would buy a car.",
+  "where": "lesson cond"
+ }
+]

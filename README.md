@@ -44,3 +44,17 @@ Why this design: phone-call tutoring plus SMS, targeted to each child's level, p
 ## Pitch
 - `pitch/RootPath_Deck.pptx`: the pitch deck (11 slides, speaker notes).
 - `PITCH.md`: the pitch script, the 60-second demo flow, and how to test it.
+
+## Nigerian voices (YarnGPT) and translations
+RootPath can speak with recorded Nigerian voices from [YarnGPT](https://github.com/saheedniyi02/yarngpt). Each spoken piece is recorded once, ahead of time; the app plays the clip when it exists and falls back to the device's voice otherwise. Clips are saved for offline use, and the phone-line adapter plays them too (`CLIPS_URL`).
+
+1. **Fix the words first.** Native speakers correct `voice/review.csv` (the demo call, line by line) and fill in Yoruba, Igbo and Hausa in `voice/translate.csv`. The corrections are then applied to the source text.
+2. **List the lines:** `node tools/voice-lines.js` (demo set) or `node tools/voice-lines.js --full`. This writes `voice/manifest*.json`.
+3. **Record:** open `voice/YarnGPT_RootPath.ipynb` in Google Colab (T4 GPU) and run all. It downloads `rootpath-voice.zip`.
+4. **Add:** unzip into `voice/clips/` (mp3 files plus `index.json`) and deploy.
+
+Licence: YarnGPT's Yoruba, Igbo and Hausa voices are non-commercial (CC-BY-NC-SA). They're fine for the hackathon; ask the author before a commercial launch.
+
+## How the teacher sees the class
+- **Any phone:** a weekly SMS summary (`teacherSms`). It lists the top root-gap groups, and the teacher can reply with a number to send that group its practice SMS.
+- **Smartphone:** the same class view as the demo, opened from a link.

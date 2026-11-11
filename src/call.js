@@ -60,11 +60,15 @@
   }
 
   // Build a prompt: what to say aloud, what to show as captions, and which keys are valid.
-  const prompt = (L, parts, extra = {}) => ({
-    lang: L, voice: VOICE[L], say: parts.map((p) => p.say ?? speakable(p.text)).join(' '),
+  // `say` on a part may be one string or a list of pieces; each piece can be a pre-recorded clip.
+  const prompt = (L, parts, extra = {}) => {
+    const segments = parts.flatMap((p) => (p.say != null ? [].concat(p.say) : [speakable(p.text)])).filter(Boolean);
+    return {
+    lang: L, voice: VOICE[L], segments, say: segments.join(' '),
     lines: parts.filter((p) => p.text != null).map((p) => ({ text: p.text, kind: p.kind || 'say' })),
     keys: [], end: false, ...extra,
-  });
+  };
+  };
 
   class CallSession {
     constructor({ pack = P0, caller = 'Learner' } = {}) {
@@ -87,7 +91,7 @@
       const L = this.L, T = this.P.text, n = this.D.next();
       if (!n) return this._finish(pre);
       const q = n.question;
-      return prompt(L, [...pre, { text: `${t(L, 'q', { n: this.D.asked.length + 1 })} ${T.qText(q, L)}`, kind: 'question', say: `${t(L, 'q', { n: this.D.asked.length + 1 })} ${speakable(T.qText(q, L))}` },
+      return prompt(L, [...pre, { text: `${t(L, 'q', { n: this.D.asked.length + 1 })} ${T.qText(q, L)}`, kind: 'question', say: [t(L, 'q', { n: this.D.asked.length + 1 }), speakable(T.qText(q, L))] },
         ...q.o.map((o, i) => ({ text: `${i + 1}. ${o[0]}`, kind: 'option', say: t(L, 'opt', { k: i + 1, o: speakable(o[0]) }) }))],
         { phase: 'question', skill: n.skill, keys: q.o.map((o, i) => ({ key: String(i + 1), label: o[0] })) });
     }
@@ -106,7 +110,7 @@
       if (this.phase === 'done') return this.last;
       if (key === '*') return this.last;
       const n = Number(key) - 1;
-      const bad = () => ({ ...this.last, say: t(this.L, 'invalid') + ' ' + this.last.say, lines: [{ text: t(this.L, 'invalid'), kind: 'feedback' }, ...this.last.lines] });
+      const bad = () => ({ ...this.last, segments: [t(this.L, 'invalid'), ...this.last.segments], say: t(this.L, 'invalid') + ' ' + this.last.say, lines: [{ text: t(this.L, 'invalid'), kind: 'feedback' }, ...this.last.lines] });
       if (!Number.isInteger(n) || !this.last.keys[n]) return bad();
       this.log.push({ phase: this.phase, key });
       let next;
@@ -125,7 +129,7 @@
         next = this._question([{ text: t(this.L, 'intro') }]);
       } else {
         const r = this.D.answer(n), T = this.P.text;
-        const fb = r.correct ? [{ text: t(this.L, 'right'), kind: 'right' }] : [{ text: t(this.L, 'wrong') + (r.misconception ? ' ' + T.fix(r.misconception, this.L) : ''), kind: 'wrong' }];
+        const fb = r.correct ? [{ text: t(this.L, 'right'), kind: 'right' }] : [{ text: t(this.L, 'wrong') + (r.misconception ? ' ' + T.fix(r.misconception, this.L) : ''), kind: 'wrong', say: [t(this.L, 'wrong'), r.misconception ? speakable(T.fix(r.misconception, this.L)) : ''] }];
         next = this._question(fb);
         next.answered = { correct: r.correct, misconception: r.misconception };
       }
@@ -155,7 +159,7 @@
         return prompt(L, [...pre, { text: t(L, 'checkDone', { skill: nm, a: Math.round(this.p0 * 100), b: Math.round(this.pr.p * 100) }), kind: 'result' }, { text: t(L, 'bye') }], { phase: 'done', end: true, before: this.p0, after: this.pr.p });
       }
       this.q = q;
-      return prompt(L, [...pre, { text: `${t(L, 'q', { n: this.n + 1 })} ${this.P.text.qText(q, L)}`, kind: 'question', say: `${t(L, 'q', { n: this.n + 1 })} ${speakable(this.P.text.qText(q, L))}` },
+      return prompt(L, [...pre, { text: `${t(L, 'q', { n: this.n + 1 })} ${this.P.text.qText(q, L)}`, kind: 'question', say: [t(L, 'q', { n: this.n + 1 }), speakable(this.P.text.qText(q, L))] },
         ...q.o.map((o, i) => ({ text: `${i + 1}. ${o[0]}`, kind: 'option', say: t(L, 'opt', { k: i + 1, o: speakable(o[0]) }) }))],
         { phase: 'question', skill: this.skill, keys: q.o.map((o, i) => ({ key: String(i + 1), label: o[0] })) });
     }
@@ -163,10 +167,10 @@
       if (this.done) return this.last;
       if (key === '*') return this.last;
       const n = Number(key) - 1;
-      if (!Number.isInteger(n) || !this.last.keys[n]) return { ...this.last, say: t(this.L, 'invalid') + ' ' + this.last.say };
+      if (!Number.isInteger(n) || !this.last.keys[n]) return { ...this.last, segments: [t(this.L, 'invalid'), ...this.last.segments], say: t(this.L, 'invalid') + ' ' + this.last.say };
       const r = this.pr.answer(n);
       this.n++;
-      const fb = r.correct ? [{ text: t(this.L, 'right'), kind: 'right' }] : [{ text: t(this.L, 'wrong') + (r.misconception ? ' ' + this.P.text.fix(r.misconception, this.L) : ''), kind: 'wrong' }];
+      const fb = r.correct ? [{ text: t(this.L, 'right'), kind: 'right' }] : [{ text: t(this.L, 'wrong') + (r.misconception ? ' ' + this.P.text.fix(r.misconception, this.L) : ''), kind: 'wrong', say: [t(this.L, 'wrong'), r.misconception ? speakable(this.P.text.fix(r.misconception, this.L)) : ''] }];
       return (this.last = this._q(fb));
     }
   }
