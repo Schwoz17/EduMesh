@@ -54,7 +54,7 @@ The teacher sees the whole class grouped by root gap, ready to *teach at the rig
 `npm test` runs **60 tests** (Node 18+, no dependencies).
 
 ## Nigerian voices (YarnGPT) and translations
-RootPath speaks with recorded Nigerian voices from [YarnGPT](https://github.com/saheedniyi02/yarngpt). **The demo call is recorded:** 193 clips in English and Pidgin (`voice/clips/`, 2 MB), plus Yoruba, Igbo and Hausa greetings. Each spoken piece is recorded once, ahead of time. The app plays the clip when it exists and falls back to the device's voice otherwise. Clips are saved for offline use, and the phone line plays them too.
+RootPath speaks with recorded Nigerian voices from [YarnGPT](https://github.com/saheedniyi02/yarngpt). **The demo call is fully recorded:** all 196 clips in English and Pidgin (`voice/clips/`, 2 MB), plus Yoruba, Igbo and Hausa greetings, checked by ear on the listening page. Each spoken piece is recorded once, ahead of time. The app plays the clip when it exists and falls back to the device's voice otherwise. Clips are saved for offline use, and the phone line plays them too.
 
 1. **Fix the words first.** Native speakers correct `voice/review.csv` (every line of the demo call) and fill in Yoruba, Igbo and Hausa in `voice/translate.csv`. The corrections are then applied to the source text.
 2. **List the lines:** run `node tools/voice-lines.js` for the demo call (196 pieces), or add `--full` for everything (897). This writes `voice/manifest*.json`.
@@ -80,7 +80,7 @@ Licence: YarnGPT's Yoruba, Igbo and Hausa voices are non-commercial (CC-BY-NC-SA
 This is built and tested, but not yet connected to a live number.
 
 ## Honest limits
-- The YarnGPT clips still need a human listen-through (`/voice/listen.html`). Automatic checks can't tell a cut-off clip from fast speech. The broken Pidgin "Correct!" clip and 2 re-worded lines currently use the device voice until they're re-recorded.
+- Only the demo call (196 pieces) is recorded. Other topics fall back to the device voice until `manifest-full.json` is recorded.
 - The voice call is complete in English and Pidgin. Yoruba, Igbo and Hausa only greet the caller, then continue in English, until `voice/translate.csv` is filled in.
 - All non-English text awaits native-speaker review.
 - The teacher view's class is simulated until real calls come in.

@@ -100,7 +100,7 @@ A child shouldn't need data or a smartphone to get a tutor. With RootPath, any p
 - **Evidence:** builds on randomised trials of phone tutoring; the field-test tool measures agreement with teachers.
 
 ## Honest limits
-- The demo call speaks with recorded YarnGPT Nigerian voices (English and Pidgin); a few lines still use the device voice. The clips still need a full human listen-through.
+- The demo call speaks entirely with recorded YarnGPT Nigerian voices (English and Pidgin). Other topics use the device voice until recorded.
 - Yoruba, Igbo and Hausa voice prompts are partial; all local-language text is in native-speaker review.
 - The class in the teacher view is simulated until real calls come in.
 - Fill in, or remove, the field-test slide before submitting.
