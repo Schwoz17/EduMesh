@@ -34,9 +34,9 @@ The teacher sees the whole class grouped by root gap, ready to *teach at the rig
 
 ## How children install the offline app (smartphones)
 Children with a basic phone don't install anything: they dial the number. For children with a smartphone:
-1. While online, open **https://rootpath-eta.vercel.app/app.html** once (school Wi-Fi, a friend's hotspot, or a café).
-2. **Android (Chrome):** tap the **⋮** menu, then **Add to Home screen** (or **Install app**). **iPhone (Safari):** tap **Share**, then **Add to Home Screen**.
-3. A **RootPath** icon appears on the home screen. It opens with no internet from then on; progress is saved on the phone.
+1. While online, open **https://rootpath-eta.vercel.app/app.html** once (or tap **📲 Get the app** on the demo page).
+2. Tap **📲 Install** at the top. On Android this installs it in one tap. On iPhone, Apple doesn't allow install buttons, so it shows the two steps: **Share → Add to Home Screen**.
+3. A **RootPath** icon appears on the home screen. It opens with no internet from then on, and progress is saved on the phone.
 
 It's about 120 KB, so it uses almost no data.
 

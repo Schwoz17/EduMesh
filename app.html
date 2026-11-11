@@ -11,6 +11,8 @@ h1,h2,.serif{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.01em}
 h1{font-size:2rem;line-height:1.15;margin:.2rem 0 .4rem}h2{font-size:1.2rem;margin:1.6rem 0 .6rem}
 .top{position:sticky;top:0;z-index:5;background:var(--deep);color:#f3efe4;padding:.65rem 1rem;padding-top:calc(.65rem + env(safe-area-inset-top))}
 .top-in{max-width:34rem;margin:0 auto;display:flex;align-items:center;gap:.6rem}.brand{font:700 1.15rem Georgia,serif;flex:1;background:none;border:0;color:inherit;padding:0;margin:0;width:auto;cursor:pointer;display:flex;align-items:center;gap:.5rem}
+.install{flex:none;border:0;border-radius:999px;background:#e3a857;color:#2a1c06;font:700 .85rem system-ui;padding:.45rem .85rem;cursor:pointer;width:auto;margin:0}
+.iosTip{position:fixed;left:.8rem;right:.8rem;bottom:1rem;z-index:20;background:#1d2b24;color:#f3efe4;border-radius:16px;padding:.9rem 1rem;font-size:.95rem;box-shadow:0 10px 30px rgba(0,0,0,.3)}.iosTip b{color:#e3a857}.iosTip button{float:right;background:none;border:0;color:#f3efe4;font-size:1.2rem;width:auto;margin:0;padding:0 .2rem}
 .top select{width:auto;padding:.35rem 1.8rem .35rem .7rem;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#f3efe4;font-size:.9rem;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23f3efe4' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .7rem center}
 .top select option{color:#1d2b24}
 main{max-width:34rem;margin:0 auto;padding:1.1rem 1rem 5rem}
@@ -83,8 +85,8 @@ details.card summary{cursor:pointer;font-weight:700;list-style:none;display:flex
 .toast{position:fixed;left:50%;bottom:1.2rem;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:.6rem 1rem;border-radius:12px;font-weight:600;font-size:.9rem;z-index:9}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style></head><body>
-<header class="top"><div class="top-in"><button class="brand" id="brand" aria-label="RootPath home"><svg width="54" height="16" viewBox="0 0 132 40" aria-hidden="true"><line x1="20" y1="20" x2="56" y2="20" stroke="#6f8f7c" stroke-width="5"/><line x1="64" y1="20" x2="100" y2="20" stroke="#6f8f7c" stroke-width="5"/><circle cx="14" cy="20" r="13" fill="#d06a3c"/><circle cx="62" cy="20" r="13" fill="#e3a857"/><circle cx="110" cy="20" r="13" fill="#7cc29e"/></svg>RootPath</button><select id="lang" aria-label="Language"></select></div></header>
-<main id="app"></main><div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<header class="top"><div class="top-in"><button class="brand" id="brand" aria-label="RootPath home"><svg width="54" height="16" viewBox="0 0 132 40" aria-hidden="true"><line x1="20" y1="20" x2="56" y2="20" stroke="#6f8f7c" stroke-width="5"/><line x1="64" y1="20" x2="100" y2="20" stroke="#6f8f7c" stroke-width="5"/><circle cx="14" cy="20" r="13" fill="#d06a3c"/><circle cx="62" cy="20" r="13" fill="#e3a857"/><circle cx="110" cy="20" r="13" fill="#7cc29e"/></svg>RootPath</button><button class="install" id="install" hidden>📲 Install</button><select id="lang" aria-label="Language"></select></div></header>
+<main id="app"></main><div class="iosTip" id="iosTip" hidden><button id="iosClose" aria-label="Close">✕</button>To install on iPhone: tap <b>Share</b> <span aria-hidden="true">⬆️</span> at the bottom of Safari, then <b>Add to Home Screen</b>.</div><div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 <script src="src/content.js"></script><script src="src/algebra.js"></script><script src="src/physics.js"></script><script src="src/english.js"></script><script src="src/pcm.js"></script><script src="src/langs.js"></script><script src="src/engine.js"></script><script src="src/pack.js"></script><script src="src/ussd.js"></script><script src="src/router.js"></script>
 <script>
 const P=RootPathPack,{Diagnosis,Practice,PARAMS}=RootPathEngine,{ussd}=RootPathUssd,{smsEncode}=RootPathRouter,T=P.text,app=document.getElementById('app'),KEY='rootpath.v1';
@@ -157,4 +159,13 @@ langSelect();store.get().seen?home():welcome();
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{});
 // When a new version of the app installs, reload once so nobody sees an old saved copy.
 if ('serviceWorker' in navigator && navigator.serviceWorker.controller) { let r = false; navigator.serviceWorker.addEventListener('controllerchange', () => { if (!r) { r = true; location.reload(); } }); }
+// One-tap install: Android/Chrome shows its install prompt; iPhone gets a two-step tip (Apple has no install button).
+(function(){const btn=document.getElementById('install'),tip=document.getElementById('iosTip');
+ const installed=matchMedia('(display-mode: standalone)').matches||navigator.standalone;if(installed)return;
+ const ios=/iphone|ipad|ipod/i.test(navigator.userAgent);let ev=null;
+ addEventListener('beforeinstallprompt',e=>{e.preventDefault();ev=e;btn.hidden=false});
+ if(ios)btn.hidden=false;
+ btn.onclick=async()=>{if(ev){ev.prompt();const c=await ev.userChoice;if(c.outcome==='accepted')btn.hidden=true;ev=null}else if(ios){tip.hidden=false}};
+ document.getElementById('iosClose').onclick=()=>tip.hidden=true;
+ addEventListener('appinstalled',()=>{btn.hidden=true});})();
 </script></body></html>
