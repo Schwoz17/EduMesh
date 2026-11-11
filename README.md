@@ -57,6 +57,7 @@ It's about 120 KB, so it uses almost no data.
 | `tools/at-voice.js` | **Real phone calls:** serves the same tutor to an Africa's Talking voice number (see below). |
 | `tools/voice-lines.js`, `voice/` | The Nigerian voice pipeline (see below). |
 | `tools/report.js`, `field-test/` | Field-test evidence: engine vs teacher agreement, and mastery gain. |
+| `docs/RootPath_Technical_Documentation.docx` | Technical documentation: architecture, engine maths, channels, voices, deployment, testing. |
 | `pitch/RootPath_Deck.pptx`, `PITCH.md` | The pitch deck (11 slides with speaker notes), and the script, demo flow and testing guide. |
 
 `npm test` runs **60 tests** (Node 18+, no dependencies).
@@ -72,6 +73,8 @@ RootPath speaks with recorded Nigerian voices from [YarnGPT](https://github.com/
    3. It then downloads `rootpath-voice.zip`.
 4. **Add the clips:** unzip into `voice/clips/` (mp3 files plus `index.json`) and deploy.
 5. **Listen and flag:** open `/voice/listen.html` on the site, play each clip next to its text, and mark the bad ones (cut off, wrong words). Bad clips are dropped from `index.json`, so the device voice says them instead. Paste their ids into `REDO_IDS` in the notebook to re-record only those. The notebook also re-tries clips that come out suspiciously fast, which usually means they were cut short.
+
+6. **Even them out:** `python3 tools/even-voices.py voice/clips /tmp/even 5.4`, then copy `/tmp/even/*.mp3` into `voice/clips/`. This gives every clip the same speaking speed, loudness and silence at each end, so the call sounds like one steady speaker. (The current clips are already evened out.)
 
 Voices: English `idera`, Pidgin `jude` (YarnGPT has no Pidgin voice, so a Nigerian-English voice reads the Pidgin text), Yoruba `yoruba_female2`, Igbo `igbo_female2`, Hausa `hausa_female1`. To change them, edit `src/voice.js` and `SPEAKER_OVERRIDE` in the notebook.
 

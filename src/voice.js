@@ -36,8 +36,10 @@
       u.rate = rate; u.onend = u.onerror = () => done();
       synth.speak(u);
     });
+    const cache = new Map(); // id -> Audio, loaded ahead so gaps between pieces stay even
+    const load = (id) => { if (!cache.has(id)) { const a = new Audio(base + id + '.mp3'); a.preload = 'auto'; cache.set(id, a); } return cache.get(id); };
     const playClip = (id) => new Promise((done) => {
-      audio = new Audio(base + id + '.mp3');
+      audio = load(id); audio.currentTime = 0;
       audio.onended = audio.onerror = () => done();
       audio.play().catch(() => done());
     });
@@ -53,6 +55,7 @@
         const my = ++run;
         await ready;
         onState(true);
+        for (const p of pieces) if (p && have.has(clipId(lang, p))) load(clipId(lang, p));
         for (const p of pieces) {
           if (my !== run) return;
           if (!p) continue;
