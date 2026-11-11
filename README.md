@@ -50,7 +50,7 @@ RootPath can speak with recorded Nigerian voices from [YarnGPT](https://github.c
 
 1. **Fix the words first.** Native speakers correct `voice/review.csv` (the demo call, line by line) and fill in Yoruba, Igbo and Hausa in `voice/translate.csv`. The corrections are then applied to the source text.
 2. **List the lines:** `node tools/voice-lines.js` (demo set) or `node tools/voice-lines.js --full`. This writes `voice/manifest*.json`.
-3. **Record:** open `voice/YarnGPT_RootPath.ipynb` in Google Colab (T4 GPU) and run all. It downloads `rootpath-voice.zip`.
+3. **Record:** [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Schwoz17/EduMesh/blob/main/voice/YarnGPT_RootPath.ipynb) then pick a T4 GPU (Runtime → Change runtime type) and run all. It records every line from GitHub's `voice/manifest.json` and downloads `rootpath-voice.zip`.
 4. **Add:** unzip into `voice/clips/` (mp3 files plus `index.json`) and deploy.
 
 Licence: YarnGPT's Yoruba, Igbo and Hausa voices are non-commercial (CC-BY-NC-SA). They're fine for the hackathon; ask the author before a commercial launch.
