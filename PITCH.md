@@ -32,7 +32,7 @@ No data, no smartphone, no app.
 That map is the AI. Every key press updates a mastery probability for that skill; this is called Bayesian Knowledge Tracing. Weak skills send the search down the skill map until it finds the root. For Tunde, that took **12 questions**. Teachers can see every step. Generative AI is only used before release, to draft local-language lessons that humans approve. There's no free chat near children.
 
 **[Slide 6 · Teacher view] (15 s)**
-Every call places the child on the class map, grouped by **root gap**, not by age. One tap sends each group its practice SMS. That's "teaching at the right level", the same method the trials used. *(The demo class is simulated by the real engine; Tunde's call is real.)*
+Every call places the child on the class map, grouped by **root gap**, not by age. Each group gets practice SMS on exactly its gap. That's "teaching at the right level", the same method the trials used. The teacher doesn't need a smartphone: she gets this as a weekly SMS summary on any phone, or opens the view from a link. *(The demo class is simulated by the real engine; Tunde's call is real.)*
 
 **[Slide 7 · Any phone] (10 s)**
 It works by voice call, SMS, USSD, or an offline app, in English and Pidgin, with Yoruba, Igbo and Hausa in native-speaker review.
