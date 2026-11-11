@@ -2,7 +2,7 @@
 // Real phone calls: serves the RootPath call tutor to Africa's Talking Voice.
 // Point your AT voice number's callback URL at this server. Each request carries sessionId,
 // isActive and (after a key press) dtmfDigits; we answer with AT voice XML (Say + GetDigits).
-//   PORT=8080 PUBLIC_URL=https://your-host/voice CLIPS_URL=https://edumesh-eta.vercel.app/voice/clips/ node tools/at-voice.js
+//   PORT=8080 PUBLIC_URL=https://your-host/voice CLIPS_URL=https://rootpath-eta.vercel.app/voice/clips/ node tools/at-voice.js
 const { CallSession } = require('../src/call');
 
 const esc = (s) => String(s).replace(/[<>&"']/g, (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', '"': '&quot;', "'": '&apos;' }[c]));
@@ -51,7 +51,7 @@ function createHandler({ callbackUrl, clips, maxSessions = 5000 } = {}) {
 
 if (require.main === module) {
   const http = require('node:http');
-  // CLIPS_URL: where voice/clips/ is served (e.g. https://edumesh-eta.vercel.app/voice/clips/) to play YarnGPT voices.
+  // CLIPS_URL: where voice/clips/ is served (e.g. https://rootpath-eta.vercel.app/voice/clips/) to play YarnGPT voices.
   let have = new Set();
   try { have = new Set(require('../voice/clips/index.json')); } catch (e) {}
   const clips = process.env.CLIPS_URL ? { base: process.env.CLIPS_URL.replace(/\/?$/, '/'), have } : null;

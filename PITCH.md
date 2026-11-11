@@ -1,7 +1,7 @@
 # RootPath: pitch script and demo flow
 
 The deck is in `pitch/RootPath_Deck.pptx` (11 slides; speaker notes on every slide).
-The live demo is at **https://edumesh-eta.vercel.app/**.
+The live demo is at **https://rootpath-eta.vercel.app/**.
 
 ---
 
@@ -54,7 +54,7 @@ A child shouldn't need data or a smartphone to get a tutor. With RootPath, any p
 ## Demo flow (60 seconds, live or recorded)
 
 **Setup:**
-1. Open **https://edumesh-eta.vercel.app/#reset**. The `#reset` clears earlier demo data.
+1. Open **https://rootpath-eta.vercel.app/#reset**. The `#reset` clears earlier demo data.
 2. Use Chrome on a laptop, with the **sound on**.
 3. Zoom the browser to 90% so the phone, the AI map and the story buttons fit on one screen.
 
@@ -78,7 +78,7 @@ A child shouldn't need data or a smartphone to get a tutor. With RootPath, any p
 
 ## How to test it yourself
 
-1. **Laptop:** open https://edumesh-eta.vercel.app/ in Chrome, turn the sound on, and follow the demo flow above.
+1. **Laptop:** open https://rootpath-eta.vercel.app/ in Chrome, turn the sound on, and follow the demo flow above.
 2. **Phone:** open the same link on Android.
    - The page shows one section at a time; use the tabs at the bottom (**Phone · AI view · Teacher**).
    - The story buttons are below the phone; scroll down.

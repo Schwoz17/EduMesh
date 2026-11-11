@@ -1,6 +1,6 @@
 # RootPath — call a tutor from any phone
 
-**Live demo:** https://edumesh-eta.vercel.app/ (works offline after one visit)
+**Live demo:** https://rootpath-eta.vercel.app/ (works offline after one visit)
 
 Wale Lab NextGen AI Hackathon 2026 · Track 1: AI for Zero-Bandwidth & Localised Learning
 
@@ -16,7 +16,7 @@ The teacher sees the whole class grouped by root gap, ready to *teach at the rig
 **Why this design:** in randomised trials across six countries, phone-call tutoring plus SMS, targeted to each child's level, produced large learning gains, while SMS alone did little ([J-PAL / Youth Impact](https://www.povertyactionlab.org/node/8131252)). Those trials used human tutors; RootPath automates the tutor.
 
 ## Try it
-1. Open https://edumesh-eta.vercel.app/#reset in Chrome with the sound on. `#reset` clears earlier demo data.
+1. Open https://rootpath-eta.vercel.app/#reset in Chrome with the sound on. `#reset` clears earlier demo data.
 2. Follow the **"One child, one week"** buttons: Monday call → daily SMS → Saturday call-back → Sunday report.
 
 `PITCH.md` has the full 60-second demo flow and testing steps.
@@ -58,7 +58,7 @@ RootPath speaks with recorded Nigerian voices from [YarnGPT](https://github.com/
 
 1. **Fix the words first.** Native speakers correct `voice/review.csv` (every line of the demo call) and fill in Yoruba, Igbo and Hausa in `voice/translate.csv`. The corrections are then applied to the source text.
 2. **List the lines:** run `node tools/voice-lines.js` for the demo call (196 pieces), or add `--full` for everything (897). This writes `voice/manifest*.json`.
-3. **Record:** [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Schwoz17/EduMesh/blob/main/voice/YarnGPT_RootPath.ipynb)
+3. **Record:** [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Schwoz17/RootPath/blob/main/voice/YarnGPT_RootPath.ipynb)
    1. Choose **Runtime → Change runtime type → T4 GPU**.
    2. Choose **Run all**. It records every line in GitHub's `voice/manifest.json`, which takes about 20–30 minutes.
    3. It then downloads `rootpath-voice.zip`.
@@ -72,7 +72,7 @@ Licence: YarnGPT's Yoruba, Igbo and Hausa voices are non-commercial (CC-BY-NC-SA
 ## Real phone line (Africa's Talking)
 1. Run the adapter on a public server:
    ```bash
-   PORT=8080 PUBLIC_URL=https://your-host/voice CLIPS_URL=https://edumesh-eta.vercel.app/voice/clips/ node tools/at-voice.js
+   PORT=8080 PUBLIC_URL=https://your-host/voice CLIPS_URL=https://rootpath-eta.vercel.app/voice/clips/ node tools/at-voice.js
    ```
 2. Set your Africa's Talking voice number's callback URL to `PUBLIC_URL`.
 3. Call the number. Each call keypress gets back voice XML: `<Play>` for recorded clips, `<Say>` otherwise, inside `<GetDigits>`.
