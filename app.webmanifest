@@ -1,0 +1,17 @@
+{
+  "id": "rootpath-offline-app",
+  "name": "RootPath — offline tutor",
+  "short_name": "RootPath",
+  "description": "Find the root of your learning gap, then follow a short path to fix it. Works with no internet.",
+  "start_url": "app.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1f4a3a",
+  "theme_color": "#1f4a3a",
+  "categories": ["education"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

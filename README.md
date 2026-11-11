@@ -32,6 +32,14 @@ The teacher sees the whole class grouped by root gap, ready to *teach at the rig
   It includes 30 *simulated* learners diagnosed by the real engine (clearly labelled), plus the calls made in the demo. Learners can also be added from their SMS progress codes.
 - **Offline app** (`app.html`): the same engine as an installable web app, with a Teacher check for field tests.
 
+## How children install the offline app (smartphones)
+Children with a basic phone don't install anything: they dial the number. For children with a smartphone:
+1. While online, open **https://rootpath-eta.vercel.app/app.html** once (school Wi-Fi, a friend's hotspot, or a café).
+2. **Android (Chrome):** tap the **⋮** menu, then **Add to Home screen** (or **Install app**). **iPhone (Safari):** tap **Share**, then **Add to Home Screen**.
+3. A **RootPath** icon appears on the home screen. It opens with no internet from then on; progress is saved on the phone.
+
+It's about 300 KB, so it uses almost no data.
+
 ## How the teacher sees the class
 - **Any phone:** a weekly SMS summary listing the biggest root-gap groups (`teacherSms` in `src/classroom.js`). The plan is that she replies with a number to send that group its practice SMS. The demo shows this message; acting on her reply needs a live SMS gateway.
 - **Smartphone:** the same class view as the demo, opened from a link.
