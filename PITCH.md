@@ -40,11 +40,17 @@ It works by voice call, SMS, USSD, or an offline app. The call speaks with real 
 **[Slide 8 · Built and tested] (10 s)**
 It's real code with 60 tests. An Africa's Talking voice adapter already serves the same tutor to a real phone line; going live only needs a number.
 
-**[Slide 9 · Field test] (10 s)** *(only if you have real numbers; otherwise skip this slide)*
-We tested it with [N] learners. RootPath agreed with the teacher on [__]% of them, and mastery rose [__] points.
+**[Slide 9 · Business model] (20 s)**
+Children and parents never pay: the call is toll-free and needs no data. The people who already fund learning pay:
+- **State education boards** pay per learner per year to raise results, and the class reports show them the progress.
+- **NGOs and donors** fund programmes in specific communities.
+- **Telcos** sponsor the toll-free line and SMS as a visible education commitment.
+- **Private schools** pay a small fee per class for the teacher view and exam-prep packs.
 
-**[Slide 10 · Scale] (15 s)**
-It's free for the child. Partners such as state education boards, NGOs and telcos sponsor the toll-free line and SMS. Next is a one-term pilot with a live number.
+It's cheap to run: no app, no smartphone, no tutor salaries. Phone tutoring with human tutors cost about twelve dollars per child in the trials; RootPath replaces the tutor's time. *(If asked about prices: we'll set them during the pilot.)*
+
+**[Slide 10 · Roadmap] (10 s)**
+What you saw is built. Next is a one-term pilot with a live toll-free number in a few classes, comparing RootPath with teachers. Then we scale through state, NGO and telco partners.
 
 **[Slide 11 · Close] (10 s)**
 A child shouldn't need data or a smartphone to get a tutor. With RootPath, any phone is enough. Scan the code and call the tutor yourself. Thank you.
