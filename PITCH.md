@@ -109,4 +109,3 @@ A child shouldn't need data or a smartphone to get a tutor. With RootPath, any p
 - The demo call speaks entirely with recorded YarnGPT Nigerian voices (English and Pidgin). Other topics use the device voice until recorded.
 - Yoruba, Igbo and Hausa voice prompts are partial; all local-language text is in native-speaker review.
 - The class in the teacher view is simulated until real calls come in.
-- Fill in, or remove, the field-test slide before submitting.
