@@ -1,10 +1,11 @@
 // RootPath service worker: saves the app on the phone so it opens with no internet.
 // Bump VERSION when files change; phones update the next time they are online.
-const VERSION = 'rootpath-v1';
+const VERSION = 'rootpath-v2';
 const FILES = [
-  './', 'index.html', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png',
+  './', 'index.html', 'app.html', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png',
   'src/content.js', 'src/algebra.js', 'src/physics.js', 'src/english.js', 'src/pcm.js',
   'src/langs.js', 'src/engine.js', 'src/pack.js', 'src/ussd.js', 'src/router.js',
+  'src/call.js', 'src/sms.js', 'src/classroom.js',
 ];
 self.addEventListener('install', (e) => e.waitUntil(caches.open(VERSION).then((c) => c.addAll(FILES)).then(() => self.skipWaiting())));
 self.addEventListener('activate', (e) => e.waitUntil(

@@ -1,158 +1,285 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>RootPath</title>
-<meta name="description" content="Find the root of the learning gap, then walk the path. Offline, in five Nigerian languages.">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>RootPath — call a tutor from any phone</title>
+<meta name="description" content="Dial from any phone. An AI tutor finds the root of a learning gap by voice, then follows up by SMS. No data, no smartphone needed.">
 <meta name="theme-color" content="#1f4a3a"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png">
 <style>
-:root{--bg:#f3efe4;--ink:#1d2b24;--soft:#55635b;--moss:#2f6b4f;--deep:#1f4a3a;--clay:#b4532a;--gold:#e3a857;--line:#ddd6c3;--card:#fbf9f2;--tint:#e6efe8;--clayt:#f6e4da;--shadow:0 1px 2px rgba(29,43,36,.06),0 6px 20px rgba(29,43,36,.07)}
-@media (prefers-color-scheme:dark){:root{--bg:#121c17;--ink:#ece8da;--soft:#aab8ae;--moss:#7cc29e;--deep:#0d2219;--clay:#e08a5c;--line:#2c3c33;--card:#1a2821;--tint:#1d3328;--clayt:#3a2418;--shadow:0 1px 2px rgba(0,0,0,.4)}}
+:root{--bg:#f3efe4;--ink:#1d2b24;--soft:#55635b;--moss:#2f6b4f;--deep:#1f4a3a;--clay:#b4532a;--gold:#e3a857;--mint:#7cc29e;--line:#ddd6c3;--card:#fbf9f2;--tint:#e6efe8;--clayt:#f6e4da;--shadow:0 1px 2px rgba(29,43,36,.06),0 8px 24px rgba(29,43,36,.08)}
 *{box-sizing:border-box}[hidden]{display:none!important}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans',sans-serif;-webkit-tap-highlight-color:transparent}
-h1,h2,.serif{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.01em}
-h1{font-size:2rem;line-height:1.15;margin:.2rem 0 .4rem}h2{font-size:1.2rem;margin:1.6rem 0 .6rem}
-.top{position:sticky;top:0;z-index:5;background:var(--deep);color:#f3efe4;padding:.65rem 1rem;padding-top:calc(.65rem + env(safe-area-inset-top))}
-.top-in{max-width:34rem;margin:0 auto;display:flex;align-items:center;gap:.6rem}.brand{font:700 1.15rem Georgia,serif;flex:1;background:none;border:0;color:inherit;padding:0;margin:0;width:auto;cursor:pointer;display:flex;align-items:center;gap:.5rem}
-.top select{width:auto;padding:.35rem 1.8rem .35rem .7rem;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#f3efe4;font-size:.9rem;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23f3efe4' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .7rem center}
-.top select option{color:#1d2b24}
-main{max-width:34rem;margin:0 auto;padding:1.1rem 1rem 5rem}
-.sub{margin:0 0 1rem;color:var(--soft)}.small{font-size:.88rem}.muted{color:var(--soft)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.1rem 1.15rem;box-shadow:var(--shadow);margin:.9rem 0}
-label{display:block;margin:.9rem 0 .3rem;font-weight:600;font-size:.92rem}
-input,select{font:inherit;color:inherit;width:100%;padding:.75rem .85rem;border:1.5px solid var(--line);border-radius:12px;background:var(--card)}
-button{font:inherit;color:inherit;cursor:pointer}
-.btn{display:block;width:100%;padding:.85rem 1rem;border-radius:14px;border:1.5px solid var(--line);background:var(--card);font-weight:600;text-align:center;margin:.5rem 0;min-height:48px}
-.btn.go{background:var(--moss);border-color:var(--moss);color:#fff}.btn.clay{background:var(--clay);border-color:var(--clay);color:#fff}.btn.ghost{background:transparent}
-@media (prefers-color-scheme:dark){.btn.go,.btn.clay{color:#10180f}}
-:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
-.chips{display:flex;gap:.4rem;flex-wrap:wrap;margin:.4rem 0 .6rem}.chip{border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:.35rem .85rem;font-size:.92rem;min-height:38px}.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.draft{font-size:.85rem;background:var(--clayt);border-radius:10px;padding:.5rem .75rem;margin:.4rem 0 .8rem}
-.hero{background:var(--deep);color:#f3efe4;border-radius:22px;padding:1.4rem 1.3rem 1.5rem;margin:.4rem 0 1rem;position:relative;overflow:hidden}
-.hero h1{color:#fff;font-size:2.3rem;margin:.6rem 0 .3rem}.hero p{margin:0;color:#cfe3d6;font-size:1.08rem}
-.badges{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0 0}.badges span{font-size:.8rem;font-weight:600;padding:.3rem .65rem;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2)}
-.story{border-left:4px solid var(--clay)}.story b{font-family:Georgia,serif}
-.steps{list-style:none;padding:0;margin:.4rem 0;counter-reset:s}.steps li{counter-increment:s;display:flex;gap:.8rem;align-items:flex-start;margin:.7rem 0}
-.steps li::before{content:counter(s);flex:none;width:2rem;height:2rem;border-radius:50%;display:grid;place-items:center;background:var(--tint);color:var(--moss);font-weight:700}
-.links{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.4rem}.links .btn{margin:0;font-size:.9rem}
-/* diagnosis */
-.qhead{display:flex;justify-content:space-between;align-items:center;gap:.5rem;margin:.2rem 0 .6rem}
-.pill{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:700;padding:.3rem .7rem;border-radius:999px;background:var(--tint);color:var(--moss)}
-.pill.clay{background:var(--clayt);color:var(--clay)}
-.trail{display:flex;gap:.3rem;align-items:center}.trail i{width:.55rem;height:.55rem;border-radius:50%;background:var(--line)}.trail i.on{background:var(--clay)}
-.q{font:600 1.45rem/1.35 Georgia,serif;margin:1rem 0 1.2rem}
-.opt{display:flex;align-items:center;gap:.85rem;width:100%;text-align:left;padding:.8rem .9rem;margin:.55rem 0;border:1.5px solid var(--line);border-radius:16px;background:var(--card);min-height:58px;font-size:1.1rem;box-shadow:var(--shadow);transition:transform .08s,border-color .15s}
-.opt:active{transform:scale(.985)}.opt:hover{border-color:var(--moss)}
-.opt .k{flex:none;width:2.1rem;height:2.1rem;border-radius:10px;display:grid;place-items:center;font-weight:700;background:var(--tint);color:var(--moss)}
-.fix{background:var(--clayt);border-radius:16px;padding:1rem 1.1rem;margin:.8rem 0}.fix .tag{font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--clay)}
-.fix p{margin:.35rem 0 0;font-size:1.08rem}
-/* result */
-.found{background:var(--clay);color:#fff;border-radius:20px;padding:1.2rem 1.2rem 1.3rem;margin:.6rem 0 1rem}
-.found.none{background:var(--moss)}.found .tag{font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.9}
-.found h1{color:#fff;margin:.3rem 0 .2rem;font-size:1.8rem}.found p{margin:0;opacity:.92}
-.route{list-style:none;padding:0;margin:.6rem 0;position:relative}
-.route li{position:relative;display:flex;align-items:center;gap:.9rem;padding:.35rem 0 1.1rem}
-.route li:not(:last-child)::after{content:'';position:absolute;left:1.35rem;top:2.9rem;bottom:.1rem;width:3px;background:var(--line);border-radius:2px}
-.node{flex:none;width:2.7rem;height:2.7rem;border-radius:50%;display:grid;place-items:center;font-weight:800;background:var(--card);border:3px solid var(--line);color:var(--soft);z-index:1}
-.route .root .node{background:var(--clay);border-color:var(--clay);color:#fff}.route .goal .node{background:var(--moss);border-color:var(--moss);color:#fff}
-.route .done .node{background:var(--moss);border-color:var(--moss);color:#fff}.route .now .node{border-color:var(--gold);box-shadow:0 0 0 5px rgba(227,168,87,.25)}
-.route .nm{font-weight:600}.route .lab{display:block;font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--soft)}
-.route .root .lab{color:var(--clay)}.route .goal .lab{color:var(--moss)}
-.why{list-style:none;padding:0;margin:.5rem 0}.why li{display:grid;grid-template-columns:1fr auto;gap:.15rem .6rem;padding:.55rem 0;border-bottom:1px solid var(--line);font-size:.93rem}.why li:last-child{border:0}
-.st{font-size:.75rem;font-weight:800;padding:.15rem .5rem;border-radius:999px;align-self:center}.st.M{background:var(--tint);color:var(--moss)}.st.W{background:var(--clayt);color:var(--clay)}
-.bar{grid-column:1/3;height:.5rem;background:var(--line);border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:var(--moss);border-radius:4px}.bar i.low{background:var(--clay)}
-.ai{display:flex;gap:.6rem;align-items:flex-start;font-size:.88rem;color:var(--soft);background:var(--tint);border-radius:12px;padding:.6rem .75rem;margin:.6rem 0 0}
-.code{display:flex;gap:.5rem;align-items:center}.code code{flex:1;font:600 .95rem ui-monospace,Menlo,monospace;background:var(--bg);border-radius:10px;padding:.6rem .7rem;word-break:break-all}
-.code button{flex:none;border:1.5px solid var(--line);background:var(--card);border-radius:10px;padding:.55rem .8rem;font-weight:600}
-details.card summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between}details.card summary::after{content:'+';color:var(--soft)}details[open].card summary::after{content:'–'}
-.checks label{display:flex;align-items:center;gap:.6rem;font-weight:500;margin:.45rem 0}.checks input{width:1.2rem;height:1.2rem;accent-color:var(--moss)}
-/* lessons */
-.strip{display:flex;gap:.35rem;margin:.2rem 0 .8rem}.strip i{flex:1;height:.4rem;border-radius:3px;background:var(--line)}.strip i.done{background:var(--moss)}.strip i.now{background:var(--gold)}
-.lesson{font-size:1.12rem;line-height:1.65}
-.meter{margin:.4rem 0 1rem}.meter .top2{display:flex;justify-content:space-between;font-size:.85rem;font-weight:700;margin-bottom:.3rem}
-.lvl{display:inline-block;font-size:.75rem;font-weight:800;padding:.15rem .55rem;border-radius:999px;background:var(--tint);color:var(--moss)}
-.ok{color:var(--moss);font-weight:800}
-/* complete */
-.gain{display:grid;grid-template-columns:1fr auto;gap:.2rem .6rem;padding:.7rem 0;border-bottom:1px solid var(--line)}.gain:last-child{border:0}.gain .nums{font-weight:700;font-size:.9rem}
-.gain .bar{position:relative}.gain .bar b{position:absolute;top:0;bottom:0;background:var(--clay);opacity:.45;border-radius:4px}
-.celebrate{font-size:2.6rem;line-height:1}
-/* feature phone */
-.handset{max-width:19rem;margin:1rem auto;background:#26302a;border-radius:2.2rem;padding:1.4rem 1.1rem 1.3rem;box-shadow:0 14px 40px rgba(0,0,0,.25)}
-.screen{background:#c9dcb4;color:#14240f;font:15px/1.35 ui-monospace,Menlo,monospace;padding:.8rem;border-radius:.6rem;min-height:11.5rem;white-space:pre-wrap;border:3px solid #18201b}
-.reply{display:flex;gap:.4rem;margin:.7rem 0}.reply input{background:#eef3e6;color:#14240f;border:0;font:600 1rem ui-monospace,monospace;padding:.55rem .7rem;border-radius:.5rem}
-.reply button{flex:none;background:var(--gold);border:0;border-radius:.5rem;padding:0 .9rem;font-weight:800;color:#2a1c06}
-.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:.45rem}.keys button{background:#3a463e;color:#eef3e6;border:0;border-radius:.8rem;padding:.6rem 0;font:700 1.1rem system-ui}
-.keys button:active{background:#4d5c52}
-.toast{position:fixed;left:50%;bottom:1.2rem;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:.6rem 1rem;border-radius:12px;font-weight:600;font-size:.9rem;z-index:9}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans',sans-serif;-webkit-tap-highlight-color:transparent}
+h1,h2,h3,.serif{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.01em}
+button{font:inherit;color:inherit;cursor:pointer}:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.top{background:var(--deep);color:#f3efe4;padding:.7rem 1.1rem;padding-top:calc(.7rem + env(safe-area-inset-top))}
+.top-in{max-width:76rem;margin:0 auto;display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.55rem;font:700 1.2rem Georgia,serif}.tagline{flex:1;color:#cfe3d6;font-size:.92rem;min-width:12rem}
+.top a{color:#f3efe4;font-size:.85rem;font-weight:600;border:1px solid rgba(255,255,255,.3);padding:.35rem .75rem;border-radius:999px;text-decoration:none}
+.wrap{max-width:76rem;margin:0 auto;padding:1rem;display:grid;grid-template-columns:24rem 1fr;gap:1.2rem;align-items:start}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.1rem 1.2rem;box-shadow:var(--shadow)}
+.card h2{font-size:1.2rem;margin:0}.card .sub{color:var(--soft);font-size:.9rem;margin:.2rem 0 .8rem}
+.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--clay)}
+.side{display:grid;gap:1.2rem;min-width:0}
+/* story */
+.story{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-top:.4rem}
+.story button{border:1.5px solid var(--line);background:var(--card);border-radius:14px;padding:.6rem .6rem;text-align:left;font-size:.85rem;line-height:1.3;min-height:64px}
+.story button b{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--soft)}
+.story button.next{border-color:var(--gold);box-shadow:0 0 0 4px rgba(227,168,87,.22)}.story button.did{border-color:var(--moss);background:var(--tint)}
+.story button:disabled{opacity:.45;cursor:not-allowed}
+/* phone */
+.phone{position:sticky;top:1rem;width:100%;max-width:24rem;margin:0 auto;background:#0f1713;border-radius:2.6rem;padding:.75rem;box-shadow:0 20px 50px rgba(0,0,0,.28)}
+.screen{background:#f7f5ee;border-radius:2rem;overflow:hidden;height:min(46rem,82vh);display:flex;flex-direction:column;position:relative}
+.status{display:flex;justify-content:space-between;padding:.55rem 1.3rem .2rem;font-size:.75rem;font-weight:700;color:#1d2b24}
+.apps{display:flex;border-top:1px solid var(--line);background:#fff}.apps button{flex:1;border:0;background:none;padding:.55rem 0 .7rem;font-size:.75rem;font-weight:700;color:var(--soft);position:relative}
+.apps button.on{color:var(--moss)}.apps .dot{position:absolute;top:.3rem;left:58%;min-width:1.1rem;height:1.1rem;border-radius:999px;background:var(--clay);color:#fff;font-size:.68rem;display:grid;place-items:center;padding:0 .25rem}
+.pane{flex:1;display:flex;flex-direction:column;min-height:0}
+/* dialer */
+.dial{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1rem 1.2rem;text-align:center;gap:.7rem}
+.dial .num{font:700 1.65rem/1.1 ui-monospace,Menlo,monospace;letter-spacing:.04em}.dial .who{color:var(--soft);font-size:.9rem}
+.dial input{font:inherit;width:100%;max-width:15rem;text-align:center;padding:.55rem .8rem;border:1.5px solid var(--line);border-radius:12px;background:#fff}
+.bigcall{width:4.6rem;height:4.6rem;border-radius:50%;border:0;background:#1f9d55;color:#fff;font-size:1.9rem;box-shadow:0 8px 20px rgba(31,157,85,.35)}
+.hint{font-size:.8rem;color:var(--soft);max-width:17rem}
+/* in call */
+.incall{flex:1;display:flex;flex-direction:column;min-height:0;background:linear-gradient(#1f4a3a,#16362a);color:#f3efe4}
+.callhead{text-align:center;padding:.7rem 1rem .3rem}.callhead .nm{font:700 1.2rem Georgia,serif}.callhead .tm{font-size:.82rem;color:#bcd5c6}
+.wave{display:flex;gap:3px;justify-content:center;align-items:center;height:22px;margin:.25rem 0}.wave i{width:4px;height:6px;border-radius:2px;background:var(--mint);transition:height .15s}
+.wave.on i{animation:wv .9s infinite ease-in-out}.wave.on i:nth-child(2n){animation-delay:.15s}.wave.on i:nth-child(3n){animation-delay:.3s}
+@keyframes wv{50%{height:20px}}
+.caps{flex:1;overflow-y:auto;padding:.4rem .9rem .6rem;display:flex;flex-direction:column;gap:.35rem;scroll-behavior:smooth}
+.cap{font-size:.92rem;line-height:1.4;padding:.45rem .7rem;border-radius:12px;background:rgba(255,255,255,.08);max-width:92%}
+.cap.question{background:rgba(255,255,255,.16);font-weight:600}.cap.option{background:none;padding:.05rem .7rem;color:#dbe9e0}
+.cap.right{background:rgba(124,194,158,.25)}.cap.wrong{background:rgba(224,138,92,.28)}.cap.result{background:#e3a857;color:#2a1c06;font-weight:700}
+.cap.me{align-self:flex-end;background:#f3efe4;color:#1d2b24;font-weight:700}
+.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:.35rem;padding:.4rem .9rem}
+.keys button{border:0;border-radius:999px;background:rgba(255,255,255,.12);color:#fff;font:700 1.1rem system-ui;padding:.38rem 0}
+.keys button:active{background:rgba(255,255,255,.28)}.keys button.hot{background:rgba(227,168,87,.38)}
+.callbar{display:flex;justify-content:space-around;align-items:center;padding:.3rem 1rem 1rem}
+.callbar button{width:3.1rem;height:3.1rem;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;font-size:1.15rem}
+.callbar .hang{width:3.8rem;height:3.8rem;background:#d64545;font-size:1.5rem}.callbar button.off{background:#f3efe4;color:#1d2b24}
+/* incoming */
+.ring{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:linear-gradient(#1f4a3a,#16362a);color:#f3efe4;text-align:center;padding:1rem}
+.ring .avatar{width:5.5rem;height:5.5rem;border-radius:50%;background:#2f6b4f;display:grid;place-items:center;font-size:2.3rem;animation:pulse 1.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(124,194,158,.55)}100%{box-shadow:0 0 0 26px rgba(124,194,158,0)}}
+.ring .row{display:flex;gap:3rem}.ring .row button{width:4rem;height:4rem;border-radius:50%;border:0;font-size:1.6rem;color:#fff}
+/* sms */
+.thread{flex:1;overflow-y:auto;padding:.8rem;display:flex;flex-direction:column;gap:.5rem;background:#efece3}
+.thead{padding:.55rem .9rem;border-bottom:1px solid var(--line);font-weight:700;background:#fff;display:flex;justify-content:space-between;align-items:center}
+.bub{max-width:85%;padding:.55rem .75rem;border-radius:16px;font-size:.88rem;line-height:1.4;white-space:pre-wrap;background:#fff;border:1px solid var(--line);align-self:flex-start}
+.bub.out{align-self:flex-end;background:#d7ecd9;border-color:#c3dfc7}.bub small{display:block;color:var(--soft);font-size:.7rem;margin-top:.2rem}
+.quick{display:flex;gap:.4rem;padding:.5rem .7rem;background:#fff;border-top:1px solid var(--line)}
+.quick button{flex:1;border:1.5px solid var(--line);border-radius:12px;background:#fff;padding:.5rem 0;font-weight:800}
+.empty{color:var(--soft);text-align:center;margin:auto;font-size:.9rem;padding:1rem}
+/* ussd */
+.ussd{flex:1;display:flex;flex-direction:column;padding:1rem;gap:.6rem;background:#26302a}
+.lcd{background:#c9dcb4;color:#14240f;font:14px/1.35 ui-monospace,Menlo,monospace;padding:.7rem;border-radius:.5rem;min-height:12rem;white-space:pre-wrap;border:3px solid #18201b}
+.ussd .reply{display:flex;gap:.4rem}.ussd input{flex:1;font:600 1rem ui-monospace,monospace;padding:.5rem .6rem;border-radius:.5rem;border:0;background:#eef3e6}
+.ussd .reply button{background:var(--gold);border:0;border-radius:.5rem;padding:0 .9rem;font-weight:800;color:#2a1c06}
+.ussd .k3{display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem}.ussd .k3 button{background:#3a463e;color:#eef3e6;border:0;border-radius:.6rem;padding:.5rem 0;font-weight:700}
+/* AI view */
+.mapwrap{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:.4rem;min-height:15rem}
+.mapwrap svg{width:100%;height:auto;display:block}
+.node circle{stroke-width:3;transition:fill .4s,stroke .4s}.node text{font:600 11px system-ui;fill:#1d2b24}.node .pct{font:800 11px system-ui}
+.node.cur circle{stroke:#e3a857;stroke-width:5}.node.cur .halo{animation:halo 1.2s infinite}@keyframes halo{0%{r:24;opacity:.6}100%{r:38;opacity:0}}
+.legend{display:flex;flex-wrap:wrap;gap:.35rem .8rem;font-size:.78rem;color:var(--soft);margin:.6rem 0 0}.legend i{display:inline-block;width:.75rem;height:.75rem;border-radius:50%;margin-right:.3rem;vertical-align:-1px}
+.explain{display:flex;gap:.6rem;font-size:.86rem;color:var(--soft);background:var(--tint);border-radius:12px;padding:.6rem .75rem;margin-top:.7rem}
+.verdict{margin-top:.7rem;padding:.75rem .9rem;border-radius:14px;background:var(--clay);color:#fff}.verdict b{font-family:Georgia,serif;font-size:1.1rem}
+.verdict.ok{background:var(--moss)}
+.placeholder{color:var(--soft);font-size:.9rem;text-align:center;padding:3rem 1rem}
+/* teacher */
+.bars{display:grid;gap:.45rem;margin:.4rem 0}.barrow{display:grid;grid-template-columns:minmax(0,15rem) 1fr 2rem;gap:.6rem;align-items:center;font-size:.88rem}
+.barrow .lab{display:flex;align-items:center;min-width:0}.barrow .lab span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.you-tag{flex:none}.barrow .track{height:1.05rem;background:var(--tint);border-radius:6px;overflow:hidden}.barrow .fill{height:100%;background:var(--clay);border-radius:6px}
+.barrow.you .lab{font-weight:800}.barrow .n{font-weight:800;text-align:right}
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));gap:.6rem;margin-top:.8rem}
+.grp{border:1px solid var(--line);border-radius:14px;padding:.65rem .75rem;background:#fff;font-size:.85rem}.grp b{display:block;font-size:.92rem}.grp .names{color:var(--soft);margin:.2rem 0 .45rem}
+.grp button,.addcode button,.small-btn{border:1.5px solid var(--line);background:var(--card);border-radius:10px;padding:.35rem .65rem;font-size:.8rem;font-weight:700}
+.you-tag{background:var(--gold);color:#2a1c06;border-radius:999px;padding:0 .4rem;font-size:.72rem;font-weight:800;margin-left:.3rem}
+.addcode{display:flex;gap:.4rem;margin-top:.8rem}.addcode input{flex:1;min-width:0;font:inherit;font-size:.85rem;padding:.45rem .6rem;border:1.5px solid var(--line);border-radius:10px;background:#fff}
+.parent{margin-top:.8rem;border-top:1px solid var(--line);padding-top:.7rem}.parent .bub{max-width:100%}
+.note{font-size:.78rem;color:var(--soft)}
+.tabs{display:none}
+.toast{position:fixed;left:50%;bottom:1.2rem;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:.6rem 1rem;border-radius:12px;font-weight:600;font-size:.9rem;z-index:20}
+@media (max-width:900px){
+ .wrap{grid-template-columns:1fr;padding:.7rem .7rem 5rem}.phone{position:static}.story{grid-template-columns:repeat(2,1fr)}
+ .wrap>section{display:none}.wrap>section.show{display:block}.side>.card{display:none}.side>.card.show{display:block}.side{display:block}.side:has(.show){display:block}
+ .tabs{display:flex;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);z-index:15;padding-bottom:env(safe-area-inset-bottom)}
+ .tabs button{flex:1;border:0;background:none;padding:.7rem 0;font-weight:700;font-size:.85rem;color:var(--soft)}.tabs button.on{color:var(--moss)}
+ .barrow{grid-template-columns:minmax(0,10rem) 1fr 1.6rem}
+ .tagline{display:none}.top{padding:.55rem .9rem}
+ .wrap{padding:0 0 4.2rem}.side .card{margin:.7rem;border-radius:16px}
+ .phone{max-width:none;border-radius:0;padding:0;background:none;box-shadow:none}.screen{border-radius:0;height:calc(100dvh - 3.2rem - 3.6rem)}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style></head><body>
-<header class="top"><div class="top-in"><button class="brand" id="brand" aria-label="RootPath home"><svg width="54" height="16" viewBox="0 0 132 40" aria-hidden="true"><line x1="20" y1="20" x2="56" y2="20" stroke="#6f8f7c" stroke-width="5"/><line x1="64" y1="20" x2="100" y2="20" stroke="#6f8f7c" stroke-width="5"/><circle cx="14" cy="20" r="13" fill="#d06a3c"/><circle cx="62" cy="20" r="13" fill="#e3a857"/><circle cx="110" cy="20" r="13" fill="#7cc29e"/></svg>RootPath</button><select id="lang" aria-label="Language"></select></div></header>
-<main id="app"></main><div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-<script src="src/content.js"></script><script src="src/algebra.js"></script><script src="src/physics.js"></script><script src="src/english.js"></script><script src="src/pcm.js"></script><script src="src/langs.js"></script><script src="src/engine.js"></script><script src="src/pack.js"></script><script src="src/ussd.js"></script><script src="src/router.js"></script>
+<header class="top"><div class="top-in"><div class="brand"><svg width="54" height="16" viewBox="0 0 132 40" aria-hidden="true"><line x1="20" y1="20" x2="56" y2="20" stroke="#6f8f7c" stroke-width="5"/><line x1="64" y1="20" x2="100" y2="20" stroke="#6f8f7c" stroke-width="5"/><circle cx="14" cy="20" r="13" fill="#d06a3c"/><circle cx="62" cy="20" r="13" fill="#e3a857"/><circle cx="110" cy="20" r="13" fill="#7cc29e"/></svg>RootPath</div>
+<div class="tagline">Call a tutor from any phone. It finds the root of the learning gap by voice, then follows up by SMS. No data, no smartphone.</div><a href="app.html">Offline app</a></div></header>
+
+<main class="wrap">
+ <section id="sec-phone" class="show">
+  <div class="phone" aria-label="Phone simulator"><div class="screen">
+   <div class="status"><span id="clock">9:41</span><span>▂▄▆ 2G · no data</span></div>
+   <div class="pane" id="p-dial">
+    <div class="dial"><div class="eyebrow">Toll-free voice line</div><div class="num">0800 ROOTPATH</div><div class="who">Works on any phone, even a ₦8,000 feature phone</div>
+     <label class="hint" for="name">Your name</label><input id="name" value="Tunde" autocomplete="off">
+     <button class="bigcall" id="call" aria-label="Call RootPath">📞</button>
+     <p class="hint">Tap to call. The tutor speaks; answer with the keypad or say the number. Sound on for the voice; captions are always shown.</p></div>
+   </div>
+   <div class="pane" id="p-call" hidden>
+    <div class="incall"><div class="callhead"><div class="nm" id="callName">RootPath Tutor</div><div class="tm" id="timer">00:00</div><div class="wave" id="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+     <div class="caps" id="caps" aria-live="polite"></div>
+     <div class="keys" id="keys">${'123456789*0#'}</div>
+     <div class="callbar"><button id="spk" aria-pressed="true" aria-label="Speaker">🔊</button><button class="hang" id="hang" aria-label="Hang up">✕</button><button id="mic" aria-label="Say your answer">🎙</button></div></div>
+   </div>
+   <div class="pane" id="p-ring" hidden><div class="ring"><div class="avatar">📚</div><div><div class="serif" style="font-size:1.4rem;font-weight:700">RootPath Tutor</div><div style="color:#bcd5c6">Incoming call · weekly check</div></div><div class="row"><button style="background:#d64545" id="decline" aria-label="Decline">✕</button><button style="background:#1f9d55" id="accept" aria-label="Accept">📞</button></div></div></div>
+   <div class="pane" id="p-sms" hidden><div class="thead"><span>RootPath · 3473</span><span class="note">SMS</span></div><div class="thread" id="thread"></div><div class="quick" id="quick" hidden><button>A</button><button>B</button><button>C</button><button>D</button></div></div>
+   <div class="pane" id="p-ussd" hidden><div class="ussd"><div class="lcd" id="lcd"></div><div class="reply"><input id="uin" inputmode="numeric" aria-label="USSD reply"><button id="usend">Send</button></div><div class="k3" id="uk"></div><p class="note" style="color:#b9c7bd;margin:0">*347*76# · same engine, text menus, no data</p></div></div>
+   <nav class="apps"><button data-app="dial" class="on">📞 Phone</button><button data-app="sms">✉️ Messages<span class="dot" id="badge" hidden>0</span></button><button data-app="ussd">#️⃣ USSD</button></nav>
+  </div></div>
+ </section>
+
+ <div class="side">
+  <section class="card show" id="sec-story"><div class="eyebrow">Demo story</div><h2>One child, one week</h2><p class="sub">Follow Tunde: one call finds the gap, then RootPath keeps teaching by SMS and calls back.</p>
+   <div class="story" id="story">
+    <button data-s="call"><b>Monday</b>📞 Tunde calls RootPath</button>
+    <button data-s="sms" disabled><b>Tue–Fri</b>☀️ Daily practice SMS</button>
+    <button data-s="ring" disabled><b>Saturday</b>📲 RootPath calls back</button>
+    <button data-s="report" disabled><b>Sunday</b>📊 Report to parent &amp; teacher</button>
+   </div></section>
+
+  <section class="card show" id="sec-ai"><div class="eyebrow">Inside the AI · live</div><h2>How RootPath is thinking</h2><p class="sub">Each key press updates a mastery probability for that skill (Bayesian Knowledge Tracing). Weak skills send the search down the skill map until it finds the root.</p>
+   <div class="mapwrap" id="map"><div class="placeholder">Start a call to watch the skill map light up.</div></div>
+   <div class="legend"><span><i style="background:#ddd6c3"></i>Not checked</span><span><i style="background:#e3a857"></i>Checking now</span><span><i style="background:#2f6b4f"></i>Mastered</span><span><i style="background:#b4532a"></i>Gap</span><span><i style="background:#cfe3d6"></i>Inferred</span></div>
+   <div id="verdict"></div>
+   <div class="explain"><span>🤖</span><span>Runs on the phone line's server, or offline on the device. The reasoning is shown, not hidden: teachers can check every step. Generative AI only drafts lessons before release; humans approve them.</span></div></section>
+
+  <section class="card show" id="sec-teacher"><div class="eyebrow">Teacher view</div><h2>JSS1 B: where each child's gap starts</h2><p class="sub" id="tsub"></p>
+   <div class="bars" id="bars"></div>
+   <h3 style="font-size:1rem;margin:1rem 0 0">Teach at the right level: groups for this week</h3>
+   <div class="groups" id="groups"></div>
+   <div class="addcode"><input id="code" placeholder="Add a learner from an SMS code, e.g. RP1 equiv:04,frac:91" aria-label="SMS progress code"><button id="addc">Add</button></div>
+   <div class="parent" id="parent" hidden><div class="eyebrow" style="color:var(--moss)">SMS sent to Tunde's parent</div><div id="parentMsg"></div></div>
+   <p class="note" id="simnote"></p></section>
+ </div>
+</main>
+<nav class="tabs" id="tabs"><button data-t="phone" class="on">📞 Phone</button><button data-t="ai">🧠 AI view</button><button data-t="teacher">👩🏾‍🏫 Teacher</button></nav>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="src/content.js"></script><script src="src/algebra.js"></script><script src="src/physics.js"></script><script src="src/english.js"></script><script src="src/pcm.js"></script><script src="src/langs.js"></script><script src="src/engine.js"></script><script src="src/pack.js"></script><script src="src/ussd.js"></script><script src="src/router.js"></script><script src="src/call.js"></script><script src="src/sms.js"></script><script src="src/classroom.js"></script>
 <script>
-const P=RootPathPack,{Diagnosis,Practice,PARAMS}=RootPathEngine,{ussd}=RootPathUssd,{smsEncode}=RootPathRouter,T=P.text,app=document.getElementById('app'),KEY='rootpath.v1';
-const store={get(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return{}}},set(v){try{localStorage.setItem(KEY,JSON.stringify(v))}catch(e){}}};
-const UI={en:{sub:'Find the real reason a subject feels hard, then follow a path to fix it. Works without internet.',name:'Your first name',topic:'Topic you are struggling with',start:'Start check',nq:'Not quite',next:'Next',gap:'Where the gap starts',nogap:'No gap found. You know this topic.',path:'Your path',go:'Start my path',lesson:'Learn',practice:'Practice',again:'Check another topic',res:'Here is your result',asked:'questions asked',well:'Correct!',now:'Mastery now',sms:'Progress code (send by SMS)',phone:'Feature phone demo',exp:'Download field-test JSON',home:'Home'},
-pcm:{sub:'Find the real reason why e dey hard, then follow the path to fix am. E no need internet.',name:'Your first name',topic:'Which topic hard you?',start:'Start check',nq:'E no correct',next:'Next',gap:'Where the wahala start',nogap:'No gap. You sabi this topic!',path:'Your path',go:'Start my path',lesson:'Learn',practice:'Practice',again:'Check another topic',res:'See your result',asked:'questions',well:'Correct!',now:'Your level now',sms:'Progress code (send am by SMS)',phone:'Feature phone demo',exp:'Download field-test JSON',home:'Home'}};
-Object.assign(UI,{yo:RootPathLangs.yo.ui,ig:RootPathLangs.ig.ui,ha:RootPathLangs.ha.ui});
-Object.assign(UI.en,{tag:'Find the root of the learning gap. Then walk the path.',whyh:'Why RootPath?',why:'Tunde is in JSS1 and cannot solve equations with fractions. The real gap is equivalent fractions from Primary 5. RootPath finds hidden gaps like this, with no teacher and no internet.',howh:'How it works',how1:'Pick a topic you find hard and answer a few questions.',how2:'RootPath finds the earliest skill you are missing, and explains each mistake.',how3:'Follow a short path of lessons and practice until it is fixed.',badges:'Works offline · No data needed · Maths, Physics, English · 5 languages',getstarted:'Get started',about:'About RootPath',
- subject:'Subject',checking:'Checking',depth:'skills deep',mistake:'Common mistake',found:'Root gap found',foundIn:'Found in {n} questions. Fix this first, and the rest gets easier.',nofound:'You know this topic',startHere:'Start here',goal:'Your goal',onPath:'On the path',decided:'How RootPath decided',decidedP:'Each answer updates a mastery probability for that skill (Bayesian Knowledge Tracing), allowing for lucky guesses and slips. Weak skills send the search down to earlier skills. It all runs on this phone.',inferred:'{n} more skills were settled without asking, from how skills depend on each other.',masteredL:'Mastered',gapL:'Gap',teacher:'Teacher check (optional)',teacherP:'Which skill do you think this learner is really missing? Your answer is saved with the result so RootPath can be compared with teachers.',same:'Same as RootPath',save:'Save teacher view',saved:'Saved. Thank you!',copy:'Copy',copied:'Copied',step:'Step',of:'of',mastery:'Mastery',complete:'Path complete!',beforeAfter:'Before → after',levels:['Attempted','Familiar','Proficient','Mastered'],offline:'Ready offline',install:'Install app',answer:'Answer',feature:'Same engine on a basic phone. Dial, reply with numbers, no data.',send:'Send'});
-Object.assign(UI.pcm,{tag:'Find the root of the wahala. Then follow the path.',whyh:'Why RootPath?',why:'Tunde dey JSS1 and e no fit solve equations wey get fractions. The real wahala na equivalent fractions from Primary 5. RootPath dey find hidden wahala like this, no teacher, no internet.',howh:'How e dey work',how1:'Pick topic wey hard you and answer small questions.',how2:'RootPath go find the first skill wey you miss, and show you why you miss am.',how3:'Follow the short path of lessons and practice till e correct.',badges:'E dey work offline · No data needed · Maths, Physics, English · 5 languages',getstarted:'Start',about:'About RootPath',
- checking:'We dey check',mistake:'Mistake wey people dey make',found:'We don find where the wahala start',foundIn:'We find am for {n} questions. Fix this one first, the rest go dey easy.',nofound:'You sabi this topic',startHere:'Start here',goal:'Where you dey go',decided:'How RootPath take decide',complete:'You don finish the path!',copied:'E don copy'});
-let L=store.get().lang||'en',D,who,before,after,pr,path,idx,entry;
-const u=k=>(UI[L]&&UI[L][k])||UI.en[k],nm=id=>T.skillName(id,L),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])),$=id=>document.getElementById(id);
-const pct=p=>Math.round((p||0)*100);
-const level=p=>u('levels')[p>=PARAMS.mastered?3:p>=0.7?2:p>=0.4?1:0];
-const draftNote=()=>P.languages.find(x=>x.code===L).status==='draft'?'<p class="draft">Draft translation: native-speaker review in progress. Untranslated lines show in English.</p>':'';
-const toast=t=>{const e=$('toast');e.textContent=t;e.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>e.hidden=true,2200)};
-const view=html=>{app.innerHTML=html;window.scrollTo(0,0)};
-function langSelect(){const s=$('lang');s.innerHTML=P.languages.map(x=>`<option value="${x.code}">${x.label}</option>`).join('');s.value=L;s.onchange=()=>{L=s.value;const x=store.get();x.lang=L;store.set(x);document.documentElement.lang=L==='pcm'?'en':L;(window.current||home)()}}
-$('brand').onclick=()=>home();
-function welcome(){window.current=welcome;view(`<section class="hero"><svg width="96" height="29" viewBox="0 0 132 40" aria-hidden="true"><line x1="20" y1="20" x2="56" y2="20" stroke="#6f8f7c" stroke-width="5"/><line x1="64" y1="20" x2="100" y2="20" stroke="#6f8f7c" stroke-width="5"/><circle cx="14" cy="20" r="13" fill="#d06a3c"/><circle cx="62" cy="20" r="13" fill="#e3a857"/><circle cx="110" cy="20" r="13" fill="#7cc29e"/></svg><h1>RootPath</h1><p>${u('tag')}</p><div class="badges">${u('badges').split(' · ').map(b=>`<span>${esc(b)}</span>`).join('')}</div></section>${draftNote()}
-<div class="card story"><b>${u('whyh')}</b><p style="margin:.4rem 0 0">${u('why')}</p></div><h2>${u('howh')}</h2><ol class="steps"><li>${u('how1')}</li><li>${u('how2')}</li><li>${u('how3')}</li></ol><button class="btn go" id="gs">${u('getstarted')}</button>`);
- $('gs').onclick=()=>{const x=store.get();x.seen=1;store.set(x);home()}}
-function home(){window.current=home;const s=store.get();view(`<h1>${u('start')}</h1>${draftNote()}<p class="sub">${u('sub')}</p>
-<div class="card"><label for="n" style="margin-top:0">${u('name')}</label><input id="n" value="${esc(s.lastName||'')}" autocomplete="off"><label for="sj">${u('subject')}</label><select id="sj">${P.subjects.map(x=>`<option value="${x.id}">${x.label}</option>`).join('')}</select><label for="t">${u('topic')}</label><select id="t"></select><button class="btn go" id="go">${u('start')}</button></div>
-<div class="links"><button class="btn" id="ph">📱 ${u('phone')}</button><button class="btn" id="ab">${u('about')}</button></div><button class="btn ghost small" id="ex">${u('exp')} (${(s.log||[]).length})</button><p class="small muted" id="offline" hidden>✓ ${u('offline')}</p>`);
- const fill=()=>{$('t').innerHTML=P.subjects.find(x=>x.id===$('sj').value).targets.map(k=>`<option value="${k}">${esc(nm(k))}</option>`).join('')};$('sj').onchange=fill;fill();
- $('go').onclick=()=>{who=$('n').value.trim()||'Learner';const x=store.get();x.lastName=who;store.set(x);D=new Diagnosis($('t').value,P.graph,P.bank);ask()};$('ph').onclick=phone;$('ex').onclick=exportJson;$('ab').onclick=welcome;
- if(navigator.serviceWorker&&navigator.serviceWorker.controller)$('offline').hidden=false}
-const depthOf=s=>{const g=P.graph;return Math.max(0,g.by[D.target].lvl-g.by[s].lvl)};
-function ask(){window.current=ask;const n=D.next();if(!n)return finish();const d=depthOf(n.skill);
- view(`<div class="qhead"><span class="pill ${d?'clay':''}">${u('checking')}: ${esc(nm(n.skill))}</span><span class="trail" aria-label="${d} ${u('depth')}">${[0,1,2,3,4].map(i=>`<i class="${i<=d?'on':''}"></i>`).join('')}</span></div>
-<p class="small muted">${u('answer')} ${D.asked.length+1}</p><div class="q">${esc(T.qText(n.question,L))}</div>${n.question.o.map((o,i)=>`<button class="opt" data-i="${i}"><span class="k">${'ABCD'[i]}</span><span>${esc(o[0])}</span></button>`).join('')}`);
- app.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const r=D.answer(+b.dataset.i);r.misconception?note(r.misconception,ask):ask()})}
-function note(m,cont){view(`<h1>${u('nq')}</h1><div class="fix"><div class="tag">${u('mistake')}</div><p><b>${esc(T.misName(m))}.</b></p><p>${esc(T.fix(m,L))}</p></div><button class="btn go" id="c">${u('next')}</button>`);$('c').onclick=cont;$('c').focus()}
-function route(list,cur){return `<ol class="route">${list.map((x,i)=>{const isRoot=i===0&&D.result().roots.includes(x),isGoal=x===D.target,cls=[isRoot?'root':'',isGoal?'goal':'',cur!=null&&i<cur?'done':'',cur===i?'now':''].join(' ');
- return `<li class="${cls}"><span class="node">${cur!=null&&i<cur?'✓':i+1}</span><span><span class="lab">${isRoot?u('startHere'):isGoal?u('goal'):u('onPath')}</span><span class="nm">${esc(nm(x))}</span></span></li>`}).join('')}</ol>`}
-function decided(r){const tested=Object.keys(r.mastery).filter(k=>r.status[k]==='M'||r.status[k]==='W');const inferred=Object.values(r.status).filter(v=>v==='iM'||v==='iW').length;
- return `<details class="card"><summary>🧠 ${u('decided')}</summary><ul class="why">${tested.map(k=>`<li><span>${esc(nm(k))}</span><span class="st ${r.status[k]}">${r.status[k]==='M'?u('masteredL'):u('gapL')} · ${pct(r.mastery[k])}%</span><div class="bar"><i class="${r.mastery[k]<.5?'low':''}" style="width:${pct(r.mastery[k])}%"></i></div></li>`).join('')}</ul>
-${inferred?`<p class="small muted">${u('inferred').replace('{n}',inferred)}</p>`:''}<div class="ai"><span>🤖</span><span>${u('decidedP')}</span></div></details>`}
-function finish(){window.current=null;const r=D.result();before={...r.mastery};after={};path=r.path;
- const s=store.get();s.log=s.log||[];entry={learner:who,target:r.target,roots:r.roots,path:r.path,questions:r.questions,before,after:null,teacherRoots:null,date:Date.now()};s.log.push(entry);entry.i=s.log.length-1;s.lastName=who;store.set(s);
- const cands=[r.target,...P.graph.below[r.target]].sort((a,b)=>P.graph.by[a].lvl-P.graph.by[b].lvl);
- view(`<p class="small muted">${esc(who)} · ${u('res')}</p>${r.roots.length?`<div class="found"><div class="tag">${u('found')}</div><h1>${r.roots.map(x=>esc(nm(x))).join(' + ')}</h1><p>${u('foundIn').replace('{n}',r.questions)}</p></div>`:`<div class="found none"><div class="tag">${u('nofound')}</div><h1>${esc(nm(r.target))}</h1><p>${u('nogap')}</p></div>`}
-${r.path.length?`<h2>${u('path')}</h2>${route(r.path)}<button class="btn go" id="p">${u('go')}</button>`:''}${decided(r)}
-<div class="card"><b>${u('sms')}</b><div class="code" style="margin-top:.5rem"><code id="sms">${esc(smsEncode(r.mastery))}</code><button id="cp">${u('copy')}</button></div></div>
-<details class="card"><summary>👩🏾‍🏫 ${u('teacher')}</summary><p class="small muted">${u('teacherP')}</p><div class="checks">${cands.map(k=>`<label><input type="checkbox" value="${k}">${esc(nm(k))}</label>`).join('')}</div><button class="btn" id="same">${u('same')}</button><button class="btn go" id="tsave">${u('save')}</button></details>
-<button class="btn ghost" id="h">${u('home')}</button>`);
- $('h').onclick=home;if(r.path.length)$('p').onclick=()=>step(0);
- $('cp').onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText($('sms').textContent).then(()=>toast(u('copied')),()=>{})};
- const saveT=roots=>{const x=store.get();if(x.log&&x.log[entry.i]){x.log[entry.i].teacherRoots=roots;store.set(x)}entry.teacherRoots=roots;toast(u('saved'))};
- $('same').onclick=()=>saveT([...r.roots]);$('tsave').onclick=()=>saveT([...app.querySelectorAll('.checks input:checked')].map(i=>i.value))}
-function step(i){idx=i;if(i>=path.length)return complete();const s=path[i];
- view(`<div class="strip">${path.map((_,j)=>`<i class="${j<i?'done':j===i?'now':''}"></i>`).join('')}</div><p class="small muted">${u('step')} ${i+1} ${u('of')} ${path.length} · ${u('lesson')}</p><h1>${esc(nm(s))}</h1><div class="card lesson">${esc(T.lesson(s,L))}</div><button class="btn go" id="c">${u('practice')}</button>`);
- $('c').onclick=()=>{pr=new Practice(s,D.p[s]??0.3,P.bank);drill()}}
-function meter(p){return `<div class="meter"><div class="top2"><span>${u('mastery')} · <span class="lvl">${level(p)}</span></span><span>${pct(p)}%</span></div><div class="bar" style="height:.65rem"><i class="${p<.5?'low':''}" style="width:${pct(p)}%"></i></div></div>`}
-function drill(){const q=pr.next();if(!q){after[pr.skill]=pr.p;return step(idx+1)}
- view(`<div class="strip">${path.map((_,j)=>`<i class="${j<idx?'done':j===idx?'now':''}"></i>`).join('')}</div><p class="small muted">${u('practice')} · ${esc(nm(pr.skill))}</p>${meter(pr.p)}<div class="q">${esc(T.qText(q,L))}</div>${q.o.map((o,i)=>`<button class="opt" data-i="${i}"><span class="k">${'ABCD'[i]}</span><span>${esc(o[0])}</span></button>`).join('')}`);
- app.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const r=pr.answer(+b.dataset.i);r.correct?(toast(u('well')),drill()):note(r.misconception||'partial',drill)})}
-function complete(){const s=store.get();if(s.log&&s.log[entry.i]){s.log[entry.i].after={...after};store.set(s)}
- view(`<div style="text-align:center;margin-top:1rem"><div class="celebrate">🎉</div><h1>${u('complete')}</h1><p class="sub">${esc(who)}</p></div>
-<div class="card"><b>${u('beforeAfter')}</b>${path.map(x=>{const b=before[x]??0,a=after[x]??b;return `<div class="gain"><span>${esc(nm(x))}<br><span class="lvl">${level(a)}</span></span><span class="nums">${pct(b)}% → <span class="ok">${pct(a)}%</span></span><div class="bar"><i style="width:${pct(a)}%"></i><b style="left:0;width:${pct(b)}%"></b></div></div>`}).join('')}</div>
-<button class="btn go" id="h">${u('again')}</button>`);$('h').onclick=home}
-function phone(){window.current=phone;let text='';const show=()=>{const s=ussd(text);$('scr').textContent=s.replace(/^(CON|END) /,'');if(s.startsWith('END'))text=''};
- view(`<h1>${u('phone')}</h1><p class="sub">${u('feature')}</p><div class="handset"><div class="screen" id="scr" aria-live="polite"></div><div class="reply"><input id="i" inputmode="numeric" autocomplete="off" aria-label="Reply"><button id="s">${u('send')}</button></div><div class="keys">${['1','2','3','4','5','6','7','8','9','*','0','#'].map(k=>`<button data-k="${k}">${k}</button>`).join('')}</div></div><p class="small muted" style="text-align:center">*123# · USSD · no data</p><button class="btn ghost" id="h">${u('home')}</button>`);
- show();const send=()=>{const v=$('i').value.trim();$('i').value='';if(!v)return;text=text?text+'*'+v:v;show()};$('s').onclick=send;$('i').onkeydown=e=>{if(e.key==='Enter')send()};
- app.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>{$('i').value+=b.dataset.k});$('h').onclick=home}
-function exportJson(){const b=new Blob([JSON.stringify((store.get().log||[]).map(({i,...r})=>r),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='rootpath-field-test.json';a.click()}
-langSelect();store.get().seen?home():welcome();
+const P=RootPathPack,{CallSession,CheckInCall}=RootPathCall,S=RootPathSms,K=RootPathClass,{ussd}=RootPathUssd;
+const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const KEY='rootpath.call.v1',st={calls:[],sms:[],practice:null,story:{},codes:[],...(()=>{try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return{}}})()};
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const toast=t=>{const e=$('toast');e.textContent=t;e.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>e.hidden=true,2600)};
+let session=null,timerT=null,secs=0,speaker=true,unread=0;
+
+// ---------- speech (offline voices on the device; captions always shown)
+const synth=window.speechSynthesis;
+function pickVoice(lang){if(!synth)return null;const v=synth.getVoices();return v.find(x=>x.lang===lang)||v.find(x=>x.lang&&x.lang.startsWith(lang.split('-')[0]+'-'))||v.find(x=>x.lang==='en-NG')||v.find(x=>x.lang==='en-GB')||v.find(x=>/^en/.test(x.lang))||null}
+function speak(text,lang,rate=1){const w=$('wave');if(!synth||!speaker){w.classList.remove('on');return}synth.cancel();
+ const parts=String(text).match(/[^.!?]+[.!?]*/g)||[text];const voice=pickVoice(lang||'en-NG');
+ parts.forEach((p,i)=>{const u=new SpeechSynthesisUtterance(p.trim());if(voice){u.voice=voice;u.lang=voice.lang}else u.lang='en-NG';u.rate=rate;
+  if(i===0)u.onstart=()=>w.classList.add('on');if(i===parts.length-1){u.onend=u.onerror=()=>w.classList.remove('on')}synth.speak(u)})}
+function hush(){synth&&synth.cancel();$('wave').classList.remove('on')}
+
+// ---------- phone apps
+function show(app){['dial','call','ring','sms','ussd'].forEach(a=>$('p-'+a).hidden=a!==app);document.querySelectorAll('.apps button').forEach(b=>b.classList.toggle('on',b.dataset.app===app||(app==='call'&&b.dataset.app==='dial')||(app==='ring'&&b.dataset.app==='dial')));
+ if(app==='sms'){unread=0;badge();renderSms();setTimeout(()=>{const t=$('thread');t.scrollTop=t.scrollHeight},30)}if(app==='ussd')ussdReset()}
+document.querySelectorAll('.apps button').forEach(b=>b.onclick=()=>{if(session&&!$('p-call').hidden&&b.dataset.app!=='dial')return toast('Hang up first');show(b.dataset.app==='dial'&&session?'call':b.dataset.app)});
+function badge(){const b=$('badge');b.hidden=!unread;b.textContent=unread}
+function tick(){const d=new Date();$('clock').textContent=d.getHours()+':'+String(d.getMinutes()).padStart(2,'0')}tick();setInterval(tick,30000);
+
+// keypad
+$('keys').innerHTML='123456789*0#'.split('').map(k=>`<button data-k="${k}" aria-label="Key ${k}">${k}</button>`).join('');
+$('keys').querySelectorAll('button').forEach(b=>b.onclick=()=>press(b.dataset.k));
+document.addEventListener('keydown',e=>{if($('p-call').hidden||e.target.tagName==='INPUT')return;if(/^[0-9*#]$/.test(e.key))press(e.key)});
+
+// ---------- captions
+function addCap(text,kind){const c=document.createElement('div');c.className='cap '+(kind||'say');c.textContent=text;$('caps').append(c);$('caps').scrollTop=$('caps').scrollHeight}
+function render(p){$('caps').querySelectorAll('.cap.option').forEach(o=>o.remove());p.lines.forEach(l=>addCap(l.text,l.kind));
+ $('keys').querySelectorAll('button').forEach(b=>b.classList.toggle('hot',p.keys.some(k=>k.key===b.dataset.k)));
+ speak(p.say,p.voice,p.lang==='pcm'?0.95:1);drawMap();if(p.end)setTimeout(()=>endCall(p),400)}
+
+// ---------- calls
+function startTimer(){secs=0;clearInterval(timerT);timerT=setInterval(()=>{secs++;$('timer').textContent=String(Math.floor(secs/60)).padStart(2,'0')+':'+String(secs%60).padStart(2,'0')},1000)}
+function placeCall(){if(session)return;const name=$('name').value.trim()||'Tunde';session={kind:'diag',s:new CallSession({caller:name}),name};$('caps').innerHTML='';$('callName').textContent='RootPath Tutor';show('call');startTimer();
+ addCap('Calling 0800 ROOTPATH… connected (toll-free)','option');render(session.s.start());markStory('call','active')}
+function press(k){if(!session)return;addCap('Pressed '+k,'me');const p=session.s.press(k);render(p)}
+function endCall(p){clearInterval(timerT);const done=session;
+ if(done.kind==='diag'&&p.result){const r=p.result;st.calls.push({name:done.name,lang:r.lang,target:r.target,roots:r.roots,path:r.path,mastery:r.mastery,questions:r.questions,date:Date.now()});
+  st.practice=r.roots.length?{skill:r.roots[0],p:r.mastery[r.roots[0]]??0.1,before:r.mastery[r.roots[0]]??0.1,day:0,lang:r.lang,name:done.name}:null;
+  incoming(S.resultSms({name:done.name,result:r,lang:r.lang==='pcm'?'pcm':'en',pack:P}));markStory('call','did');if(st.practice)enable('sms');save();renderTeacher()}
+ if(done.kind==='check'&&st.practice){st.practice.p=p.after;st.practice.checked=true;markStory('ring','did');enable('report');save()}
+ setTimeout(()=>{session=null;hush();show('dial');if(done.kind==='diag')toast('Call ended · RootPath sent an SMS')},Math.min(9000,1500+p.say.length*45))}
+$('call').onclick=placeCall;$('hang').onclick=()=>{if(!session)return;clearInterval(timerT);hush();session=null;show('dial')};
+$('spk').onclick=()=>{speaker=!speaker;$('spk').setAttribute('aria-pressed',speaker);$('spk').classList.toggle('off',!speaker);if(!speaker)hush()};
+// say your answer
+const Rec=window.SpeechRecognition||window.webkitSpeechRecognition;
+const WORDS={one:1,won:1,wan:1,two:2,to:2,too:2,tu:2,three:3,tree:3,tri:3,four:4,for:4,fo:4,a:1,b:2,c:3,d:4,ookan:1,eji:2,eta:3,erin:4,daya:1,biyu:2,uku:3,hudu:4,otu:1,abuo:2,ato:3,ano:4};
+$('mic').onclick=()=>{if(!Rec)return toast('Voice answers are not supported in this browser. Use the keypad.');const r=new Rec();r.lang='en-NG';if('processLocally' in r)r.processLocally=true;hush();$('mic').classList.add('off');
+ r.onresult=e=>{const said=e.results[0][0].transcript.toLowerCase();const m=said.match(/\b([1-9])\b/)||said.split(/\s+/).map(w=>WORDS[w.replace(/[^a-z]/g,'')]).filter(Boolean).map(String);const k=Array.isArray(m)?m[0]:m&&m[1];addCap('Said: “'+said+'”','me');if(k)press(String(k));else toast('Didn’t catch a number. Try the keypad.')};
+ r.onerror=()=>toast('Voice answer unavailable here (often needs data). Use the keypad.');r.onend=()=>$('mic').classList.remove('off');r.start()};
+
+// ---------- incoming check-in call (proactive)
+function ringIn(){if(!st.practice)return;show('ring');markStory('ring','active')}
+$('accept').onclick=()=>{const pr=st.practice;session={kind:'check',s:new CheckInCall({lang:pr.lang,name:pr.name,skill:pr.skill,p0:pr.p,pack:P}),name:pr.name};$('caps').innerHTML='';show('call');startTimer();render(session.s.start())};
+$('decline').onclick=()=>{show('dial');toast('RootPath will try again tomorrow')};
+
+// ---------- SMS
+function incoming(text){st.sms.push({dir:'in',text,t:Date.now()});unread++;badge();save();if(!$('p-sms').hidden)renderSms()}
+function renderSms(){const t=$('thread');t.innerHTML=st.sms.length?st.sms.map(m=>`<div class="bub ${m.dir==='out'?'out':''}">${esc(m.text)}<small>${new Date(m.t).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}${m.day?' · Day '+m.day:''}</small></div>`).join(''):'<div class="empty">No messages yet. Call RootPath first.</div>';
+ $('quick').hidden=!(st.practice&&st.practice.q&&!st.practice.answered);t.scrollTop=t.scrollHeight}
+function sendDaily(){const pr=st.practice;if(!pr)return;pr.day++;const d=S.dailySms({skill:pr.skill,day:pr.day,lang:pr.lang==='pcm'?'pcm':'en',pack:P});pr.q=d.question.id;pr.answered=false;st.sms.push({dir:'in',text:d.text,t:Date.now(),day:pr.day});unread++;badge();save();show('sms');markStory('sms','active')}
+$('quick').querySelectorAll('button').forEach(b=>b.onclick=()=>{const pr=st.practice;const q=P.bank.find(x=>x.id===pr.q);st.sms.push({dir:'out',text:b.textContent,t:Date.now()});
+ const r=S.replySms({question:q,reply:b.textContent,p:pr.p,lang:pr.lang==='pcm'?'pcm':'en',pack:P});pr.p=r.p;pr.answered=true;st.sms.push({dir:'in',text:r.text,t:Date.now()});save();renderSms();
+ if(pr.day>=2){markStory('sms','did');enable('ring')}else toast('Tap “Daily practice SMS” again for the next day')});
+
+// ---------- USSD
+let utext='';function ussdShow(){const s=ussd(utext);$('lcd').textContent=s.replace(/^(CON|END) /,'');if(s.startsWith('END'))utext=''}
+function ussdReset(){utext='';ussdShow()}
+$('uk').innerHTML='123456789*0#'.split('').map(k=>`<button data-k="${k}">${k}</button>`).join('');$('uk').querySelectorAll('button').forEach(b=>b.onclick=()=>$('uin').value+=b.dataset.k);
+const usend=()=>{const v=$('uin').value.trim();$('uin').value='';if(!v)return;utext=utext?utext+'*'+v:v;ussdShow()};$('usend').onclick=usend;$('uin').onkeydown=e=>{if(e.key==='Enter')usend()};
+
+// ---------- story
+function markStory(k,state){st.story[k]=state;save();paintStory()}
+function enable(k){st.story[k]=st.story[k]||'ready';save();paintStory()}
+function paintStory(){const order=['call','sms','ring','report'];let nextSet=false;document.querySelectorAll('#story button').forEach(b=>{const k=b.dataset.s,v=st.story[k];b.disabled=k!=='call'&&!v;b.classList.toggle('did',v==='did');const isNext=!nextSet&&v!=='did'&&!b.disabled;b.classList.toggle('next',isNext);if(isNext)nextSet=true})}
+document.querySelectorAll('#story button').forEach(b=>b.onclick=()=>{const k=b.dataset.s;go('phone');if(k==='call'){show('dial');$('call').focus();if(!session)placeCall()}else if(k==='sms')sendDaily();else if(k==='ring')ringIn();else if(k==='report')sendReport()});
+function sendReport(){const pr=st.practice,last=st.calls.at(-1);if(!pr||!last)return;const msg=S.reportSms({name:pr.name,result:last,skill:pr.skill,before:pr.before,after:pr.p,days:Math.max(pr.day,1)+1,lang:'en',pack:P});
+ st.parentMsg=msg;markStory('report','did');save();renderTeacher();go('teacher');document.getElementById('parent').scrollIntoView({behavior:'smooth',block:'center'});toast('Report sent by SMS')}
+
+// ---------- live skill map
+let SW=520;
+function drawMap(){SW=innerWidth<600?340:520;const LIM=innerWidth<600?12:20;const sess=session&&session.kind==='diag'?session.s:null;const s=sess&&sess.state();const box=$('map');
+ if(!s){if(!st.lastMap){return}}const view=s||st.lastMap;st.lastMap=view;
+ const g=P.graph,ids=[view.target,...g.below[view.target]];const lv=[...new Set(ids.map(i=>g.by[i].lvl))].sort((a,b)=>b-a);
+ const rowH=innerWidth<600?78:72,H=lv.length*rowH+24,pos={};lv.forEach((l,ri)=>{const row=ids.filter(i=>g.by[i].lvl===l).sort((a,b)=>g.by[a].order-g.by[b].order);row.forEach((id,ci)=>{pos[id]=[(ci+1)*SW/(row.length+1),40+ri*rowH]})});
+ const fill=id=>{const v=view.status[id];return v==='M'?'#2f6b4f':v==='W'?'#b4532a':v==='iM'?'#cfe3d6':v==='iW'?'#f0c9b3':'#f3efe4'};
+ const stroke=id=>{const v=view.status[id];return v==='M'?'#2f6b4f':v==='W'?'#b4532a':v==='iM'?'#9cc7af':v==='iW'?'#e2a283':'#ddd6c3'};
+ const roots=sess&&sess.D?sess.D.roots():(st.calls.at(-1)?st.calls.at(-1).roots:[]);
+ let svg=`<svg viewBox="0 0 ${SW} ${H}" role="img" aria-label="Skill map for ${esc(g.by[view.target].name)}">`;
+ ids.forEach(id=>g.by[id].pre.filter(p=>pos[p]).forEach(p=>{const[a,b]=pos[id],[c,d]=pos[p];svg+=`<line x1="${a}" y1="${b}" x2="${c}" y2="${d}" stroke="#ddd6c3" stroke-width="2"/>`}));
+ ids.forEach(id=>{const[x,y]=pos[id],m=view.mastery[id],cur=view.current===id&&sess&&!sess.result,dark=['M','W'].includes(view.status[id]),root=roots.includes(id);
+  const name=P.text.skillName(id,'en');const short=name.length>LIM?name.slice(0,LIM-1)+'…':name;
+  svg+=`<g class="node ${cur?'cur':''}">${cur?`<circle class="halo" cx="${x}" cy="${y}" r="24" fill="none" stroke="#e3a857" stroke-width="3"/>`:''}<circle cx="${x}" cy="${y}" r="${root?24:20}" fill="${fill(id)}" stroke="${root?'#7a2f12':stroke(id)}" ${root?'stroke-width="5"':''}/>`+
+  (m!=null?`<text class="pct" x="${x}" y="${y+4}" text-anchor="middle" fill="${dark?'#fff':'#1d2b24'}">${Math.round(m*100)}</text>`:'')+
+  `<text x="${x}" y="${y+(root?38:34)}" text-anchor="middle">${esc(short)}</text>${id===view.target?`<text x="${x}" y="${y-27}" text-anchor="middle" style="font:800 9px system-ui;fill:#2f6b4f;letter-spacing:.06em">GOAL</text>`:''}${root?`<text x="${x}" y="${y-30}" text-anchor="middle" style="font:800 9px system-ui;fill:#b4532a;letter-spacing:.06em">ROOT GAP</text>`:''}</g>`});
+ box.innerHTML=svg+'</svg>';
+ const res=sess&&sess.result||(!sess&&st.calls.at(-1));if(res){$('verdict').innerHTML=res.roots.length?`<div class="verdict"><span class="eyebrow" style="color:#ffe1cf">Root gap found in ${res.questions} questions</span><br><b>${esc(res.roots.map(x=>P.text.skillName(x,'en')).join(' + '))}</b></div>`:`<div class="verdict ok"><b>No gap: knows ${esc(P.text.skillName(res.target,'en'))}</b></div>`}else $('verdict').innerHTML=''}
+
+// ---------- teacher
+function rows(){const sim=K.demoClass({size:30,pack:P});const you=st.calls.length?[{name:st.calls.at(-1).name,roots:st.calls.at(-1).roots,you:true}]:[];return[...you,...st.codes.map(c=>({...K.fromCode(c.name,c.code,P),coded:true})),...sim]}
+function renderTeacher(){const rs=rows(),g=K.groupByRoot(rs,P),max=Math.max(1,...g.groups.map(x=>x.count)),youName=st.calls.length&&st.calls.at(-1).name;
+ $('tsub').textContent=`${g.total} learners · ${g.total-g.noGap.length} have a gap · ${g.noGap.length} ready for the next topic`;
+ $('bars').innerHTML=g.groups.map(x=>`<div class="barrow ${x.names.includes(youName)?'you':''}"><span class="lab" title="${esc(x.name)}"><span>${esc(x.name)}</span>${x.names.includes(youName)?'<span class="you-tag">'+esc(youName)+'</span>':''}</span><span class="track"><span class="fill" style="display:block;width:${x.count/max*100}%"></span></span><span class="n">${x.count}</span></div>`).join('');
+ $('groups').innerHTML=g.groups.slice(0,6).map(x=>`<div class="grp"><b>${esc(x.name)} · ${x.count}</b><div class="names">${esc(x.names.slice(0,6).join(', '))}${x.names.length>6?' +'+(x.names.length-6):''}</div><button data-sk="${x.skill}" data-n="${x.count}">Send group SMS</button></div>`).join('')+(g.noGap.length?`<div class="grp"><b>Ready to move on · ${g.noGap.length}</b><div class="names">${esc(g.noGap.slice(0,6).join(', '))}</div></div>`:'');
+ $('groups').querySelectorAll('button').forEach(b=>b.onclick=()=>toast(`Practice SMS queued for ${b.dataset.n} learners: ${P.text.skillName(b.dataset.sk,'en')}`));
+ $('parent').hidden=!st.parentMsg;if(st.parentMsg)$('parentMsg').innerHTML=`<div class="bub">${esc(st.parentMsg)}</div>`;
+ $('simnote').textContent=`Includes 30 simulated learners diagnosed by the real engine, for demonstration${st.calls.length?', plus '+youName+'’s call':''}${st.codes.length?' and '+st.codes.length+' learner(s) added by SMS code':''}.`}
+$('addc').onclick=()=>{const v=$('code').value.trim();try{K.fromCode('Learner',v,P);st.codes.push({name:'Learner '+(st.codes.length+1),code:v});$('code').value='';save();renderTeacher();toast('Learner added from SMS code')}catch(e){toast('That is not a RootPath code (starts with RP1)')}};
+
+// ---------- mobile tabs
+function go(t){document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));$('sec-phone').classList.toggle('show',t==='phone');$('sec-story').classList.toggle('show',t==='phone');$('sec-ai').classList.toggle('show',t==='ai');$('sec-teacher').classList.toggle('show',t==='teacher');if(innerWidth>900)['sec-phone','sec-story','sec-ai','sec-teacher'].forEach(i=>$(i).classList.add('show'))}
+document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{go(b.dataset.t);if(b.dataset.t==='ai')drawMap()});
+addEventListener('resize',()=>{if(innerWidth>900)go('phone')});
+
+go('phone');paintStory();renderTeacher();drawMap();badge();
+if(location.hash==='#reset'){localStorage.removeItem(KEY);location.hash='';location.reload()}
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{});
 </script></body></html>
