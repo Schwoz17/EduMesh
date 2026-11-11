@@ -258,7 +258,7 @@ function drawMap(){SW=innerWidth<600?340:520;const LIM=innerWidth<600?12:20;cons
   const name=P.text.skillName(id,'en');const short=name.length>LIM?name.slice(0,LIM-1)+'…':name;
   svg+=`<g class="node ${cur?'cur':''}">${cur?`<circle class="halo" cx="${x}" cy="${y}" r="24" fill="none" stroke="#e3a857" stroke-width="3"/>`:''}<circle cx="${x}" cy="${y}" r="${root?24:20}" fill="${fill(id)}" stroke="${root?'#7a2f12':stroke(id)}" ${root?'stroke-width="5"':''}/>`+
   (m!=null?`<text class="pct" x="${x}" y="${y+4}" text-anchor="middle" fill="${dark?'#fff':'#1d2b24'}">${Math.round(m*100)}</text>`:'')+
-  `<text x="${x}" y="${y+(root?38:34)}" text-anchor="middle">${esc(short)}</text>${id===view.target?`<text x="${x}" y="${y-27}" text-anchor="middle" style="font:800 9px system-ui;fill:#2f6b4f;letter-spacing:.06em">GOAL</text>`:''}${root?`<text x="${x}" y="${y-30}" text-anchor="middle" style="font:800 9px system-ui;fill:#b4532a;letter-spacing:.06em">ROOT GAP</text>`:''}</g>`});
+  `<text x="${x}" y="${y+(root?38:34)}" text-anchor="middle">${esc(short)}</text>${id===view.target||root?`<text x="${x}" y="${y-(root?30:27)}" text-anchor="middle" style="font:800 9px system-ui;fill:${root?'#b4532a':'#2f6b4f'};letter-spacing:.06em">${id===view.target&&root?'GOAL · ROOT GAP':root?'ROOT GAP':'GOAL'}</text>`:''}</g>`});
  box.innerHTML=svg+'</svg>';
  const res=sess&&sess.result||(!sess&&st.calls.at(-1));if(res){$('verdict').innerHTML=res.roots.length?`<div class="verdict"><span class="eyebrow" style="color:#ffe1cf">Root gap found in ${res.questions} questions</span><br><b>${esc(res.roots.map(x=>P.text.skillName(x,'en')).join(' + '))}</b></div>`:`<div class="verdict ok"><b>No gap: knows ${esc(P.text.skillName(res.target,'en'))}</b></div>`}else $('verdict').innerHTML=''}
 
@@ -279,7 +279,7 @@ document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{go(b.dataset
 addEventListener('resize',()=>{if(innerWidth>900)go('phone')});
 
 go('phone');paintStory();renderTeacher();drawMap();badge();
-if(location.hash==='#reset'){localStorage.removeItem(KEY);location.hash='';location.reload()}
+const doReset=()=>{if(location.hash==='#reset'){localStorage.removeItem(KEY);history.replaceState(null,'',location.pathname);location.reload()}};doReset();addEventListener('hashchange',doReset);
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{});
 // When a new version of the app installs, reload once so nobody sees an old saved copy.
 if ('serviceWorker' in navigator && navigator.serviceWorker.controller) { let r = false; navigator.serviceWorker.addEventListener('controllerchange', () => { if (!r) { r = true; location.reload(); } }); }
