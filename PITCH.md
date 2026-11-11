@@ -38,7 +38,7 @@ Every call places the child on the class map, grouped by **root gap**, not by ag
 It works by voice call, SMS, USSD, or an offline app, in English and Pidgin, with Yoruba, Igbo and Hausa in native-speaker review.
 
 **[Slide 8 · Built and tested] (10 s)**
-It's real code with 56 tests. An Africa's Talking voice adapter already serves the same tutor to a real phone line; going live only needs a number.
+It's real code with 60 tests. An Africa's Talking voice adapter already serves the same tutor to a real phone line; going live only needs a number.
 
 **[Slide 9 · Field test] (10 s)** *(only if you have real numbers; otherwise skip this slide)*
 We tested it with [N] learners. RootPath agreed with the teacher on [__]% of them, and mastery rose [__] points.
@@ -84,7 +84,7 @@ A child shouldn't need data or a smartphone to get a tutor. With RootPath, any p
    - The story buttons are below the phone; scroll down.
 3. **Offline:** open the link once, then turn on **airplane mode** and reload. It still works, voice included, because the voice comes from your phone's built-in voices.
 4. **Voice answers:** tap **🎙** during a call and say "two". This often needs data in Chrome, so use the keypad offline.
-5. **Code tests:** `npm test` (Node 18+) runs 56 tests.
+5. **Code tests:** `npm test` (Node 18+) runs 60 tests.
 6. **A real phone line** (optional, needs an Africa's Talking account and voice number):
    1. Run `PORT=8080 PUBLIC_URL=https://<your-host>/voice node tools/at-voice.js` on a public server.
    2. Set your Africa's Talking number's voice callback to that URL.
