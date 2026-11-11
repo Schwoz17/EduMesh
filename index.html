@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RootPath</title>
+<style>
+:root{--bg:#f3efe4;--ink:#1d2b24;--moss:#2f6b4f;--clay:#b4532a;--line:#cfc8b4;--card:#fbf9f2}
+@media (prefers-color-scheme:dark){:root{--bg:#14201a;--ink:#ece8da;--moss:#7cc29e;--clay:#e08a5c;--line:#34463c;--card:#1b2b23}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.5 Georgia,'Times New Roman',serif}
+main{max-width:34rem;margin:0 auto;padding:1.2rem 1rem 4rem}h1{font-size:2.2rem;margin:.2rem 0}h2{font-size:1.25rem;margin:1.4rem 0 .4rem}
+.sub{margin:0 0 1rem;opacity:.75}label{display:block;margin:.8rem 0 .2rem}input,select{font:inherit;color:inherit;width:100%;padding:.6rem;border:2px solid var(--line);border-radius:6px;background:var(--card)}
+button{font:inherit;color:inherit;padding:.7rem 1rem;border:2px solid var(--ink);border-radius:6px;background:var(--card);cursor:pointer;text-align:left;width:100%;margin:.35rem 0}
+button.go{background:var(--moss);color:#fff;border-color:var(--moss);text-align:center;margin-top:1rem}button.sm{width:auto;padding:.3rem .8rem;margin:0 .3rem 0 0}button.on{background:var(--ink);color:var(--bg)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
+.q{font-size:1.4rem;margin:1rem 0}.fix{border-left:4px solid var(--clay);padding:.3rem .8rem;margin:.8rem 0;background:var(--card)}.ok{color:var(--moss);font-weight:bold}
+ol.path{padding-left:1.4rem}.bar{height:.7rem;background:var(--line);border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:var(--moss)}
+.row{display:grid;grid-template-columns:1fr auto;gap:.2rem .6rem;margin:.5rem 0;font-size:.9rem}.row .bar{grid-column:1/3}
+code{display:block;white-space:pre-wrap;word-break:break-all;font-size:.85rem}button.sm{margin-bottom:.35rem}
+.hero svg{display:block;margin:.2rem 0 .4rem}.tag{font-size:1.25rem;margin:.2rem 0 1rem}
+.phone{background:#101510;color:#9fe6b0;font:16px/1.35 ui-monospace,Menlo,monospace;padding:1rem;border-radius:10px;min-height:9rem;white-space:pre-wrap}
+</style></head><body><main id="app"></main>
+<script src="src/content.js"></script><script src="src/algebra.js"></script><script src="src/physics.js"></script><script src="src/english.js"></script><script src="src/pcm.js"></script><script src="src/langs.js"></script><script src="src/engine.js"></script><script src="src/pack.js"></script><script src="src/ussd.js"></script><script src="src/router.js"></script>
+<script>
+const P=RootPathPack,{Diagnosis,Practice}=RootPathEngine,{ussd}=RootPathUssd,{smsEncode}=RootPathRouter,T=P.text,app=document.getElementById('app'),KEY='rootpath.v1';
+const store={get(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return{}}},set(v){try{localStorage.setItem(KEY,JSON.stringify(v))}catch(e){}}};
+const UI={en:{sub:'Find the real reason a subject feels hard, then follow a path to fix it. Works without internet.',name:'Your first name',topic:'Topic you are struggling with',start:'Start check',nq:'Not quite',next:'Next',gap:'Where the gap starts',nogap:'No gap found. You know this topic.',path:'Your path',go:'Start my path',lesson:'Learn',practice:'Practice',again:'Check another topic',res:'Here is your result',asked:'questions asked',well:'Correct!',now:'Mastery now',sms:'Progress code (send by SMS)',phone:'Feature phone demo',exp:'Download field-test JSON',home:'Home'},
+pcm:{sub:'Find the real reason why e dey hard, then follow the path to fix am. E no need internet.',name:'Your first name',topic:'Which topic hard you?',start:'Start check',nq:'E no correct',next:'Next',gap:'Where the wahala start',nogap:'No gap. You sabi this topic!',path:'Your path',go:'Start my path',lesson:'Learn',practice:'Practice',again:'Check another topic',res:'See your result',asked:'questions',well:'Correct!',now:'Your level now',sms:'Progress code (send am by SMS)',phone:'Feature phone demo',exp:'Download field-test JSON',home:'Home'}};
+Object.assign(UI,{yo:RootPathLangs.yo.ui,ig:RootPathLangs.ig.ui,ha:RootPathLangs.ha.ui});
+let L=store.get().lang||'en',D,who,before,after,pr,path,idx;const u=k=>(UI[L]&&UI[L][k])||UI.en[k],nm=id=>T.skillName(id,L),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const bar=(l,p)=>`<div class="row"><span>${esc(l)}</span><span>${Math.round(p*100)}%</span><div class="bar"><i style="width:${p*100}%"></i></div></div>`;
+const langBtns=()=>P.languages.map(x=>`<button class="sm ${x.code===L?'on':''}" data-l="${x.code}">${x.label}</button>`).join('');
+const draftNote=()=>P.languages.find(x=>x.code===L).status==='draft'?'<p class="sub">Draft translation: native-speaker review in progress. Untranslated lines show in English.</p>':'';
+Object.assign(UI.en,{tag:'Find the root of the learning gap. Then walk the path.',whyh:'Why RootPath?',why:'Tunde is in JSS1 and cannot solve equations with fractions. The real gap is equivalent fractions from Primary 5. RootPath finds hidden gaps like this, with no teacher and no internet.',howh:'How it works',how1:'Pick a topic you find hard and answer a few questions.',how2:'RootPath finds the earliest skill you are missing, and explains each mistake.',how3:'Follow a short path of lessons and practice until it is fixed.',badges:'Works offline · No data needed · Maths, Physics, English · 5 languages',getstarted:'Get started',about:'About RootPath'});
+Object.assign(UI.pcm,{tag:'Find the root of the wahala. Then follow the path.',whyh:'Why RootPath?',why:'Tunde dey JSS1 and e no fit solve equations wey get fractions. The real wahala na equivalent fractions from Primary 5. RootPath dey find hidden wahala like this, no teacher, no internet.',howh:'How e dey work',how1:'Pick topic wey hard you and answer small questions.',how2:'RootPath go find the first skill wey you miss, and show you why you miss am.',how3:'Follow the short path of lessons and practice till e correct.',badges:'E dey work offline · No data needed · Maths, Physics, English · 5 languages',getstarted:'Start',about:'About RootPath'});
+const logo=()=>`<svg width="132" height="40" viewBox="0 0 132 40" aria-hidden="true"><line x1="20" y1="20" x2="56" y2="20" stroke="var(--line)" stroke-width="4"/><line x1="64" y1="20" x2="100" y2="20" stroke="var(--line)" stroke-width="4"/><circle cx="14" cy="20" r="12" fill="var(--clay)"/><circle cx="62" cy="20" r="12" fill="#e3a857"/><circle cx="110" cy="20" r="12" fill="var(--moss)"/></svg>`;
+function welcome(){app.innerHTML=`<div class="hero">${logo()}<h1>RootPath</h1><p class="tag">${u('tag')}</p></div><div>${langBtns()}</div>${draftNote()}
+<div class="fix"><b>${u('whyh')}</b><br>${u('why')}</div><h2>${u('howh')}</h2><ol class="path"><li>${u('how1')}</li><li>${u('how2')}</li><li>${u('how3')}</li></ol><p class="sub">${u('badges')}</p><button class="go" id="gs">${u('getstarted')}</button>`;
+ app.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{L=b.dataset.l;const x=store.get();x.lang=L;store.set(x);welcome()});
+ gs.onclick=()=>{const x=store.get();x.seen=1;store.set(x);home()}}
+function home(){const s=store.get();app.innerHTML=`<h1>RootPath</h1><div>${langBtns()}</div>${draftNote()}<p class="sub">${u('sub')}</p>
+<label for="n">${u('name')}</label><input id="n" value="${esc(s.lastName||'')}" autocomplete="off"><label for="sj">Subject</label><select id="sj">${P.subjects.map(x=>`<option value="${x.id}">${x.label}</option>`).join('')}</select><label for="t">${u('topic')}</label><select id="t"></select><button class="go" id="go">${u('start')}</button>
+<button id="ph">${u('phone')}</button><button id="ex">${u('exp')}</button><button id="ab">${u('about')}</button>`;
+ const fill=()=>{t.innerHTML=P.subjects.find(x=>x.id===sj.value).targets.map(k=>`<option value="${k}">${esc(nm(k))}</option>`).join('')};sj.onchange=fill;fill();
+ app.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{L=b.dataset.l;const x=store.get();x.lang=L;store.set(x);home()});
+ go.onclick=()=>{who=n.value.trim()||'Learner';D=new Diagnosis(t.value,P.graph,P.bank);ask()};ph.onclick=phone;ex.onclick=exportJson;ab.onclick=welcome}
+function ask(){const n=D.next();if(!n)return finish();app.innerHTML=`<p class="sub">${esc(nm(n.skill))} · ${D.asked.length+1}</p><div class="q">${esc(T.qText(n.question,L))}</div>${n.question.o.map((o,i)=>`<button data-i="${i}">${esc(o[0])}</button>`).join('')}`;
+ app.querySelectorAll('button').forEach(b=>b.onclick=()=>{const r=D.answer(+b.dataset.i);r.misconception?note(r.misconception,ask):ask()})}
+function note(m,cont){app.innerHTML=`<h2>${u('nq')}</h2><div class="fix"><b>${esc(T.misName(m))}.</b><br>${esc(T.fix(m,L))}</div><button class="go" id="c">${u('next')}</button>`;c.onclick=cont}
+function summary(r){return `<h2>${u('gap')}</h2><p>${r.roots.length?r.roots.map(x=>`<b>${esc(nm(x))}</b>`).join(', '):u('nogap')}</p>`+(r.path.length?`<h2>${u('path')}</h2><ol class="path">${r.path.map(x=>`<li>${esc(nm(x))}</li>`).join('')}</ol>`:'')}
+function finish(){const r=D.result();before={...r.mastery};after={};path=r.path;
+ app.innerHTML=`<h1>${esc(who)}: ${u('res')}</h1><p class="sub">${r.questions} ${u('asked')}</p>${summary(r)}${r.path.length?`<button class="go" id="p">${u('go')}</button>`:''}<h2>${u('sms')}</h2><p><code>${esc(smsEncode(r.mastery))}</code></p><button id="h">${u('home')}</button>`;
+ h.onclick=home;if(r.path.length)p.onclick=()=>step(0)}
+function step(i){idx=i;if(i>=path.length)return complete();const s=path[i];app.innerHTML=`<p class="sub">${u('lesson')} ${i+1}/${path.length}</p><h1>${esc(nm(s))}</h1><div class="fix">${esc(T.lesson(s,L))}</div><button class="go" id="c">${u('practice')}</button>`;
+ c.onclick=()=>{pr=new Practice(s,D.p[s]??0.3,P.bank);drill()}}
+function drill(){const q=pr.next();if(!q){after[pr.skill]=pr.p;return step(idx+1)}app.innerHTML=`<p class="sub">${esc(nm(pr.skill))} ${Math.round(pr.p*100)}%</p><div class="q">${esc(T.qText(q,L))}</div>${q.o.map((o,i)=>`<button data-i="${i}">${esc(o[0])}</button>`).join('')}`;
+ app.querySelectorAll('button').forEach(b=>b.onclick=()=>{const r=pr.answer(+b.dataset.i);r.correct?(pr.done?drill():drill()):note(r.misconception||'partial',drill)})}
+function complete(){const r=D.result(),s=store.get();s.log=s.log||[];s.log.push({learner:who,target:r.target,roots:r.roots,path:r.path,questions:r.questions,before,after,teacherRoots:null,date:Date.now()});s.lastName=who;store.set(s);
+ app.innerHTML=`<h1>${esc(who)}</h1><h2>${u('now')}</h2>${path.map(x=>bar(nm(x),after[x]??before[x]??0)).join('')}<button class="go" id="h">${u('again')}</button>`;h.onclick=home}
+function phone(){let text='';const show=()=>{const s=ussd(text);scr.textContent=s.replace(/^(CON|END) /,'');if(s.startsWith('END'))text=''};
+ app.innerHTML=`<h1>${u('phone')}</h1><p class="sub">*123# · USSD · no data</p><div class="phone" id="scr"></div><label for="i">Reply</label><input id="i" inputmode="numeric" autocomplete="off"><button class="go" id="s">Send</button><button id="h">${u('home')}</button>`;
+ show();s.onclick=()=>{const v=i.value.trim();i.value='';text=text?text+'*'+v:v;show()};h.onclick=home}
+function exportJson(){const b=new Blob([JSON.stringify(store.get().log||[],null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='rootpath-field-test.json';a.click()}
+store.get().seen?home():welcome();
+</script></body></html>

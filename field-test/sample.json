@@ -1,0 +1,2 @@
+[{"learner":"Example A","target":"addu","roots":["equiv"],"teacherRoots":["equiv"],"before":{"equiv":0.04},"after":{"equiv":0.9}},
+ {"learner":"Example B","target":"leqf","roots":["frac"],"teacherRoots":null}]

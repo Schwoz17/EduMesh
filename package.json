@@ -1,16 +1,1 @@
-{
-  "name": "edumesh-ai",
-  "version": "1.0.0",
-  "description": "Offline-first AI tutor PWA for Nigerian students: in-browser AI, local textbook search, 5 language modes, voice access and on-device exam prediction. Optional classroom hub.",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "start": "node server/index.js",
-    "test": "node --test tests/*.test.js",
-    "build:data": "node scripts/build-data.js",
-    "pack": "node scripts/make-pack.js"
-  },
-  "engines": {
-    "node": ">=18"
-  }
-}
+{ "name": "rootpath", "version": "0.1.0", "description": "Offline root-cause AI math tutor", "scripts": { "test": "node --test \"test/*.test.js\"", "report": "node tools/report.js" } }

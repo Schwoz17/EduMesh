@@ -1,5 +1,0 @@
-[
-  {"subject": "Agricultural Science", "topic": "Soil and Soil Fertility", "q": "The best soil for most crops is…", "options": ["sandy soil", "clay soil", "loamy soil", "gravel"], "answer": 2, "explain": "Loamy soil holds enough water, drains well and is rich in humus."},
-  {"subject": "Agricultural Science", "topic": "Soil and Soil Fertility", "q": "Which practice adds nitrogen to the soil?", "options": ["Bush burning", "Planting legumes like cowpea", "Over-grazing", "Erosion"], "answer": 1, "explain": "Legumes such as cowpea and groundnut add nitrogen to the soil."},
-  {"subject": "Agricultural Science", "topic": "Farming Systems", "q": "Growing maize and cassava together on the same land at the same time is…", "options": ["crop rotation", "mixed cropping", "shifting cultivation", "monocropping"], "answer": 1, "explain": "Mixed cropping grows two or more crops together at the same time."}
-]
