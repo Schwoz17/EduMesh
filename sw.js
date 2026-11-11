@@ -1,6 +1,6 @@
 // RootPath service worker: saves the app on the phone so it opens with no internet.
 // Bump VERSION when files change; phones update the next time they are online.
-const VERSION = 'rootpath-v4';
+const VERSION = 'rootpath-v5';
 const FILES = [
   './', 'index.html', 'app.html', 'manifest.webmanifest', 'icon.svg', 'icon-192.png', 'icon-512.png',
   'src/content.js', 'src/algebra.js', 'src/physics.js', 'src/english.js', 'src/pcm.js',
@@ -17,6 +17,11 @@ self.addEventListener('activate', (e) => e.waitUntil(
 self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
+  // Lists that change when new voices are added: always try the network first, use the saved copy only offline.
+  if (/\/voice\/(clips\/index\.json|manifest[^/]*\.json|listen\.html)$/.test(new URL(req.url).pathname)) {
+    e.respondWith(caches.open(VERSION).then((c) => fetch(req, { cache: 'no-store' }).then((r) => { if (r.ok) c.put(req, r.clone()); return r; }).catch(() => c.match(req, { ignoreSearch: true }).then((hit) => hit || new Response('[]', { headers: { 'Content-Type': 'application/json' } })))));
+    return;
+  }
   e.respondWith(caches.open(VERSION).then(async (c) => {
     const hit = await c.match(req, { ignoreSearch: true });
     const net = fetch(req).then((r) => { if (r.ok) c.put(req, r.clone()); return r; }).catch(() => null);

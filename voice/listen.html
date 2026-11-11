@@ -44,4 +44,6 @@ $('all').onclick=()=>{auto=true;play(Math.max(cur,0))};$('stop').onclick=()=>{au
 document.addEventListener('keydown',e=>{const r=vis()[cur];if(e.key===' '){e.preventDefault();audio.paused?audio.play():audio.pause()}else if(r&&/^[gb]$/i.test(e.key))mark(r.id,e.key.toLowerCase()==='g'?'good':'bad')});
 $('copy').onclick=()=>{$('out').select();navigator.clipboard&&navigator.clipboard.writeText($('out').value)};$('reset').onclick=()=>{if(confirm('Clear all your marks?')){marks={};save();render()}};
 Promise.all([fetch('manifest.json').then(r=>r.json()),fetch('clips/index.json').then(r=>r.json()).catch(()=>[])]).then(([m,ids])=>{rows=m;have=new Set(ids);render()});
+// When a new version of the app installs, reload once so nobody sees an old saved copy.
+if ('serviceWorker' in navigator && navigator.serviceWorker.controller) { let r = false; navigator.serviceWorker.addEventListener('controllerchange', () => { if (!r) { r = true; location.reload(); } }); }
 </script></body></html>

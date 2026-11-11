@@ -155,4 +155,6 @@ function phone(){window.current=phone;let text='';const show=()=>{const s=ussd(t
 function exportJson(){const b=new Blob([JSON.stringify((store.get().log||[]).map(({i,...r})=>r),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='rootpath-field-test.json';a.click()}
 langSelect();store.get().seen?home():welcome();
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{});
+// When a new version of the app installs, reload once so nobody sees an old saved copy.
+if ('serviceWorker' in navigator && navigator.serviceWorker.controller) { let r = false; navigator.serviceWorker.addEventListener('controllerchange', () => { if (!r) { r = true; location.reload(); } }); }
 </script></body></html>

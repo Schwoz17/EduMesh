@@ -281,4 +281,6 @@ addEventListener('resize',()=>{if(innerWidth>900)go('phone')});
 go('phone');paintStory();renderTeacher();drawMap();badge();
 if(location.hash==='#reset'){localStorage.removeItem(KEY);location.hash='';location.reload()}
 if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{});
+// When a new version of the app installs, reload once so nobody sees an old saved copy.
+if ('serviceWorker' in navigator && navigator.serviceWorker.controller) { let r = false; navigator.serviceWorker.addEventListener('controllerchange', () => { if (!r) { r = true; location.reload(); } }); }
 </script></body></html>
