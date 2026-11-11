@@ -40,3 +40,7 @@ Why this design: phone-call tutoring plus SMS, targeted to each child's level, p
 - The demo uses the browser's voice. A live line uses the telephony provider's text-to-speech, which needs an Africa's Talking account and number.
 - Local-language prompts are drafts awaiting native-speaker review.
 - The teacher view's class is simulated until real calls come in.
+
+## Pitch
+- `pitch/RootPath_Deck.pptx`: the pitch deck (11 slides, speaker notes).
+- `PITCH.md`: the pitch script, the 60-second demo flow, and how to test it.
