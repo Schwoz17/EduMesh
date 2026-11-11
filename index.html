@@ -1,61 +1,158 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RootPath</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>RootPath</title>
+<meta name="description" content="Find the root of the learning gap, then walk the path. Offline, in five Nigerian languages.">
+<meta name="theme-color" content="#1f4a3a"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png">
 <style>
-:root{--bg:#f3efe4;--ink:#1d2b24;--moss:#2f6b4f;--clay:#b4532a;--line:#cfc8b4;--card:#fbf9f2}
-@media (prefers-color-scheme:dark){:root{--bg:#14201a;--ink:#ece8da;--moss:#7cc29e;--clay:#e08a5c;--line:#34463c;--card:#1b2b23}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.5 Georgia,'Times New Roman',serif}
-main{max-width:34rem;margin:0 auto;padding:1.2rem 1rem 4rem}h1{font-size:2.2rem;margin:.2rem 0}h2{font-size:1.25rem;margin:1.4rem 0 .4rem}
-.sub{margin:0 0 1rem;opacity:.75}label{display:block;margin:.8rem 0 .2rem}input,select{font:inherit;color:inherit;width:100%;padding:.6rem;border:2px solid var(--line);border-radius:6px;background:var(--card)}
-button{font:inherit;color:inherit;padding:.7rem 1rem;border:2px solid var(--ink);border-radius:6px;background:var(--card);cursor:pointer;text-align:left;width:100%;margin:.35rem 0}
-button.go{background:var(--moss);color:#fff;border-color:var(--moss);text-align:center;margin-top:1rem}button.sm{width:auto;padding:.3rem .8rem;margin:0 .3rem 0 0}button.on{background:var(--ink);color:var(--bg)}
-button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
-.q{font-size:1.4rem;margin:1rem 0}.fix{border-left:4px solid var(--clay);padding:.3rem .8rem;margin:.8rem 0;background:var(--card)}.ok{color:var(--moss);font-weight:bold}
-ol.path{padding-left:1.4rem}.bar{height:.7rem;background:var(--line);border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:var(--moss)}
-.row{display:grid;grid-template-columns:1fr auto;gap:.2rem .6rem;margin:.5rem 0;font-size:.9rem}.row .bar{grid-column:1/3}
-code{display:block;white-space:pre-wrap;word-break:break-all;font-size:.85rem}button.sm{margin-bottom:.35rem}
-.hero svg{display:block;margin:.2rem 0 .4rem}.tag{font-size:1.25rem;margin:.2rem 0 1rem}
-.phone{background:#101510;color:#9fe6b0;font:16px/1.35 ui-monospace,Menlo,monospace;padding:1rem;border-radius:10px;min-height:9rem;white-space:pre-wrap}
-</style></head><body><main id="app"></main>
+:root{--bg:#f3efe4;--ink:#1d2b24;--soft:#55635b;--moss:#2f6b4f;--deep:#1f4a3a;--clay:#b4532a;--gold:#e3a857;--line:#ddd6c3;--card:#fbf9f2;--tint:#e6efe8;--clayt:#f6e4da;--shadow:0 1px 2px rgba(29,43,36,.06),0 6px 20px rgba(29,43,36,.07)}
+@media (prefers-color-scheme:dark){:root{--bg:#121c17;--ink:#ece8da;--soft:#aab8ae;--moss:#7cc29e;--deep:#0d2219;--clay:#e08a5c;--line:#2c3c33;--card:#1a2821;--tint:#1d3328;--clayt:#3a2418;--shadow:0 1px 2px rgba(0,0,0,.4)}}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans',sans-serif;-webkit-tap-highlight-color:transparent}
+h1,h2,.serif{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.01em}
+h1{font-size:2rem;line-height:1.15;margin:.2rem 0 .4rem}h2{font-size:1.2rem;margin:1.6rem 0 .6rem}
+.top{position:sticky;top:0;z-index:5;background:var(--deep);color:#f3efe4;padding:.65rem 1rem;padding-top:calc(.65rem + env(safe-area-inset-top))}
+.top-in{max-width:34rem;margin:0 auto;display:flex;align-items:center;gap:.6rem}.brand{font:700 1.15rem Georgia,serif;flex:1;background:none;border:0;color:inherit;padding:0;margin:0;width:auto;cursor:pointer;display:flex;align-items:center;gap:.5rem}
+.top select{width:auto;padding:.35rem 1.8rem .35rem .7rem;border-radius:999px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#f3efe4;font-size:.9rem;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23f3efe4' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .7rem center}
+.top select option{color:#1d2b24}
+main{max-width:34rem;margin:0 auto;padding:1.1rem 1rem 5rem}
+.sub{margin:0 0 1rem;color:var(--soft)}.small{font-size:.88rem}.muted{color:var(--soft)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.1rem 1.15rem;box-shadow:var(--shadow);margin:.9rem 0}
+label{display:block;margin:.9rem 0 .3rem;font-weight:600;font-size:.92rem}
+input,select{font:inherit;color:inherit;width:100%;padding:.75rem .85rem;border:1.5px solid var(--line);border-radius:12px;background:var(--card)}
+button{font:inherit;color:inherit;cursor:pointer}
+.btn{display:block;width:100%;padding:.85rem 1rem;border-radius:14px;border:1.5px solid var(--line);background:var(--card);font-weight:600;text-align:center;margin:.5rem 0;min-height:48px}
+.btn.go{background:var(--moss);border-color:var(--moss);color:#fff}.btn.clay{background:var(--clay);border-color:var(--clay);color:#fff}.btn.ghost{background:transparent}
+@media (prefers-color-scheme:dark){.btn.go,.btn.clay{color:#10180f}}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.chips{display:flex;gap:.4rem;flex-wrap:wrap;margin:.4rem 0 .6rem}.chip{border:1.5px solid var(--line);background:var(--card);border-radius:999px;padding:.35rem .85rem;font-size:.92rem;min-height:38px}.chip.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.draft{font-size:.85rem;background:var(--clayt);border-radius:10px;padding:.5rem .75rem;margin:.4rem 0 .8rem}
+.hero{background:var(--deep);color:#f3efe4;border-radius:22px;padding:1.4rem 1.3rem 1.5rem;margin:.4rem 0 1rem;position:relative;overflow:hidden}
+.hero h1{color:#fff;font-size:2.3rem;margin:.6rem 0 .3rem}.hero p{margin:0;color:#cfe3d6;font-size:1.08rem}
+.badges{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0 0}.badges span{font-size:.8rem;font-weight:600;padding:.3rem .65rem;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2)}
+.story{border-left:4px solid var(--clay)}.story b{font-family:Georgia,serif}
+.steps{list-style:none;padding:0;margin:.4rem 0;counter-reset:s}.steps li{counter-increment:s;display:flex;gap:.8rem;align-items:flex-start;margin:.7rem 0}
+.steps li::before{content:counter(s);flex:none;width:2rem;height:2rem;border-radius:50%;display:grid;place-items:center;background:var(--tint);color:var(--moss);font-weight:700}
+.links{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.4rem}.links .btn{margin:0;font-size:.9rem}
+/* diagnosis */
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:.5rem;margin:.2rem 0 .6rem}
+.pill{display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:700;padding:.3rem .7rem;border-radius:999px;background:var(--tint);color:var(--moss)}
+.pill.clay{background:var(--clayt);color:var(--clay)}
+.trail{display:flex;gap:.3rem;align-items:center}.trail i{width:.55rem;height:.55rem;border-radius:50%;background:var(--line)}.trail i.on{background:var(--clay)}
+.q{font:600 1.45rem/1.35 Georgia,serif;margin:1rem 0 1.2rem}
+.opt{display:flex;align-items:center;gap:.85rem;width:100%;text-align:left;padding:.8rem .9rem;margin:.55rem 0;border:1.5px solid var(--line);border-radius:16px;background:var(--card);min-height:58px;font-size:1.1rem;box-shadow:var(--shadow);transition:transform .08s,border-color .15s}
+.opt:active{transform:scale(.985)}.opt:hover{border-color:var(--moss)}
+.opt .k{flex:none;width:2.1rem;height:2.1rem;border-radius:10px;display:grid;place-items:center;font-weight:700;background:var(--tint);color:var(--moss)}
+.fix{background:var(--clayt);border-radius:16px;padding:1rem 1.1rem;margin:.8rem 0}.fix .tag{font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--clay)}
+.fix p{margin:.35rem 0 0;font-size:1.08rem}
+/* result */
+.found{background:var(--clay);color:#fff;border-radius:20px;padding:1.2rem 1.2rem 1.3rem;margin:.6rem 0 1rem}
+.found.none{background:var(--moss)}.found .tag{font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.9}
+.found h1{color:#fff;margin:.3rem 0 .2rem;font-size:1.8rem}.found p{margin:0;opacity:.92}
+.route{list-style:none;padding:0;margin:.6rem 0;position:relative}
+.route li{position:relative;display:flex;align-items:center;gap:.9rem;padding:.35rem 0 1.1rem}
+.route li:not(:last-child)::after{content:'';position:absolute;left:1.35rem;top:2.9rem;bottom:.1rem;width:3px;background:var(--line);border-radius:2px}
+.node{flex:none;width:2.7rem;height:2.7rem;border-radius:50%;display:grid;place-items:center;font-weight:800;background:var(--card);border:3px solid var(--line);color:var(--soft);z-index:1}
+.route .root .node{background:var(--clay);border-color:var(--clay);color:#fff}.route .goal .node{background:var(--moss);border-color:var(--moss);color:#fff}
+.route .done .node{background:var(--moss);border-color:var(--moss);color:#fff}.route .now .node{border-color:var(--gold);box-shadow:0 0 0 5px rgba(227,168,87,.25)}
+.route .nm{font-weight:600}.route .lab{display:block;font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--soft)}
+.route .root .lab{color:var(--clay)}.route .goal .lab{color:var(--moss)}
+.why{list-style:none;padding:0;margin:.5rem 0}.why li{display:grid;grid-template-columns:1fr auto;gap:.15rem .6rem;padding:.55rem 0;border-bottom:1px solid var(--line);font-size:.93rem}.why li:last-child{border:0}
+.st{font-size:.75rem;font-weight:800;padding:.15rem .5rem;border-radius:999px;align-self:center}.st.M{background:var(--tint);color:var(--moss)}.st.W{background:var(--clayt);color:var(--clay)}
+.bar{grid-column:1/3;height:.5rem;background:var(--line);border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;background:var(--moss);border-radius:4px}.bar i.low{background:var(--clay)}
+.ai{display:flex;gap:.6rem;align-items:flex-start;font-size:.88rem;color:var(--soft);background:var(--tint);border-radius:12px;padding:.6rem .75rem;margin:.6rem 0 0}
+.code{display:flex;gap:.5rem;align-items:center}.code code{flex:1;font:600 .95rem ui-monospace,Menlo,monospace;background:var(--bg);border-radius:10px;padding:.6rem .7rem;word-break:break-all}
+.code button{flex:none;border:1.5px solid var(--line);background:var(--card);border-radius:10px;padding:.55rem .8rem;font-weight:600}
+details.card summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between}details.card summary::after{content:'+';color:var(--soft)}details[open].card summary::after{content:'–'}
+.checks label{display:flex;align-items:center;gap:.6rem;font-weight:500;margin:.45rem 0}.checks input{width:1.2rem;height:1.2rem;accent-color:var(--moss)}
+/* lessons */
+.strip{display:flex;gap:.35rem;margin:.2rem 0 .8rem}.strip i{flex:1;height:.4rem;border-radius:3px;background:var(--line)}.strip i.done{background:var(--moss)}.strip i.now{background:var(--gold)}
+.lesson{font-size:1.12rem;line-height:1.65}
+.meter{margin:.4rem 0 1rem}.meter .top2{display:flex;justify-content:space-between;font-size:.85rem;font-weight:700;margin-bottom:.3rem}
+.lvl{display:inline-block;font-size:.75rem;font-weight:800;padding:.15rem .55rem;border-radius:999px;background:var(--tint);color:var(--moss)}
+.ok{color:var(--moss);font-weight:800}
+/* complete */
+.gain{display:grid;grid-template-columns:1fr auto;gap:.2rem .6rem;padding:.7rem 0;border-bottom:1px solid var(--line)}.gain:last-child{border:0}.gain .nums{font-weight:700;font-size:.9rem}
+.gain .bar{position:relative}.gain .bar b{position:absolute;top:0;bottom:0;background:var(--clay);opacity:.45;border-radius:4px}
+.celebrate{font-size:2.6rem;line-height:1}
+/* feature phone */
+.handset{max-width:19rem;margin:1rem auto;background:#26302a;border-radius:2.2rem;padding:1.4rem 1.1rem 1.3rem;box-shadow:0 14px 40px rgba(0,0,0,.25)}
+.screen{background:#c9dcb4;color:#14240f;font:15px/1.35 ui-monospace,Menlo,monospace;padding:.8rem;border-radius:.6rem;min-height:11.5rem;white-space:pre-wrap;border:3px solid #18201b}
+.reply{display:flex;gap:.4rem;margin:.7rem 0}.reply input{background:#eef3e6;color:#14240f;border:0;font:600 1rem ui-monospace,monospace;padding:.55rem .7rem;border-radius:.5rem}
+.reply button{flex:none;background:var(--gold);border:0;border-radius:.5rem;padding:0 .9rem;font-weight:800;color:#2a1c06}
+.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:.45rem}.keys button{background:#3a463e;color:#eef3e6;border:0;border-radius:.8rem;padding:.6rem 0;font:700 1.1rem system-ui}
+.keys button:active{background:#4d5c52}
+.toast{position:fixed;left:50%;bottom:1.2rem;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:.6rem 1rem;border-radius:12px;font-weight:600;font-size:.9rem;z-index:9}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+<header class="top"><div class="top-in"><button class="brand" id="brand" aria-label="RootPath home"><svg width="54" height="16" viewBox="0 0 132 40" aria-hidden="true"><line x1="20" y1="20" x2="56" y2="20" stroke="#6f8f7c" stroke-width="5"/><line x1="64" y1="20" x2="100" y2="20" stroke="#6f8f7c" stroke-width="5"/><circle cx="14" cy="20" r="13" fill="#d06a3c"/><circle cx="62" cy="20" r="13" fill="#e3a857"/><circle cx="110" cy="20" r="13" fill="#7cc29e"/></svg>RootPath</button><select id="lang" aria-label="Language"></select></div></header>
+<main id="app"></main><div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 <script src="src/content.js"></script><script src="src/algebra.js"></script><script src="src/physics.js"></script><script src="src/english.js"></script><script src="src/pcm.js"></script><script src="src/langs.js"></script><script src="src/engine.js"></script><script src="src/pack.js"></script><script src="src/ussd.js"></script><script src="src/router.js"></script>
 <script>
-const P=RootPathPack,{Diagnosis,Practice}=RootPathEngine,{ussd}=RootPathUssd,{smsEncode}=RootPathRouter,T=P.text,app=document.getElementById('app'),KEY='rootpath.v1';
+const P=RootPathPack,{Diagnosis,Practice,PARAMS}=RootPathEngine,{ussd}=RootPathUssd,{smsEncode}=RootPathRouter,T=P.text,app=document.getElementById('app'),KEY='rootpath.v1';
 const store={get(){try{return JSON.parse(localStorage.getItem(KEY))||{}}catch(e){return{}}},set(v){try{localStorage.setItem(KEY,JSON.stringify(v))}catch(e){}}};
 const UI={en:{sub:'Find the real reason a subject feels hard, then follow a path to fix it. Works without internet.',name:'Your first name',topic:'Topic you are struggling with',start:'Start check',nq:'Not quite',next:'Next',gap:'Where the gap starts',nogap:'No gap found. You know this topic.',path:'Your path',go:'Start my path',lesson:'Learn',practice:'Practice',again:'Check another topic',res:'Here is your result',asked:'questions asked',well:'Correct!',now:'Mastery now',sms:'Progress code (send by SMS)',phone:'Feature phone demo',exp:'Download field-test JSON',home:'Home'},
 pcm:{sub:'Find the real reason why e dey hard, then follow the path to fix am. E no need internet.',name:'Your first name',topic:'Which topic hard you?',start:'Start check',nq:'E no correct',next:'Next',gap:'Where the wahala start',nogap:'No gap. You sabi this topic!',path:'Your path',go:'Start my path',lesson:'Learn',practice:'Practice',again:'Check another topic',res:'See your result',asked:'questions',well:'Correct!',now:'Your level now',sms:'Progress code (send am by SMS)',phone:'Feature phone demo',exp:'Download field-test JSON',home:'Home'}};
 Object.assign(UI,{yo:RootPathLangs.yo.ui,ig:RootPathLangs.ig.ui,ha:RootPathLangs.ha.ui});
-let L=store.get().lang||'en',D,who,before,after,pr,path,idx;const u=k=>(UI[L]&&UI[L][k])||UI.en[k],nm=id=>T.skillName(id,L),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const bar=(l,p)=>`<div class="row"><span>${esc(l)}</span><span>${Math.round(p*100)}%</span><div class="bar"><i style="width:${p*100}%"></i></div></div>`;
-const langBtns=()=>P.languages.map(x=>`<button class="sm ${x.code===L?'on':''}" data-l="${x.code}">${x.label}</button>`).join('');
-const draftNote=()=>P.languages.find(x=>x.code===L).status==='draft'?'<p class="sub">Draft translation: native-speaker review in progress. Untranslated lines show in English.</p>':'';
-Object.assign(UI.en,{tag:'Find the root of the learning gap. Then walk the path.',whyh:'Why RootPath?',why:'Tunde is in JSS1 and cannot solve equations with fractions. The real gap is equivalent fractions from Primary 5. RootPath finds hidden gaps like this, with no teacher and no internet.',howh:'How it works',how1:'Pick a topic you find hard and answer a few questions.',how2:'RootPath finds the earliest skill you are missing, and explains each mistake.',how3:'Follow a short path of lessons and practice until it is fixed.',badges:'Works offline · No data needed · Maths, Physics, English · 5 languages',getstarted:'Get started',about:'About RootPath'});
-Object.assign(UI.pcm,{tag:'Find the root of the wahala. Then follow the path.',whyh:'Why RootPath?',why:'Tunde dey JSS1 and e no fit solve equations wey get fractions. The real wahala na equivalent fractions from Primary 5. RootPath dey find hidden wahala like this, no teacher, no internet.',howh:'How e dey work',how1:'Pick topic wey hard you and answer small questions.',how2:'RootPath go find the first skill wey you miss, and show you why you miss am.',how3:'Follow the short path of lessons and practice till e correct.',badges:'E dey work offline · No data needed · Maths, Physics, English · 5 languages',getstarted:'Start',about:'About RootPath'});
-const logo=()=>`<svg width="132" height="40" viewBox="0 0 132 40" aria-hidden="true"><line x1="20" y1="20" x2="56" y2="20" stroke="var(--line)" stroke-width="4"/><line x1="64" y1="20" x2="100" y2="20" stroke="var(--line)" stroke-width="4"/><circle cx="14" cy="20" r="12" fill="var(--clay)"/><circle cx="62" cy="20" r="12" fill="#e3a857"/><circle cx="110" cy="20" r="12" fill="var(--moss)"/></svg>`;
-function welcome(){app.innerHTML=`<div class="hero">${logo()}<h1>RootPath</h1><p class="tag">${u('tag')}</p></div><div>${langBtns()}</div>${draftNote()}
-<div class="fix"><b>${u('whyh')}</b><br>${u('why')}</div><h2>${u('howh')}</h2><ol class="path"><li>${u('how1')}</li><li>${u('how2')}</li><li>${u('how3')}</li></ol><p class="sub">${u('badges')}</p><button class="go" id="gs">${u('getstarted')}</button>`;
- app.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{L=b.dataset.l;const x=store.get();x.lang=L;store.set(x);welcome()});
- gs.onclick=()=>{const x=store.get();x.seen=1;store.set(x);home()}}
-function home(){const s=store.get();app.innerHTML=`<h1>RootPath</h1><div>${langBtns()}</div>${draftNote()}<p class="sub">${u('sub')}</p>
-<label for="n">${u('name')}</label><input id="n" value="${esc(s.lastName||'')}" autocomplete="off"><label for="sj">Subject</label><select id="sj">${P.subjects.map(x=>`<option value="${x.id}">${x.label}</option>`).join('')}</select><label for="t">${u('topic')}</label><select id="t"></select><button class="go" id="go">${u('start')}</button>
-<button id="ph">${u('phone')}</button><button id="ex">${u('exp')}</button><button id="ab">${u('about')}</button>`;
- const fill=()=>{t.innerHTML=P.subjects.find(x=>x.id===sj.value).targets.map(k=>`<option value="${k}">${esc(nm(k))}</option>`).join('')};sj.onchange=fill;fill();
- app.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{L=b.dataset.l;const x=store.get();x.lang=L;store.set(x);home()});
- go.onclick=()=>{who=n.value.trim()||'Learner';D=new Diagnosis(t.value,P.graph,P.bank);ask()};ph.onclick=phone;ex.onclick=exportJson;ab.onclick=welcome}
-function ask(){const n=D.next();if(!n)return finish();app.innerHTML=`<p class="sub">${esc(nm(n.skill))} · ${D.asked.length+1}</p><div class="q">${esc(T.qText(n.question,L))}</div>${n.question.o.map((o,i)=>`<button data-i="${i}">${esc(o[0])}</button>`).join('')}`;
- app.querySelectorAll('button').forEach(b=>b.onclick=()=>{const r=D.answer(+b.dataset.i);r.misconception?note(r.misconception,ask):ask()})}
-function note(m,cont){app.innerHTML=`<h2>${u('nq')}</h2><div class="fix"><b>${esc(T.misName(m))}.</b><br>${esc(T.fix(m,L))}</div><button class="go" id="c">${u('next')}</button>`;c.onclick=cont}
-function summary(r){return `<h2>${u('gap')}</h2><p>${r.roots.length?r.roots.map(x=>`<b>${esc(nm(x))}</b>`).join(', '):u('nogap')}</p>`+(r.path.length?`<h2>${u('path')}</h2><ol class="path">${r.path.map(x=>`<li>${esc(nm(x))}</li>`).join('')}</ol>`:'')}
-function finish(){const r=D.result();before={...r.mastery};after={};path=r.path;
- app.innerHTML=`<h1>${esc(who)}: ${u('res')}</h1><p class="sub">${r.questions} ${u('asked')}</p>${summary(r)}${r.path.length?`<button class="go" id="p">${u('go')}</button>`:''}<h2>${u('sms')}</h2><p><code>${esc(smsEncode(r.mastery))}</code></p><button id="h">${u('home')}</button>`;
- h.onclick=home;if(r.path.length)p.onclick=()=>step(0)}
-function step(i){idx=i;if(i>=path.length)return complete();const s=path[i];app.innerHTML=`<p class="sub">${u('lesson')} ${i+1}/${path.length}</p><h1>${esc(nm(s))}</h1><div class="fix">${esc(T.lesson(s,L))}</div><button class="go" id="c">${u('practice')}</button>`;
- c.onclick=()=>{pr=new Practice(s,D.p[s]??0.3,P.bank);drill()}}
-function drill(){const q=pr.next();if(!q){after[pr.skill]=pr.p;return step(idx+1)}app.innerHTML=`<p class="sub">${esc(nm(pr.skill))} ${Math.round(pr.p*100)}%</p><div class="q">${esc(T.qText(q,L))}</div>${q.o.map((o,i)=>`<button data-i="${i}">${esc(o[0])}</button>`).join('')}`;
- app.querySelectorAll('button').forEach(b=>b.onclick=()=>{const r=pr.answer(+b.dataset.i);r.correct?(pr.done?drill():drill()):note(r.misconception||'partial',drill)})}
-function complete(){const r=D.result(),s=store.get();s.log=s.log||[];s.log.push({learner:who,target:r.target,roots:r.roots,path:r.path,questions:r.questions,before,after,teacherRoots:null,date:Date.now()});s.lastName=who;store.set(s);
- app.innerHTML=`<h1>${esc(who)}</h1><h2>${u('now')}</h2>${path.map(x=>bar(nm(x),after[x]??before[x]??0)).join('')}<button class="go" id="h">${u('again')}</button>`;h.onclick=home}
-function phone(){let text='';const show=()=>{const s=ussd(text);scr.textContent=s.replace(/^(CON|END) /,'');if(s.startsWith('END'))text=''};
- app.innerHTML=`<h1>${u('phone')}</h1><p class="sub">*123# · USSD · no data</p><div class="phone" id="scr"></div><label for="i">Reply</label><input id="i" inputmode="numeric" autocomplete="off"><button class="go" id="s">Send</button><button id="h">${u('home')}</button>`;
- show();s.onclick=()=>{const v=i.value.trim();i.value='';text=text?text+'*'+v:v;show()};h.onclick=home}
-function exportJson(){const b=new Blob([JSON.stringify(store.get().log||[],null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='rootpath-field-test.json';a.click()}
-store.get().seen?home():welcome();
+Object.assign(UI.en,{tag:'Find the root of the learning gap. Then walk the path.',whyh:'Why RootPath?',why:'Tunde is in JSS1 and cannot solve equations with fractions. The real gap is equivalent fractions from Primary 5. RootPath finds hidden gaps like this, with no teacher and no internet.',howh:'How it works',how1:'Pick a topic you find hard and answer a few questions.',how2:'RootPath finds the earliest skill you are missing, and explains each mistake.',how3:'Follow a short path of lessons and practice until it is fixed.',badges:'Works offline · No data needed · Maths, Physics, English · 5 languages',getstarted:'Get started',about:'About RootPath',
+ subject:'Subject',checking:'Checking',depth:'skills deep',mistake:'Common mistake',found:'Root gap found',foundIn:'Found in {n} questions. Fix this first, and the rest gets easier.',nofound:'You know this topic',startHere:'Start here',goal:'Your goal',onPath:'On the path',decided:'How RootPath decided',decidedP:'Each answer updates a mastery probability for that skill (Bayesian Knowledge Tracing), allowing for lucky guesses and slips. Weak skills send the search down to earlier skills. It all runs on this phone.',inferred:'{n} more skills were settled without asking, from how skills depend on each other.',masteredL:'Mastered',gapL:'Gap',teacher:'Teacher check (optional)',teacherP:'Which skill do you think this learner is really missing? Your answer is saved with the result so RootPath can be compared with teachers.',same:'Same as RootPath',save:'Save teacher view',saved:'Saved. Thank you!',copy:'Copy',copied:'Copied',step:'Step',of:'of',mastery:'Mastery',complete:'Path complete!',beforeAfter:'Before → after',levels:['Attempted','Familiar','Proficient','Mastered'],offline:'Ready offline',install:'Install app',answer:'Answer',feature:'Same engine on a basic phone. Dial, reply with numbers, no data.',send:'Send'});
+Object.assign(UI.pcm,{tag:'Find the root of the wahala. Then follow the path.',whyh:'Why RootPath?',why:'Tunde dey JSS1 and e no fit solve equations wey get fractions. The real wahala na equivalent fractions from Primary 5. RootPath dey find hidden wahala like this, no teacher, no internet.',howh:'How e dey work',how1:'Pick topic wey hard you and answer small questions.',how2:'RootPath go find the first skill wey you miss, and show you why you miss am.',how3:'Follow the short path of lessons and practice till e correct.',badges:'E dey work offline · No data needed · Maths, Physics, English · 5 languages',getstarted:'Start',about:'About RootPath',
+ checking:'We dey check',mistake:'Mistake wey people dey make',found:'We don find where the wahala start',foundIn:'We find am for {n} questions. Fix this one first, the rest go dey easy.',nofound:'You sabi this topic',startHere:'Start here',goal:'Where you dey go',decided:'How RootPath take decide',complete:'You don finish the path!',copied:'E don copy'});
+let L=store.get().lang||'en',D,who,before,after,pr,path,idx,entry;
+const u=k=>(UI[L]&&UI[L][k])||UI.en[k],nm=id=>T.skillName(id,L),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])),$=id=>document.getElementById(id);
+const pct=p=>Math.round((p||0)*100);
+const level=p=>u('levels')[p>=PARAMS.mastered?3:p>=0.7?2:p>=0.4?1:0];
+const draftNote=()=>P.languages.find(x=>x.code===L).status==='draft'?'<p class="draft">Draft translation: native-speaker review in progress. Untranslated lines show in English.</p>':'';
+const toast=t=>{const e=$('toast');e.textContent=t;e.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>e.hidden=true,2200)};
+const view=html=>{app.innerHTML=html;window.scrollTo(0,0)};
+function langSelect(){const s=$('lang');s.innerHTML=P.languages.map(x=>`<option value="${x.code}">${x.label}</option>`).join('');s.value=L;s.onchange=()=>{L=s.value;const x=store.get();x.lang=L;store.set(x);document.documentElement.lang=L==='pcm'?'en':L;(window.current||home)()}}
+$('brand').onclick=()=>home();
+function welcome(){window.current=welcome;view(`<section class="hero"><svg width="96" height="29" viewBox="0 0 132 40" aria-hidden="true"><line x1="20" y1="20" x2="56" y2="20" stroke="#6f8f7c" stroke-width="5"/><line x1="64" y1="20" x2="100" y2="20" stroke="#6f8f7c" stroke-width="5"/><circle cx="14" cy="20" r="13" fill="#d06a3c"/><circle cx="62" cy="20" r="13" fill="#e3a857"/><circle cx="110" cy="20" r="13" fill="#7cc29e"/></svg><h1>RootPath</h1><p>${u('tag')}</p><div class="badges">${u('badges').split(' · ').map(b=>`<span>${esc(b)}</span>`).join('')}</div></section>${draftNote()}
+<div class="card story"><b>${u('whyh')}</b><p style="margin:.4rem 0 0">${u('why')}</p></div><h2>${u('howh')}</h2><ol class="steps"><li>${u('how1')}</li><li>${u('how2')}</li><li>${u('how3')}</li></ol><button class="btn go" id="gs">${u('getstarted')}</button>`);
+ $('gs').onclick=()=>{const x=store.get();x.seen=1;store.set(x);home()}}
+function home(){window.current=home;const s=store.get();view(`<h1>${u('start')}</h1>${draftNote()}<p class="sub">${u('sub')}</p>
+<div class="card"><label for="n" style="margin-top:0">${u('name')}</label><input id="n" value="${esc(s.lastName||'')}" autocomplete="off"><label for="sj">${u('subject')}</label><select id="sj">${P.subjects.map(x=>`<option value="${x.id}">${x.label}</option>`).join('')}</select><label for="t">${u('topic')}</label><select id="t"></select><button class="btn go" id="go">${u('start')}</button></div>
+<div class="links"><button class="btn" id="ph">📱 ${u('phone')}</button><button class="btn" id="ab">${u('about')}</button></div><button class="btn ghost small" id="ex">${u('exp')} (${(s.log||[]).length})</button><p class="small muted" id="offline" hidden>✓ ${u('offline')}</p>`);
+ const fill=()=>{$('t').innerHTML=P.subjects.find(x=>x.id===$('sj').value).targets.map(k=>`<option value="${k}">${esc(nm(k))}</option>`).join('')};$('sj').onchange=fill;fill();
+ $('go').onclick=()=>{who=$('n').value.trim()||'Learner';const x=store.get();x.lastName=who;store.set(x);D=new Diagnosis($('t').value,P.graph,P.bank);ask()};$('ph').onclick=phone;$('ex').onclick=exportJson;$('ab').onclick=welcome;
+ if(navigator.serviceWorker&&navigator.serviceWorker.controller)$('offline').hidden=false}
+const depthOf=s=>{const g=P.graph;return Math.max(0,g.by[D.target].lvl-g.by[s].lvl)};
+function ask(){window.current=ask;const n=D.next();if(!n)return finish();const d=depthOf(n.skill);
+ view(`<div class="qhead"><span class="pill ${d?'clay':''}">${u('checking')}: ${esc(nm(n.skill))}</span><span class="trail" aria-label="${d} ${u('depth')}">${[0,1,2,3,4].map(i=>`<i class="${i<=d?'on':''}"></i>`).join('')}</span></div>
+<p class="small muted">${u('answer')} ${D.asked.length+1}</p><div class="q">${esc(T.qText(n.question,L))}</div>${n.question.o.map((o,i)=>`<button class="opt" data-i="${i}"><span class="k">${'ABCD'[i]}</span><span>${esc(o[0])}</span></button>`).join('')}`);
+ app.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const r=D.answer(+b.dataset.i);r.misconception?note(r.misconception,ask):ask()})}
+function note(m,cont){view(`<h1>${u('nq')}</h1><div class="fix"><div class="tag">${u('mistake')}</div><p><b>${esc(T.misName(m))}.</b></p><p>${esc(T.fix(m,L))}</p></div><button class="btn go" id="c">${u('next')}</button>`);$('c').onclick=cont;$('c').focus()}
+function route(list,cur){return `<ol class="route">${list.map((x,i)=>{const isRoot=i===0&&D.result().roots.includes(x),isGoal=x===D.target,cls=[isRoot?'root':'',isGoal?'goal':'',cur!=null&&i<cur?'done':'',cur===i?'now':''].join(' ');
+ return `<li class="${cls}"><span class="node">${cur!=null&&i<cur?'✓':i+1}</span><span><span class="lab">${isRoot?u('startHere'):isGoal?u('goal'):u('onPath')}</span><span class="nm">${esc(nm(x))}</span></span></li>`}).join('')}</ol>`}
+function decided(r){const tested=Object.keys(r.mastery).filter(k=>r.status[k]==='M'||r.status[k]==='W');const inferred=Object.values(r.status).filter(v=>v==='iM'||v==='iW').length;
+ return `<details class="card"><summary>🧠 ${u('decided')}</summary><ul class="why">${tested.map(k=>`<li><span>${esc(nm(k))}</span><span class="st ${r.status[k]}">${r.status[k]==='M'?u('masteredL'):u('gapL')} · ${pct(r.mastery[k])}%</span><div class="bar"><i class="${r.mastery[k]<.5?'low':''}" style="width:${pct(r.mastery[k])}%"></i></div></li>`).join('')}</ul>
+${inferred?`<p class="small muted">${u('inferred').replace('{n}',inferred)}</p>`:''}<div class="ai"><span>🤖</span><span>${u('decidedP')}</span></div></details>`}
+function finish(){window.current=null;const r=D.result();before={...r.mastery};after={};path=r.path;
+ const s=store.get();s.log=s.log||[];entry={learner:who,target:r.target,roots:r.roots,path:r.path,questions:r.questions,before,after:null,teacherRoots:null,date:Date.now()};s.log.push(entry);entry.i=s.log.length-1;s.lastName=who;store.set(s);
+ const cands=[r.target,...P.graph.below[r.target]].sort((a,b)=>P.graph.by[a].lvl-P.graph.by[b].lvl);
+ view(`<p class="small muted">${esc(who)} · ${u('res')}</p>${r.roots.length?`<div class="found"><div class="tag">${u('found')}</div><h1>${r.roots.map(x=>esc(nm(x))).join(' + ')}</h1><p>${u('foundIn').replace('{n}',r.questions)}</p></div>`:`<div class="found none"><div class="tag">${u('nofound')}</div><h1>${esc(nm(r.target))}</h1><p>${u('nogap')}</p></div>`}
+${r.path.length?`<h2>${u('path')}</h2>${route(r.path)}<button class="btn go" id="p">${u('go')}</button>`:''}${decided(r)}
+<div class="card"><b>${u('sms')}</b><div class="code" style="margin-top:.5rem"><code id="sms">${esc(smsEncode(r.mastery))}</code><button id="cp">${u('copy')}</button></div></div>
+<details class="card"><summary>👩🏾‍🏫 ${u('teacher')}</summary><p class="small muted">${u('teacherP')}</p><div class="checks">${cands.map(k=>`<label><input type="checkbox" value="${k}">${esc(nm(k))}</label>`).join('')}</div><button class="btn" id="same">${u('same')}</button><button class="btn go" id="tsave">${u('save')}</button></details>
+<button class="btn ghost" id="h">${u('home')}</button>`);
+ $('h').onclick=home;if(r.path.length)$('p').onclick=()=>step(0);
+ $('cp').onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText($('sms').textContent).then(()=>toast(u('copied')),()=>{})};
+ const saveT=roots=>{const x=store.get();if(x.log&&x.log[entry.i]){x.log[entry.i].teacherRoots=roots;store.set(x)}entry.teacherRoots=roots;toast(u('saved'))};
+ $('same').onclick=()=>saveT([...r.roots]);$('tsave').onclick=()=>saveT([...app.querySelectorAll('.checks input:checked')].map(i=>i.value))}
+function step(i){idx=i;if(i>=path.length)return complete();const s=path[i];
+ view(`<div class="strip">${path.map((_,j)=>`<i class="${j<i?'done':j===i?'now':''}"></i>`).join('')}</div><p class="small muted">${u('step')} ${i+1} ${u('of')} ${path.length} · ${u('lesson')}</p><h1>${esc(nm(s))}</h1><div class="card lesson">${esc(T.lesson(s,L))}</div><button class="btn go" id="c">${u('practice')}</button>`);
+ $('c').onclick=()=>{pr=new Practice(s,D.p[s]??0.3,P.bank);drill()}}
+function meter(p){return `<div class="meter"><div class="top2"><span>${u('mastery')} · <span class="lvl">${level(p)}</span></span><span>${pct(p)}%</span></div><div class="bar" style="height:.65rem"><i class="${p<.5?'low':''}" style="width:${pct(p)}%"></i></div></div>`}
+function drill(){const q=pr.next();if(!q){after[pr.skill]=pr.p;return step(idx+1)}
+ view(`<div class="strip">${path.map((_,j)=>`<i class="${j<idx?'done':j===idx?'now':''}"></i>`).join('')}</div><p class="small muted">${u('practice')} · ${esc(nm(pr.skill))}</p>${meter(pr.p)}<div class="q">${esc(T.qText(q,L))}</div>${q.o.map((o,i)=>`<button class="opt" data-i="${i}"><span class="k">${'ABCD'[i]}</span><span>${esc(o[0])}</span></button>`).join('')}`);
+ app.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{const r=pr.answer(+b.dataset.i);r.correct?(toast(u('well')),drill()):note(r.misconception||'partial',drill)})}
+function complete(){const s=store.get();if(s.log&&s.log[entry.i]){s.log[entry.i].after={...after};store.set(s)}
+ view(`<div style="text-align:center;margin-top:1rem"><div class="celebrate">🎉</div><h1>${u('complete')}</h1><p class="sub">${esc(who)}</p></div>
+<div class="card"><b>${u('beforeAfter')}</b>${path.map(x=>{const b=before[x]??0,a=after[x]??b;return `<div class="gain"><span>${esc(nm(x))}<br><span class="lvl">${level(a)}</span></span><span class="nums">${pct(b)}% → <span class="ok">${pct(a)}%</span></span><div class="bar"><i style="width:${pct(a)}%"></i><b style="left:0;width:${pct(b)}%"></b></div></div>`}).join('')}</div>
+<button class="btn go" id="h">${u('again')}</button>`);$('h').onclick=home}
+function phone(){window.current=phone;let text='';const show=()=>{const s=ussd(text);$('scr').textContent=s.replace(/^(CON|END) /,'');if(s.startsWith('END'))text=''};
+ view(`<h1>${u('phone')}</h1><p class="sub">${u('feature')}</p><div class="handset"><div class="screen" id="scr" aria-live="polite"></div><div class="reply"><input id="i" inputmode="numeric" autocomplete="off" aria-label="Reply"><button id="s">${u('send')}</button></div><div class="keys">${['1','2','3','4','5','6','7','8','9','*','0','#'].map(k=>`<button data-k="${k}">${k}</button>`).join('')}</div></div><p class="small muted" style="text-align:center">*123# · USSD · no data</p><button class="btn ghost" id="h">${u('home')}</button>`);
+ show();const send=()=>{const v=$('i').value.trim();$('i').value='';if(!v)return;text=text?text+'*'+v:v;show()};$('s').onclick=send;$('i').onkeydown=e=>{if(e.key==='Enter')send()};
+ app.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>{$('i').value+=b.dataset.k});$('h').onclick=home}
+function exportJson(){const b=new Blob([JSON.stringify((store.get().log||[]).map(({i,...r})=>r),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='rootpath-field-test.json';a.click()}
+langSelect();store.get().seen?home():welcome();
+if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{});
 </script></body></html>
